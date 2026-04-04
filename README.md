@@ -1,5 +1,4 @@
 # EarningsEcho
-# EarningsEcho
 
 **NLP pipeline that measures executive language patterns in earnings calls and backtests them against post-earnings stock returns.**
 
