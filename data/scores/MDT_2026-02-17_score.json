@@ -1,0 +1,171 @@
+{
+  "ticker": "MDT",
+  "date": "2026-02-17",
+  "source_file": "MDT_2026-02-17_parsed.json",
+  "word_count": 5781,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 26,
+    "word_count": 1703,
+    "hedging_density": 1.5267,
+    "epistemic_count": 2,
+    "approximator_count": 7,
+    "shield_count": 16,
+    "plausibility_count": 1,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        5
+      ],
+      [
+        "approximately",
+        3
+      ],
+      [
+        "could",
+        3
+      ],
+      [
+        "would",
+        3
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "management believes",
+        2
+      ],
+      [
+        "generally",
+        2
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "in some cases",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3043,
+    "opening_negative_ratio": 0.0652,
+    "opening_neutral_ratio": 0.6304,
+    "opening_sentence_count": 46,
+    "qa_positive_ratio": 0.0328,
+    "qa_negative_ratio": 0.2787,
+    "qa_neutral_ratio": 0.6885,
+    "qa_sentence_count": 61,
+    "overall_positive_ratio": 0.1495,
+    "overall_negative_ratio": 0.1869,
+    "overall_neutral_ratio": 0.6636,
+    "sentiment_trajectory": 0.2347
+  },
+  "vocab": {
+    "forward_count": 46,
+    "backward_count": 20,
+    "total_signal": 66,
+    "forward_ratio": 0.697,
+    "backward_ratio": 0.303,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        12
+      ],
+      [
+        "guidance",
+        12
+      ],
+      [
+        "will",
+        4
+      ],
+      [
+        "investing",
+        2
+      ],
+      [
+        "opportunities",
+        2
+      ],
+      [
+        "pipeline",
+        2
+      ],
+      [
+        "expect",
+        2
+      ],
+      [
+        "accelerating",
+        1
+      ],
+      [
+        "confidence",
+        1
+      ],
+      [
+        "invest",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "reported",
+        7
+      ],
+      [
+        "were",
+        4
+      ],
+      [
+        "increased",
+        3
+      ],
+      [
+        "grew",
+        1
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "completed",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "recorded",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.5089,
+  "negative_sentiment_norm": 0.9345,
+  "backward_ratio_norm": 0.303,
+  "EW_Risk_Score": 60.64,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 20.36,
+    "sentiment_contribution": 32.71,
+    "vocab_contribution": 7.58
+  }
+}

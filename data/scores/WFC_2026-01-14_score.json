@@ -1,0 +1,127 @@
+{
+  "ticker": "WFC",
+  "date": "2026-01-14",
+  "source_file": "WFC_2026-01-14_parsed.json",
+  "word_count": 4786,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 862,
+    "hedging_density": 0.116,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.8095,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.1905,
+    "opening_sentence_count": 21,
+    "qa_positive_ratio": 0.1235,
+    "qa_negative_ratio": 0.0988,
+    "qa_neutral_ratio": 0.7778,
+    "qa_sentence_count": 81,
+    "overall_positive_ratio": 0.2647,
+    "overall_negative_ratio": 0.0784,
+    "overall_neutral_ratio": 0.6569,
+    "sentiment_trajectory": 0.6079
+  },
+  "vocab": {
+    "forward_count": 22,
+    "backward_count": 25,
+    "total_signal": 47,
+    "forward_ratio": 0.4681,
+    "backward_ratio": 0.5319,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "investment",
+        8
+      ],
+      [
+        "growth",
+        7
+      ],
+      [
+        "target",
+        2
+      ],
+      [
+        "investing",
+        1
+      ],
+      [
+        "grow",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "opportunities",
+        1
+      ],
+      [
+        "will",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "grew",
+        8
+      ],
+      [
+        "ended",
+        5
+      ],
+      [
+        "increased",
+        4
+      ],
+      [
+        "was",
+        2
+      ],
+      [
+        "reported",
+        2
+      ],
+      [
+        "repurchased",
+        1
+      ],
+      [
+        "achieved",
+        1
+      ],
+      [
+        "declined",
+        1
+      ],
+      [
+        "returned",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0387,
+  "negative_sentiment_norm": 0.392,
+  "backward_ratio_norm": 0.5319,
+  "EW_Risk_Score": 28.56,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 1.55,
+    "sentiment_contribution": 13.72,
+    "vocab_contribution": 13.3
+  }
+}

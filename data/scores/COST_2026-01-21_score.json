@@ -1,0 +1,75 @@
+{
+  "ticker": "COST",
+  "date": "2026-01-21",
+  "source_file": "COST_2026-01-21_parsed.json",
+  "word_count": 474,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 2,
+    "word_count": 204,
+    "hedging_density": 0.9804,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 1,
+    "plausibility_count": 1,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        1
+      ],
+      [
+        "in some cases",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.1429,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.8571,
+    "opening_sentence_count": 7,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.1667,
+    "qa_neutral_ratio": 0.8333,
+    "qa_sentence_count": 6,
+    "overall_positive_ratio": 0.0769,
+    "overall_negative_ratio": 0.0769,
+    "overall_neutral_ratio": 0.8462,
+    "sentiment_trajectory": 0.0752
+  },
+  "vocab": {
+    "forward_count": 2,
+    "backward_count": 1,
+    "total_signal": 3,
+    "forward_ratio": 0.6667,
+    "backward_ratio": 0.3333,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "expects",
+        1
+      ],
+      [
+        "anticipates",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.3268,
+  "negative_sentiment_norm": 0.3845,
+  "backward_ratio_norm": 0.3333,
+  "EW_Risk_Score": 34.86,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 13.07,
+    "sentiment_contribution": 13.46,
+    "vocab_contribution": 8.33
+  }
+}

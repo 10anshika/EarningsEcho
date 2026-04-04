@@ -1,0 +1,103 @@
+{
+  "ticker": "SBUX",
+  "date": "2026-04-02",
+  "source_file": "SBUX_2026-04-02_parsed.json",
+  "word_count": 1191,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 2,
+    "word_count": 483,
+    "hedging_density": 0.4141,
+    "epistemic_count": 0,
+    "approximator_count": 2,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        1
+      ],
+      [
+        "about",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.8182,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.1818,
+    "opening_sentence_count": 11,
+    "qa_positive_ratio": 0.2,
+    "qa_negative_ratio": 0.1333,
+    "qa_neutral_ratio": 0.6667,
+    "qa_sentence_count": 15,
+    "overall_positive_ratio": 0.4615,
+    "overall_negative_ratio": 0.0769,
+    "overall_neutral_ratio": 0.4615,
+    "sentiment_trajectory": 0.4926
+  },
+  "vocab": {
+    "forward_count": 22,
+    "backward_count": 2,
+    "total_signal": 24,
+    "forward_ratio": 0.9167,
+    "backward_ratio": 0.0833,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        6
+      ],
+      [
+        "expansion",
+        3
+      ],
+      [
+        "grow",
+        3
+      ],
+      [
+        "accelerate",
+        2
+      ],
+      [
+        "expand",
+        2
+      ],
+      [
+        "will",
+        2
+      ],
+      [
+        "opportunities",
+        2
+      ],
+      [
+        "confidence",
+        1
+      ],
+      [
+        "intention",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        2
+      ]
+    ]
+  },
+  "hedging_norm": 0.138,
+  "negative_sentiment_norm": 0.3845,
+  "backward_ratio_norm": 0.0833,
+  "EW_Risk_Score": 21.06,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 5.52,
+    "sentiment_contribution": 13.46,
+    "vocab_contribution": 2.08
+  }
+}

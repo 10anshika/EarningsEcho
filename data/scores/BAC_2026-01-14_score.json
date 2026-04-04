@@ -1,0 +1,143 @@
+{
+  "ticker": "BAC",
+  "date": "2026-01-14",
+  "source_file": "BAC_2026-01-14_parsed.json",
+  "word_count": 10989,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 5,
+    "word_count": 4395,
+    "hedging_density": 0.1138,
+    "epistemic_count": 2,
+    "approximator_count": 2,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        2
+      ],
+      [
+        "we expect",
+        1
+      ],
+      [
+        "we feel",
+        1
+      ],
+      [
+        "may",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2353,
+    "opening_negative_ratio": 0.0294,
+    "opening_neutral_ratio": 0.7353,
+    "opening_sentence_count": 102,
+    "qa_positive_ratio": 0.0227,
+    "qa_negative_ratio": 0.0076,
+    "qa_neutral_ratio": 0.9697,
+    "qa_sentence_count": 132,
+    "overall_positive_ratio": 0.1154,
+    "overall_negative_ratio": 0.0171,
+    "overall_neutral_ratio": 0.8675,
+    "sentiment_trajectory": 0.1868
+  },
+  "vocab": {
+    "forward_count": 29,
+    "backward_count": 70,
+    "total_signal": 99,
+    "forward_ratio": 0.2929,
+    "backward_ratio": 0.7071,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "investment",
+        14
+      ],
+      [
+        "growth",
+        8
+      ],
+      [
+        "plan",
+        2
+      ],
+      [
+        "expect",
+        1
+      ],
+      [
+        "confident",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "planning",
+        1
+      ],
+      [
+        "confidence",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "increased",
+        22
+      ],
+      [
+        "decreased",
+        11
+      ],
+      [
+        "ended",
+        10
+      ],
+      [
+        "was",
+        7
+      ],
+      [
+        "improved",
+        6
+      ],
+      [
+        "grew",
+        5
+      ],
+      [
+        "were",
+        4
+      ],
+      [
+        "completed",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "reflected",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0379,
+  "negative_sentiment_norm": 0.0855,
+  "backward_ratio_norm": 0.7071,
+  "EW_Risk_Score": 22.19,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 1.52,
+    "sentiment_contribution": 2.99,
+    "vocab_contribution": 17.68
+  }
+}

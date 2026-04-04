@@ -1,0 +1,151 @@
+{
+  "ticker": "GOOGL",
+  "date": "2025-04-24",
+  "source_file": "GOOGL_2025-04-24_parsed.json",
+  "word_count": 3597,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 16,
+    "word_count": 1939,
+    "hedging_density": 0.8252,
+    "epistemic_count": 3,
+    "approximator_count": 3,
+    "shield_count": 10,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        6
+      ],
+      [
+        "we believe",
+        3
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "up to",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3043,
+    "opening_negative_ratio": 0.0217,
+    "opening_neutral_ratio": 0.6739,
+    "opening_sentence_count": 46,
+    "qa_positive_ratio": 0.0909,
+    "qa_negative_ratio": 0.0455,
+    "qa_neutral_ratio": 0.8636,
+    "qa_sentence_count": 22,
+    "overall_positive_ratio": 0.2353,
+    "overall_negative_ratio": 0.0294,
+    "overall_neutral_ratio": 0.7353,
+    "sentiment_trajectory": 0.1887
+  },
+  "vocab": {
+    "forward_count": 15,
+    "backward_count": 27,
+    "total_signal": 42,
+    "forward_ratio": 0.3571,
+    "backward_ratio": 0.6429,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        5
+      ],
+      [
+        "momentum",
+        2
+      ],
+      [
+        "investment",
+        2
+      ],
+      [
+        "will",
+        2
+      ],
+      [
+        "opportunities",
+        1
+      ],
+      [
+        "plans",
+        1
+      ],
+      [
+        "planning",
+        1
+      ],
+      [
+        "forecasting",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "ended",
+        11
+      ],
+      [
+        "increased",
+        6
+      ],
+      [
+        "announced",
+        2
+      ],
+      [
+        "paid",
+        2
+      ],
+      [
+        "were",
+        2
+      ],
+      [
+        "was",
+        1
+      ],
+      [
+        "grew",
+        1
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "recognized",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2751,
+  "negative_sentiment_norm": 0.147,
+  "backward_ratio_norm": 0.6429,
+  "EW_Risk_Score": 32.22,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 11.0,
+    "sentiment_contribution": 5.14,
+    "vocab_contribution": 16.07
+  }
+}

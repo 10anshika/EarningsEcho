@@ -1,0 +1,115 @@
+{
+  "ticker": "MS",
+  "date": "2026-01-15",
+  "source_file": "MS_2026-01-15_parsed.json",
+  "word_count": 4533,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 1837,
+    "hedging_density": 0.0544,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "largely",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.5893,
+    "opening_negative_ratio": 0.3036,
+    "opening_neutral_ratio": 0.1071,
+    "opening_sentence_count": 56,
+    "qa_positive_ratio": 0.1714,
+    "qa_negative_ratio": 0.0857,
+    "qa_neutral_ratio": 0.7429,
+    "qa_sentence_count": 70,
+    "overall_positive_ratio": 0.3571,
+    "overall_negative_ratio": 0.1825,
+    "overall_neutral_ratio": 0.4603,
+    "sentiment_trajectory": 0.4116
+  },
+  "vocab": {
+    "forward_count": 20,
+    "backward_count": 58,
+    "total_signal": 78,
+    "forward_ratio": 0.2564,
+    "backward_ratio": 0.7436,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "investment",
+        12
+      ],
+      [
+        "growth",
+        6
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "invest",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "increased",
+        22
+      ],
+      [
+        "was",
+        9
+      ],
+      [
+        "reported",
+        8
+      ],
+      [
+        "decreased",
+        5
+      ],
+      [
+        "were",
+        3
+      ],
+      [
+        "delivered",
+        3
+      ],
+      [
+        "completed",
+        2
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "produced",
+        1
+      ],
+      [
+        "contributed",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0181,
+  "negative_sentiment_norm": 0.9125,
+  "backward_ratio_norm": 0.7436,
+  "EW_Risk_Score": 51.25,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 0.73,
+    "sentiment_contribution": 31.94,
+    "vocab_contribution": 18.59
+  }
+}

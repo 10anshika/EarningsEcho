@@ -1,0 +1,171 @@
+{
+  "ticker": "AXP",
+  "date": "2025-07-18",
+  "source_file": "AXP_2025-07-18_parsed.json",
+  "word_count": 2858,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 16,
+    "word_count": 2772,
+    "hedging_density": 0.5772,
+    "epistemic_count": 1,
+    "approximator_count": 3,
+    "shield_count": 12,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "could",
+        6
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "management believes",
+        1
+      ],
+      [
+        "around",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "may",
+        1
+      ],
+      [
+        "would",
+        1
+      ],
+      [
+        "uncertain",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3051,
+    "opening_negative_ratio": 0.1017,
+    "opening_neutral_ratio": 0.5932,
+    "opening_sentence_count": 59,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 1,
+    "overall_positive_ratio": 0.3,
+    "overall_negative_ratio": 0.1,
+    "overall_neutral_ratio": 0.6,
+    "sentiment_trajectory": 0.2525
+  },
+  "vocab": {
+    "forward_count": 49,
+    "backward_count": 30,
+    "total_signal": 79,
+    "forward_ratio": 0.6203,
+    "backward_ratio": 0.3797,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        9
+      ],
+      [
+        "will",
+        9
+      ],
+      [
+        "outlook",
+        4
+      ],
+      [
+        "grow",
+        4
+      ],
+      [
+        "investment",
+        3
+      ],
+      [
+        "guidance",
+        2
+      ],
+      [
+        "momentum",
+        2
+      ],
+      [
+        "growing",
+        2
+      ],
+      [
+        "opportunities",
+        2
+      ],
+      [
+        "confident",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "ended",
+        8
+      ],
+      [
+        "was",
+        7
+      ],
+      [
+        "were",
+        3
+      ],
+      [
+        "increased",
+        3
+      ],
+      [
+        "impacted",
+        3
+      ],
+      [
+        "announced",
+        2
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "reflected",
+        1
+      ],
+      [
+        "reduced",
+        1
+      ],
+      [
+        "recognized",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1924,
+  "negative_sentiment_norm": 0.5,
+  "backward_ratio_norm": 0.3797,
+  "EW_Risk_Score": 34.69,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 7.7,
+    "sentiment_contribution": 17.5,
+    "vocab_contribution": 9.49
+  }
+}

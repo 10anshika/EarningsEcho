@@ -1,0 +1,95 @@
+{
+  "ticker": "INTC",
+  "date": "2026-01-22",
+  "source_file": "INTC_2026-01-22_parsed.json",
+  "word_count": 6761,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 470,
+    "hedging_density": 0.2128,
+    "epistemic_count": 1,
+    "approximator_count": 0,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "we expect",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2857,
+    "opening_negative_ratio": 0.2857,
+    "opening_neutral_ratio": 0.4286,
+    "opening_sentence_count": 14,
+    "qa_positive_ratio": 0.1273,
+    "qa_negative_ratio": 0.1273,
+    "qa_neutral_ratio": 0.7455,
+    "qa_sentence_count": 110,
+    "overall_positive_ratio": 0.1452,
+    "overall_negative_ratio": 0.1452,
+    "overall_neutral_ratio": 0.7097,
+    "sentiment_trajectory": 0.1911
+  },
+  "vocab": {
+    "forward_count": 6,
+    "backward_count": 9,
+    "total_signal": 15,
+    "forward_ratio": 0.4,
+    "backward_ratio": 0.6,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "grow",
+        2
+      ],
+      [
+        "forecasting",
+        1
+      ],
+      [
+        "expecting",
+        1
+      ],
+      [
+        "opportunity",
+        1
+      ],
+      [
+        "expect",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        6
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "exceeded",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0709,
+  "negative_sentiment_norm": 0.726,
+  "backward_ratio_norm": 0.6,
+  "EW_Risk_Score": 43.25,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 2.84,
+    "sentiment_contribution": 25.41,
+    "vocab_contribution": 15.0
+  }
+}

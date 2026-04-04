@@ -1,0 +1,82 @@
+{
+  "ticker": "META",
+  "date": "2025-04-11",
+  "source_file": "META_2025-04-11_parsed.json",
+  "word_count": 625,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 0,
+    "word_count": 256,
+    "hedging_density": 0.0,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": []
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.7,
+    "opening_sentence_count": 10,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 9,
+    "overall_positive_ratio": 0.1579,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.8421,
+    "sentiment_trajectory": 0.1907
+  },
+  "vocab": {
+    "forward_count": 6,
+    "backward_count": 1,
+    "total_signal": 7,
+    "forward_ratio": 0.8571,
+    "backward_ratio": 0.1429,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "committed",
+        1
+      ],
+      [
+        "expanding",
+        1
+      ],
+      [
+        "opportunity",
+        1
+      ],
+      [
+        "will",
+        1
+      ],
+      [
+        "grow",
+        1
+      ],
+      [
+        "opportunities",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.1429,
+  "EW_Risk_Score": 3.57,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 0.0,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 3.57
+  }
+}

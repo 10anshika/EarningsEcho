@@ -1,0 +1,66 @@
+{
+  "ticker": "AXP",
+  "date": "2026-03-02",
+  "source_file": "AXP_2026-03-02_parsed.json",
+  "word_count": 272,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 2,
+    "word_count": 114,
+    "hedging_density": 1.7544,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        1
+      ],
+      [
+        "about",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.6667,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.3333,
+    "opening_sentence_count": 3,
+    "qa_positive_ratio": 0.2,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.8,
+    "qa_sentence_count": 5,
+    "overall_positive_ratio": 0.375,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.625,
+    "sentiment_trajectory": 0.3559
+  },
+  "vocab": {
+    "forward_count": 0,
+    "backward_count": 1,
+    "total_signal": 1,
+    "forward_ratio": 0.0,
+    "backward_ratio": 1.0,
+    "deflection_flag": true,
+    "top_forward": [],
+    "top_backward": [
+      [
+        "was",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.5848,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 1.0,
+  "EW_Risk_Score": 48.39,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 23.39,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 25.0
+  }
+}

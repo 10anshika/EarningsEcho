@@ -1,0 +1,127 @@
+{
+  "ticker": "MSFT",
+  "date": "2025-04-30",
+  "source_file": "MSFT_2025-04-30_parsed.json",
+  "word_count": 2967,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 3,
+    "word_count": 818,
+    "hedging_density": 0.3667,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 2,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "about",
+        1
+      ],
+      [
+        "may",
+        1
+      ],
+      [
+        "should",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2667,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.7333,
+    "opening_sentence_count": 15,
+    "qa_positive_ratio": 0.0833,
+    "qa_negative_ratio": 0.0833,
+    "qa_neutral_ratio": 0.8333,
+    "qa_sentence_count": 12,
+    "overall_positive_ratio": 0.1852,
+    "overall_negative_ratio": 0.037,
+    "overall_neutral_ratio": 0.7778,
+    "sentiment_trajectory": 0.2242
+  },
+  "vocab": {
+    "forward_count": 16,
+    "backward_count": 26,
+    "total_signal": 42,
+    "forward_ratio": 0.381,
+    "backward_ratio": 0.619,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        6
+      ],
+      [
+        "will",
+        3
+      ],
+      [
+        "expand",
+        1
+      ],
+      [
+        "accelerate",
+        1
+      ],
+      [
+        "outlook",
+        1
+      ],
+      [
+        "guidance",
+        1
+      ],
+      [
+        "accelerating",
+        1
+      ],
+      [
+        "expanding",
+        1
+      ],
+      [
+        "opportunities",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "increased",
+        15
+      ],
+      [
+        "was",
+        7
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "returned",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1222,
+  "negative_sentiment_norm": 0.185,
+  "backward_ratio_norm": 0.619,
+  "EW_Risk_Score": 26.84,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 4.89,
+    "sentiment_contribution": 6.47,
+    "vocab_contribution": 15.47
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "ticker": "NKE",
+  "date": "2025-09-30",
+  "source_file": "NKE_2025-09-30_parsed.json",
+  "word_count": 2037,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 7,
+    "word_count": 1017,
+    "hedging_density": 0.6883,
+    "epistemic_count": 0,
+    "approximator_count": 6,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        5
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2,
+    "opening_negative_ratio": 0.3333,
+    "opening_neutral_ratio": 0.4667,
+    "opening_sentence_count": 30,
+    "qa_positive_ratio": 0.125,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.875,
+    "qa_sentence_count": 16,
+    "overall_positive_ratio": 0.1739,
+    "overall_negative_ratio": 0.2174,
+    "overall_neutral_ratio": 0.6087,
+    "sentiment_trajectory": 0.0919
+  },
+  "vocab": {
+    "forward_count": 9,
+    "backward_count": 37,
+    "total_signal": 46,
+    "forward_ratio": 0.1957,
+    "backward_ratio": 0.8043,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "will",
+        5
+      ],
+      [
+        "confident",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "growth",
+        1
+      ],
+      [
+        "investment",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        10
+      ],
+      [
+        "reported",
+        9
+      ],
+      [
+        "was",
+        8
+      ],
+      [
+        "decreased",
+        4
+      ],
+      [
+        "generated",
+        2
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "increased",
+        1
+      ],
+      [
+        "returned",
+        1
+      ],
+      [
+        "repurchased",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2294,
+  "negative_sentiment_norm": 1.0,
+  "backward_ratio_norm": 0.8043,
+  "EW_Risk_Score": 64.28,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 9.18,
+    "sentiment_contribution": 35.0,
+    "vocab_contribution": 20.11
+  }
+}

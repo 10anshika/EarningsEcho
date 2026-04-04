@@ -1,0 +1,52 @@
+{
+  "ticker": "BAC",
+  "date": "2026-01-06",
+  "source_file": "BAC_2026-01-06_parsed.json",
+  "word_count": 12293,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 0,
+    "word_count": 106,
+    "hedging_density": 0.0,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": []
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.0,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 1.0,
+    "opening_sentence_count": 4,
+    "qa_positive_ratio": 0.0933,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.9067,
+    "qa_sentence_count": 75,
+    "overall_positive_ratio": 0.0886,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.9114,
+    "sentiment_trajectory": -0.0924
+  },
+  "vocab": {
+    "forward_count": 0,
+    "backward_count": 0,
+    "total_signal": 0,
+    "forward_ratio": 0.0,
+    "backward_ratio": 0.0,
+    "deflection_flag": false,
+    "top_forward": [],
+    "top_backward": []
+  },
+  "hedging_norm": 0.0,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.0,
+  "EW_Risk_Score": 0.0,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 0.0,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 0.0
+  }
+}

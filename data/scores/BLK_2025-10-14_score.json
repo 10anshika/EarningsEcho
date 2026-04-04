@@ -1,0 +1,111 @@
+{
+  "ticker": "BLK",
+  "date": "2025-10-14",
+  "source_file": "BLK_2025-10-14_parsed.json",
+  "word_count": 11024,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 2,
+    "word_count": 751,
+    "hedging_density": 0.2663,
+    "epistemic_count": 1,
+    "approximator_count": 1,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "we believe",
+        1
+      ],
+      [
+        "around",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.6667,
+    "opening_negative_ratio": 0.0667,
+    "opening_neutral_ratio": 0.2667,
+    "opening_sentence_count": 15,
+    "qa_positive_ratio": 0.1455,
+    "qa_negative_ratio": 0.0667,
+    "qa_neutral_ratio": 0.7879,
+    "qa_sentence_count": 165,
+    "overall_positive_ratio": 0.1889,
+    "overall_negative_ratio": 0.0667,
+    "overall_neutral_ratio": 0.7444,
+    "sentiment_trajectory": 0.4731
+  },
+  "vocab": {
+    "forward_count": 15,
+    "backward_count": 5,
+    "total_signal": 20,
+    "forward_ratio": 0.75,
+    "backward_ratio": 0.25,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        7
+      ],
+      [
+        "investment",
+        2
+      ],
+      [
+        "accelerating",
+        2
+      ],
+      [
+        "investing",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "scale",
+        1
+      ],
+      [
+        "opportunity",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "reported",
+        1
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "impacted",
+        1
+      ],
+      [
+        "closed",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0888,
+  "negative_sentiment_norm": 0.3335,
+  "backward_ratio_norm": 0.25,
+  "EW_Risk_Score": 21.47,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 3.55,
+    "sentiment_contribution": 11.67,
+    "vocab_contribution": 6.25
+  }
+}

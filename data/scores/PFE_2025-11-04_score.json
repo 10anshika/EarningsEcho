@@ -1,0 +1,155 @@
+{
+  "ticker": "PFE",
+  "date": "2025-11-04",
+  "source_file": "PFE_2025-11-04_parsed.json",
+  "word_count": 12280,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 10,
+    "word_count": 2031,
+    "hedging_density": 0.4924,
+    "epistemic_count": 1,
+    "approximator_count": 7,
+    "shield_count": 2,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        5
+      ],
+      [
+        "largely",
+        2
+      ],
+      [
+        "we believe",
+        1
+      ],
+      [
+        "could",
+        1
+      ],
+      [
+        "may",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2857,
+    "opening_negative_ratio": 0.3143,
+    "opening_neutral_ratio": 0.4,
+    "opening_sentence_count": 35,
+    "qa_positive_ratio": 0.1872,
+    "qa_negative_ratio": 0.1176,
+    "qa_neutral_ratio": 0.6952,
+    "qa_sentence_count": 187,
+    "overall_positive_ratio": 0.2027,
+    "overall_negative_ratio": 0.1486,
+    "overall_neutral_ratio": 0.6486,
+    "sentiment_trajectory": 0.1053
+  },
+  "vocab": {
+    "forward_count": 25,
+    "backward_count": 31,
+    "total_signal": 56,
+    "forward_ratio": 0.4464,
+    "backward_ratio": 0.5536,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "guidance",
+        12
+      ],
+      [
+        "growth",
+        3
+      ],
+      [
+        "confidence",
+        2
+      ],
+      [
+        "expansion",
+        2
+      ],
+      [
+        "opportunities",
+        1
+      ],
+      [
+        "projects",
+        1
+      ],
+      [
+        "anticipate",
+        1
+      ],
+      [
+        "expects",
+        1
+      ],
+      [
+        "pipeline",
+        1
+      ],
+      [
+        "investment",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "reported",
+        9
+      ],
+      [
+        "acquired",
+        5
+      ],
+      [
+        "decreased",
+        4
+      ],
+      [
+        "recorded",
+        3
+      ],
+      [
+        "was",
+        3
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "completed",
+        1
+      ],
+      [
+        "were",
+        1
+      ],
+      [
+        "reduced",
+        1
+      ],
+      [
+        "reflected",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1641,
+  "negative_sentiment_norm": 0.743,
+  "backward_ratio_norm": 0.5536,
+  "EW_Risk_Score": 46.41,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 6.57,
+    "sentiment_contribution": 26.0,
+    "vocab_contribution": 13.84
+  }
+}

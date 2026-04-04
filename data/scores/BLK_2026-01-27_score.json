@@ -1,0 +1,65 @@
+{
+  "ticker": "BLK",
+  "date": "2026-01-27",
+  "source_file": "BLK_2026-01-27_parsed.json",
+  "word_count": 384,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 0,
+    "word_count": 135,
+    "hedging_density": 0.0,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": []
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.6,
+    "opening_sentence_count": 5,
+    "qa_positive_ratio": 0.0909,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.9091,
+    "qa_sentence_count": 11,
+    "overall_positive_ratio": 0.1875,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.8125,
+    "sentiment_trajectory": 0.263
+  },
+  "vocab": {
+    "forward_count": 3,
+    "backward_count": 0,
+    "total_signal": 3,
+    "forward_ratio": 1.0,
+    "backward_ratio": 0.0,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "investment",
+        1
+      ],
+      [
+        "will",
+        1
+      ],
+      [
+        "growth",
+        1
+      ]
+    ],
+    "top_backward": []
+  },
+  "hedging_norm": 0.0,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.0,
+  "EW_Risk_Score": 0.0,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 0.0,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 0.0
+  }
+}

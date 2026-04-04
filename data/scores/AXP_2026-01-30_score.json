@@ -1,0 +1,175 @@
+{
+  "ticker": "AXP",
+  "date": "2026-01-30",
+  "source_file": "AXP_2026-01-30_parsed.json",
+  "word_count": 2415,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 19,
+    "word_count": 2350,
+    "hedging_density": 0.8085,
+    "epistemic_count": 2,
+    "approximator_count": 6,
+    "shield_count": 11,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "could",
+        5
+      ],
+      [
+        "approximately",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "we expect",
+        1
+      ],
+      [
+        "in the range of",
+        1
+      ],
+      [
+        "management believes",
+        1
+      ],
+      [
+        "around",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "may",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4531,
+    "opening_negative_ratio": 0.0781,
+    "opening_neutral_ratio": 0.4688,
+    "opening_sentence_count": 64,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 1,
+    "overall_positive_ratio": 0.4462,
+    "overall_negative_ratio": 0.0769,
+    "overall_neutral_ratio": 0.4769,
+    "sentiment_trajectory": 0.3757
+  },
+  "vocab": {
+    "forward_count": 46,
+    "backward_count": 40,
+    "total_signal": 86,
+    "forward_ratio": 0.5349,
+    "backward_ratio": 0.4651,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        16
+      ],
+      [
+        "will",
+        5
+      ],
+      [
+        "plan",
+        3
+      ],
+      [
+        "investment",
+        3
+      ],
+      [
+        "guidance",
+        3
+      ],
+      [
+        "grow",
+        3
+      ],
+      [
+        "invest",
+        2
+      ],
+      [
+        "expect",
+        2
+      ],
+      [
+        "expects",
+        1
+      ],
+      [
+        "plans",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        10
+      ],
+      [
+        "increased",
+        8
+      ],
+      [
+        "were",
+        6
+      ],
+      [
+        "ended",
+        4
+      ],
+      [
+        "grew",
+        3
+      ],
+      [
+        "reflected",
+        3
+      ],
+      [
+        "impacted",
+        2
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "signed",
+        1
+      ],
+      [
+        "recognized",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2695,
+  "negative_sentiment_norm": 0.3845,
+  "backward_ratio_norm": 0.4651,
+  "EW_Risk_Score": 35.86,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 10.78,
+    "sentiment_contribution": 13.46,
+    "vocab_contribution": 11.63
+  }
+}

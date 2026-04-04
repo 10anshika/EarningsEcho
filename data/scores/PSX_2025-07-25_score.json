@@ -1,0 +1,175 @@
+{
+  "ticker": "PSX",
+  "date": "2025-07-25",
+  "source_file": "PSX_2025-07-25_parsed.json",
+  "word_count": 4242,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 15,
+    "word_count": 2488,
+    "hedging_density": 0.6029,
+    "epistemic_count": 0,
+    "approximator_count": 8,
+    "shield_count": 7,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "about",
+        2
+      ],
+      [
+        "around",
+        2
+      ],
+      [
+        "generally",
+        2
+      ],
+      [
+        "may",
+        2
+      ],
+      [
+        "could",
+        2
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "largely",
+        1
+      ],
+      [
+        "would",
+        1
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "difficult to predict",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2642,
+    "opening_negative_ratio": 0.0566,
+    "opening_neutral_ratio": 0.6792,
+    "opening_sentence_count": 53,
+    "qa_positive_ratio": 0.0435,
+    "qa_negative_ratio": 0.0435,
+    "qa_neutral_ratio": 0.913,
+    "qa_sentence_count": 23,
+    "overall_positive_ratio": 0.1974,
+    "overall_negative_ratio": 0.0526,
+    "overall_neutral_ratio": 0.75,
+    "sentiment_trajectory": 0.212
+  },
+  "vocab": {
+    "forward_count": 25,
+    "backward_count": 32,
+    "total_signal": 57,
+    "forward_ratio": 0.4386,
+    "backward_ratio": 0.5614,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "pipeline",
+        4
+      ],
+      [
+        "investment",
+        3
+      ],
+      [
+        "growth",
+        3
+      ],
+      [
+        "committed",
+        2
+      ],
+      [
+        "project",
+        2
+      ],
+      [
+        "will",
+        2
+      ],
+      [
+        "projects",
+        2
+      ],
+      [
+        "targets",
+        1
+      ],
+      [
+        "expansion",
+        1
+      ],
+      [
+        "intend",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "increased",
+        5
+      ],
+      [
+        "reported",
+        3
+      ],
+      [
+        "announced",
+        3
+      ],
+      [
+        "achieved",
+        3
+      ],
+      [
+        "were",
+        3
+      ],
+      [
+        "generated",
+        2
+      ],
+      [
+        "delivered",
+        2
+      ],
+      [
+        "acquired",
+        2
+      ],
+      [
+        "improved",
+        2
+      ],
+      [
+        "reduced",
+        2
+      ]
+    ]
+  },
+  "hedging_norm": 0.201,
+  "negative_sentiment_norm": 0.263,
+  "backward_ratio_norm": 0.5614,
+  "EW_Risk_Score": 31.28,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 8.04,
+    "sentiment_contribution": 9.21,
+    "vocab_contribution": 14.04
+  }
+}

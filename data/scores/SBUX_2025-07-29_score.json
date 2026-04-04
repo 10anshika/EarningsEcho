@@ -1,0 +1,171 @@
+{
+  "ticker": "SBUX",
+  "date": "2025-07-29",
+  "source_file": "SBUX_2025-07-29_parsed.json",
+  "word_count": 6373,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 18,
+    "word_count": 2727,
+    "hedging_density": 0.6601,
+    "epistemic_count": 2,
+    "approximator_count": 5,
+    "shield_count": 11,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "could",
+        4
+      ],
+      [
+        "about",
+        3
+      ],
+      [
+        "may",
+        3
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "we believe",
+        2
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "generally",
+        1
+      ],
+      [
+        "would",
+        1
+      ],
+      [
+        "beyond our control",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3,
+    "opening_negative_ratio": 0.2333,
+    "opening_neutral_ratio": 0.4667,
+    "opening_sentence_count": 60,
+    "qa_positive_ratio": 0.0435,
+    "qa_negative_ratio": 0.1304,
+    "qa_neutral_ratio": 0.8261,
+    "qa_sentence_count": 23,
+    "overall_positive_ratio": 0.2289,
+    "overall_negative_ratio": 0.2048,
+    "overall_neutral_ratio": 0.5663,
+    "sentiment_trajectory": 0.2243
+  },
+  "vocab": {
+    "forward_count": 48,
+    "backward_count": 40,
+    "total_signal": 88,
+    "forward_ratio": 0.5455,
+    "backward_ratio": 0.4545,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        7
+      ],
+      [
+        "will",
+        7
+      ],
+      [
+        "investment",
+        3
+      ],
+      [
+        "expansion",
+        3
+      ],
+      [
+        "plan",
+        3
+      ],
+      [
+        "growing",
+        2
+      ],
+      [
+        "anticipate",
+        2
+      ],
+      [
+        "plans",
+        2
+      ],
+      [
+        "intends",
+        1
+      ],
+      [
+        "accelerate",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "increased",
+        7
+      ],
+      [
+        "declined",
+        6
+      ],
+      [
+        "ended",
+        4
+      ],
+      [
+        "was",
+        4
+      ],
+      [
+        "announced",
+        4
+      ],
+      [
+        "decreased",
+        3
+      ],
+      [
+        "impacted",
+        2
+      ],
+      [
+        "reported",
+        2
+      ],
+      [
+        "closed",
+        2
+      ],
+      [
+        "reduced",
+        2
+      ]
+    ]
+  },
+  "hedging_norm": 0.22,
+  "negative_sentiment_norm": 1.0,
+  "backward_ratio_norm": 0.4545,
+  "EW_Risk_Score": 55.16,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 8.8,
+    "sentiment_contribution": 35.0,
+    "vocab_contribution": 11.36
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "ticker": "WFC",
+  "date": "2024-10-11",
+  "source": "motleyfool",
+  "source_file": "WFC_2024-10-11_parsed.json",
+  "word_count": 8547,
+  "sections_found": true,
+  "hedging": {
+    "hedge_count": 25,
+    "word_count": 3582,
+    "hedging_density": 0.6979,
+    "epistemic_count": 2,
+    "approximator_count": 13,
+    "shield_count": 10,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        6
+      ],
+      [
+        "would",
+        4
+      ],
+      [
+        "about",
+        4
+      ],
+      [
+        "may",
+        3
+      ],
+      [
+        "largely",
+        2
+      ],
+      [
+        "we believe",
+        2
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "roughly",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.378,
+    "opening_negative_ratio": 0.311,
+    "opening_neutral_ratio": 0.311,
+    "opening_sentence_count": 164,
+    "qa_positive_ratio": 0.1154,
+    "qa_negative_ratio": 0.0577,
+    "qa_neutral_ratio": 0.8269,
+    "qa_sentence_count": 260,
+    "overall_positive_ratio": 0.217,
+    "overall_negative_ratio": 0.1557,
+    "overall_neutral_ratio": 0.6274,
+    "sentiment_trajectory": 0.2048
+  },
+  "vocab": {
+    "forward_count": 66,
+    "backward_count": 93,
+    "total_signal": 159,
+    "forward_ratio": 0.4151,
+    "backward_ratio": 0.5849,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        16
+      ],
+      [
+        "will",
+        14
+      ],
+      [
+        "investment",
+        14
+      ],
+      [
+        "grow",
+        5
+      ],
+      [
+        "expect",
+        4
+      ],
+      [
+        "investing",
+        3
+      ],
+      [
+        "scale",
+        2
+      ],
+      [
+        "opportunity",
+        2
+      ],
+      [
+        "growing",
+        1
+      ],
+      [
+        "confidence",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        17
+      ],
+      [
+        "were",
+        16
+      ],
+      [
+        "declined",
+        16
+      ],
+      [
+        "increased",
+        9
+      ],
+      [
+        "grew",
+        5
+      ],
+      [
+        "decreased",
+        5
+      ],
+      [
+        "improved",
+        4
+      ],
+      [
+        "had",
+        4
+      ],
+      [
+        "announced",
+        3
+      ],
+      [
+        "recorded",
+        2
+      ]
+    ]
+  },
+  "hedging_norm": 0.2326,
+  "negative_sentiment_norm": 0.7785,
+  "backward_ratio_norm": 0.5849,
+  "EW_Risk_Score": 51.18,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 9.31,
+    "sentiment_contribution": 27.25,
+    "vocab_contribution": 14.62
+  }
+}

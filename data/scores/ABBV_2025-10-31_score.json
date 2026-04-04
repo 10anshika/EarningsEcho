@@ -1,0 +1,175 @@
+{
+  "ticker": "ABBV",
+  "date": "2025-10-31",
+  "source_file": "ABBV_2025-10-31_parsed.json",
+  "word_count": 5761,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 22,
+    "word_count": 4163,
+    "hedging_density": 0.5285,
+    "epistemic_count": 1,
+    "approximator_count": 14,
+    "shield_count": 7,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "generally",
+        5
+      ],
+      [
+        "about",
+        4
+      ],
+      [
+        "may",
+        4
+      ],
+      [
+        "at least",
+        3
+      ],
+      [
+        "broadly",
+        1
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "unpredictable",
+        1
+      ],
+      [
+        "management believes",
+        1
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4636,
+    "opening_negative_ratio": 0.1182,
+    "opening_neutral_ratio": 0.4182,
+    "opening_sentence_count": 110,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.1333,
+    "qa_neutral_ratio": 0.8667,
+    "qa_sentence_count": 30,
+    "overall_positive_ratio": 0.3643,
+    "overall_negative_ratio": 0.1214,
+    "overall_neutral_ratio": 0.5143,
+    "sentiment_trajectory": 0.4141
+  },
+  "vocab": {
+    "forward_count": 27,
+    "backward_count": 116,
+    "total_signal": 143,
+    "forward_ratio": 0.1888,
+    "backward_ratio": 0.8112,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "will",
+        6
+      ],
+      [
+        "guidance",
+        3
+      ],
+      [
+        "outlook",
+        2
+      ],
+      [
+        "scale",
+        2
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "pipeline",
+        1
+      ],
+      [
+        "investing",
+        1
+      ],
+      [
+        "growth",
+        1
+      ],
+      [
+        "plans",
+        1
+      ],
+      [
+        "committed",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        39
+      ],
+      [
+        "reported",
+        24
+      ],
+      [
+        "announced",
+        17
+      ],
+      [
+        "was",
+        17
+      ],
+      [
+        "acquired",
+        6
+      ],
+      [
+        "ended",
+        3
+      ],
+      [
+        "achieved",
+        2
+      ],
+      [
+        "completed",
+        2
+      ],
+      [
+        "increased",
+        2
+      ],
+      [
+        "had",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1762,
+  "negative_sentiment_norm": 0.607,
+  "backward_ratio_norm": 0.8112,
+  "EW_Risk_Score": 48.57,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 7.05,
+    "sentiment_contribution": 21.24,
+    "vocab_contribution": 20.28
+  }
+}

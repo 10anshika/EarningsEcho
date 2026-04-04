@@ -1,0 +1,155 @@
+{
+  "ticker": "MCD",
+  "date": "2026-02-11",
+  "source_file": "MCD_2026-02-11_parsed.json",
+  "word_count": 2421,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 11,
+    "word_count": 1785,
+    "hedging_density": 0.6162,
+    "epistemic_count": 2,
+    "approximator_count": 4,
+    "shield_count": 5,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        3
+      ],
+      [
+        "management believes",
+        2
+      ],
+      [
+        "at least",
+        1
+      ],
+      [
+        "generally",
+        1
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4423,
+    "opening_negative_ratio": 0.0385,
+    "opening_neutral_ratio": 0.5192,
+    "opening_sentence_count": 52,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 1,
+    "overall_positive_ratio": 0.434,
+    "overall_negative_ratio": 0.0377,
+    "overall_neutral_ratio": 0.5283,
+    "sentiment_trajectory": 0.4
+  },
+  "vocab": {
+    "forward_count": 16,
+    "backward_count": 41,
+    "total_signal": 57,
+    "forward_ratio": 0.2807,
+    "backward_ratio": 0.7193,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "growth",
+        5
+      ],
+      [
+        "accelerating",
+        4
+      ],
+      [
+        "will",
+        3
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "plans",
+        1
+      ],
+      [
+        "expansion",
+        1
+      ],
+      [
+        "opportunities",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "increased",
+        19
+      ],
+      [
+        "ended",
+        7
+      ],
+      [
+        "was",
+        5
+      ],
+      [
+        "were",
+        2
+      ],
+      [
+        "closed",
+        2
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "improved",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "reflected",
+        1
+      ],
+      [
+        "affected",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2054,
+  "negative_sentiment_norm": 0.1885,
+  "backward_ratio_norm": 0.7193,
+  "EW_Risk_Score": 32.8,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 8.22,
+    "sentiment_contribution": 6.6,
+    "vocab_contribution": 17.98
+  }
+}

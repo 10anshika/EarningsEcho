@@ -1,0 +1,79 @@
+{
+  "ticker": "CVS",
+  "date": "2025-11-20",
+  "source_file": "CVS_2025-11-20_parsed.json",
+  "word_count": 497,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 203,
+    "hedging_density": 0.4926,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "should",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4286,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.5714,
+    "opening_sentence_count": 7,
+    "qa_positive_ratio": 0.5556,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.4444,
+    "qa_sentence_count": 9,
+    "overall_positive_ratio": 0.5,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.5,
+    "sentiment_trajectory": -0.1505
+  },
+  "vocab": {
+    "forward_count": 4,
+    "backward_count": 2,
+    "total_signal": 6,
+    "forward_ratio": 0.6667,
+    "backward_ratio": 0.3333,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        2
+      ],
+      [
+        "growth",
+        1
+      ],
+      [
+        "opportunities",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ],
+      [
+        "was",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1642,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.3333,
+  "EW_Risk_Score": 14.9,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 6.57,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 8.33
+  }
+}

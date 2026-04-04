@@ -1,0 +1,135 @@
+{
+  "ticker": "MSFT",
+  "date": "2025-10-29",
+  "source_file": "MSFT_2025-10-29_parsed.json",
+  "word_count": 2944,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 3,
+    "word_count": 1127,
+    "hedging_density": 0.2662,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 2,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "should",
+        2
+      ],
+      [
+        "generally",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2692,
+    "opening_negative_ratio": 0.0769,
+    "opening_neutral_ratio": 0.6538,
+    "opening_sentence_count": 26,
+    "qa_positive_ratio": 0.0909,
+    "qa_negative_ratio": 0.0909,
+    "qa_neutral_ratio": 0.8182,
+    "qa_sentence_count": 11,
+    "overall_positive_ratio": 0.2162,
+    "overall_negative_ratio": 0.0811,
+    "overall_neutral_ratio": 0.7027,
+    "sentiment_trajectory": 0.2039
+  },
+  "vocab": {
+    "forward_count": 11,
+    "backward_count": 44,
+    "total_signal": 55,
+    "forward_ratio": 0.2,
+    "backward_ratio": 0.8,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "will",
+        3
+      ],
+      [
+        "growth",
+        2
+      ],
+      [
+        "scale",
+        1
+      ],
+      [
+        "opportunity",
+        1
+      ],
+      [
+        "growing",
+        1
+      ],
+      [
+        "outlook",
+        1
+      ],
+      [
+        "guidance",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "increased",
+        19
+      ],
+      [
+        "was",
+        10
+      ],
+      [
+        "reported",
+        3
+      ],
+      [
+        "ended",
+        2
+      ],
+      [
+        "were",
+        2
+      ],
+      [
+        "impacted",
+        2
+      ],
+      [
+        "resulted",
+        2
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "returned",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0887,
+  "negative_sentiment_norm": 0.4055,
+  "backward_ratio_norm": 0.8,
+  "EW_Risk_Score": 37.74,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 3.55,
+    "sentiment_contribution": 14.19,
+    "vocab_contribution": 20.0
+  }
+}

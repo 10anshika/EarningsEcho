@@ -1,0 +1,95 @@
+{
+  "ticker": "BAC",
+  "date": "2025-09-12",
+  "source_file": "BAC_2025-09-12_parsed.json",
+  "word_count": 1721,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 700,
+    "hedging_density": 0.1429,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "around",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.36,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.64,
+    "opening_sentence_count": 25,
+    "qa_positive_ratio": 0.25,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.75,
+    "qa_sentence_count": 36,
+    "overall_positive_ratio": 0.2951,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.7049,
+    "sentiment_trajectory": 0.0696
+  },
+  "vocab": {
+    "forward_count": 23,
+    "backward_count": 1,
+    "total_signal": 24,
+    "forward_ratio": 0.9583,
+    "backward_ratio": 0.0417,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        9
+      ],
+      [
+        "growth",
+        7
+      ],
+      [
+        "plans",
+        2
+      ],
+      [
+        "expanding",
+        1
+      ],
+      [
+        "grow",
+        1
+      ],
+      [
+        "scale",
+        1
+      ],
+      [
+        "expansion",
+        1
+      ],
+      [
+        "accelerate",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0476,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.0417,
+  "EW_Risk_Score": 2.95,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 1.91,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 1.04
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "ticker": "CRM",
+  "date": "2025-10-16",
+  "source_file": "CRM_2025-10-16_parsed.json",
+  "word_count": 719,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 303,
+    "hedging_density": 0.33,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.8889,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.1111,
+    "opening_sentence_count": 9,
+    "qa_positive_ratio": 0.1667,
+    "qa_negative_ratio": 0.0833,
+    "qa_neutral_ratio": 0.75,
+    "qa_sentence_count": 12,
+    "overall_positive_ratio": 0.4762,
+    "overall_negative_ratio": 0.0476,
+    "overall_neutral_ratio": 0.4762,
+    "sentiment_trajectory": 0.5856
+  },
+  "vocab": {
+    "forward_count": 14,
+    "backward_count": 3,
+    "total_signal": 17,
+    "forward_ratio": 0.8235,
+    "backward_ratio": 0.1765,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        6
+      ],
+      [
+        "target",
+        2
+      ],
+      [
+        "growing",
+        2
+      ],
+      [
+        "aims",
+        1
+      ],
+      [
+        "scaling",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "expand",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        2
+      ],
+      [
+        "was",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.11,
+  "negative_sentiment_norm": 0.238,
+  "backward_ratio_norm": 0.1765,
+  "EW_Risk_Score": 17.14,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 4.4,
+    "sentiment_contribution": 8.33,
+    "vocab_contribution": 4.41
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "ticker": "COP",
+  "date": "2025-11-06",
+  "source_file": "COP_2025-11-06_parsed.json",
+  "word_count": 3631,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 6,
+    "word_count": 1519,
+    "hedging_density": 0.395,
+    "epistemic_count": 1,
+    "approximator_count": 4,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        3
+      ],
+      [
+        "we expect",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "about",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.371,
+    "opening_negative_ratio": 0.2097,
+    "opening_neutral_ratio": 0.4194,
+    "opening_sentence_count": 62,
+    "qa_positive_ratio": 0.0606,
+    "qa_negative_ratio": 0.0606,
+    "qa_neutral_ratio": 0.8788,
+    "qa_sentence_count": 33,
+    "overall_positive_ratio": 0.2632,
+    "overall_negative_ratio": 0.1579,
+    "overall_neutral_ratio": 0.5789,
+    "sentiment_trajectory": 0.2782
+  },
+  "vocab": {
+    "forward_count": 40,
+    "backward_count": 39,
+    "total_signal": 79,
+    "forward_ratio": 0.5063,
+    "backward_ratio": 0.4937,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "guidance",
+        16
+      ],
+      [
+        "project",
+        6
+      ],
+      [
+        "growth",
+        4
+      ],
+      [
+        "projects",
+        3
+      ],
+      [
+        "target",
+        2
+      ],
+      [
+        "will",
+        2
+      ],
+      [
+        "goal",
+        1
+      ],
+      [
+        "expect",
+        1
+      ],
+      [
+        "outlook",
+        1
+      ],
+      [
+        "expects",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        6
+      ],
+      [
+        "reduced",
+        4
+      ],
+      [
+        "were",
+        4
+      ],
+      [
+        "closed",
+        4
+      ],
+      [
+        "generated",
+        3
+      ],
+      [
+        "increased",
+        3
+      ],
+      [
+        "reported",
+        2
+      ],
+      [
+        "delivered",
+        2
+      ],
+      [
+        "repurchased",
+        2
+      ],
+      [
+        "paid",
+        2
+      ]
+    ]
+  },
+  "hedging_norm": 0.1317,
+  "negative_sentiment_norm": 0.7895,
+  "backward_ratio_norm": 0.4937,
+  "EW_Risk_Score": 45.24,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 5.27,
+    "sentiment_contribution": 27.63,
+    "vocab_contribution": 12.34
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "ticker": "TGT",
+  "date": "2025-08-20",
+  "source_file": "TGT_2025-08-20_parsed.json",
+  "word_count": 3779,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 7,
+    "word_count": 1197,
+    "hedging_density": 0.5848,
+    "epistemic_count": 0,
+    "approximator_count": 5,
+    "shield_count": 2,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "about",
+        3
+      ],
+      [
+        "approximately",
+        2
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2222,
+    "opening_negative_ratio": 0.3111,
+    "opening_neutral_ratio": 0.4667,
+    "opening_sentence_count": 45,
+    "qa_positive_ratio": 0.1064,
+    "qa_negative_ratio": 0.0851,
+    "qa_neutral_ratio": 0.8085,
+    "qa_sentence_count": 47,
+    "overall_positive_ratio": 0.163,
+    "overall_negative_ratio": 0.1957,
+    "overall_neutral_ratio": 0.6413,
+    "sentiment_trajectory": 0.1515
+  },
+  "vocab": {
+    "forward_count": 39,
+    "backward_count": 27,
+    "total_signal": 66,
+    "forward_ratio": 0.5909,
+    "backward_ratio": 0.4091,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "target",
+        25
+      ],
+      [
+        "growth",
+        5
+      ],
+      [
+        "will",
+        3
+      ],
+      [
+        "guidance",
+        2
+      ],
+      [
+        "growing",
+        1
+      ],
+      [
+        "confidence",
+        1
+      ],
+      [
+        "accelerating",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        8
+      ],
+      [
+        "were",
+        4
+      ],
+      [
+        "improved",
+        3
+      ],
+      [
+        "grew",
+        2
+      ],
+      [
+        "reported",
+        2
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "contributed",
+        1
+      ],
+      [
+        "decreased",
+        1
+      ],
+      [
+        "increased",
+        1
+      ],
+      [
+        "paid",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1949,
+  "negative_sentiment_norm": 0.9785,
+  "backward_ratio_norm": 0.4091,
+  "EW_Risk_Score": 52.27,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 7.8,
+    "sentiment_contribution": 34.25,
+    "vocab_contribution": 10.23
+  }
+}

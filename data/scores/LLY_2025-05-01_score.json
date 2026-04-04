@@ -1,0 +1,171 @@
+{
+  "ticker": "LLY",
+  "date": "2025-05-01",
+  "source_file": "LLY_2025-05-01_parsed.json",
+  "word_count": 3756,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 26,
+    "word_count": 3460,
+    "hedging_density": 0.7514,
+    "epistemic_count": 0,
+    "approximator_count": 9,
+    "shield_count": 17,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        10
+      ],
+      [
+        "could",
+        4
+      ],
+      [
+        "about",
+        3
+      ],
+      [
+        "in the range of",
+        3
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "generally",
+        1
+      ],
+      [
+        "around",
+        1
+      ],
+      [
+        "uncertain",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4433,
+    "opening_negative_ratio": 0.0825,
+    "opening_neutral_ratio": 0.4742,
+    "opening_sentence_count": 97,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.1429,
+    "qa_neutral_ratio": 0.8571,
+    "qa_sentence_count": 7,
+    "overall_positive_ratio": 0.4135,
+    "overall_negative_ratio": 0.0865,
+    "overall_neutral_ratio": 0.5,
+    "sentiment_trajectory": 0.4168
+  },
+  "vocab": {
+    "forward_count": 38,
+    "backward_count": 86,
+    "total_signal": 124,
+    "forward_ratio": 0.3065,
+    "backward_ratio": 0.6935,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "guidance",
+        13
+      ],
+      [
+        "growth",
+        5
+      ],
+      [
+        "pipeline",
+        4
+      ],
+      [
+        "will",
+        4
+      ],
+      [
+        "intend",
+        2
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "accelerating",
+        1
+      ],
+      [
+        "plans",
+        1
+      ],
+      [
+        "investment",
+        1
+      ],
+      [
+        "expects",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "reported",
+        19
+      ],
+      [
+        "increased",
+        15
+      ],
+      [
+        "was",
+        15
+      ],
+      [
+        "acquired",
+        14
+      ],
+      [
+        "were",
+        5
+      ],
+      [
+        "announced",
+        2
+      ],
+      [
+        "improved",
+        2
+      ],
+      [
+        "recognized",
+        2
+      ],
+      [
+        "impacted",
+        2
+      ],
+      [
+        "achieved",
+        2
+      ]
+    ]
+  },
+  "hedging_norm": 0.2505,
+  "negative_sentiment_norm": 0.4325,
+  "backward_ratio_norm": 0.6935,
+  "EW_Risk_Score": 42.49,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 10.02,
+    "sentiment_contribution": 15.14,
+    "vocab_contribution": 17.34
+  }
+}

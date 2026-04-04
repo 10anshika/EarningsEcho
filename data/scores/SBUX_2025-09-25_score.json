@@ -1,0 +1,91 @@
+{
+  "ticker": "SBUX",
+  "date": "2025-09-25",
+  "source_file": "SBUX_2025-09-25_parsed.json",
+  "word_count": 744,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 2,
+    "word_count": 304,
+    "hedging_density": 0.6579,
+    "epistemic_count": 1,
+    "approximator_count": 1,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "we understand",
+        1
+      ],
+      [
+        "about",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.25,
+    "opening_negative_ratio": 0.1667,
+    "opening_neutral_ratio": 0.5833,
+    "opening_sentence_count": 12,
+    "qa_positive_ratio": 0.5,
+    "qa_negative_ratio": 0.0455,
+    "qa_neutral_ratio": 0.4545,
+    "qa_sentence_count": 22,
+    "overall_positive_ratio": 0.4118,
+    "overall_negative_ratio": 0.0882,
+    "overall_neutral_ratio": 0.5,
+    "sentiment_trajectory": -0.2122
+  },
+  "vocab": {
+    "forward_count": 9,
+    "backward_count": 2,
+    "total_signal": 11,
+    "forward_ratio": 0.8182,
+    "backward_ratio": 0.1818,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        4
+      ],
+      [
+        "plan",
+        2
+      ],
+      [
+        "grow",
+        1
+      ],
+      [
+        "goal",
+        1
+      ],
+      [
+        "expect",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        1
+      ],
+      [
+        "closed",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2193,
+  "negative_sentiment_norm": 0.441,
+  "backward_ratio_norm": 0.1818,
+  "EW_Risk_Score": 28.75,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 8.77,
+    "sentiment_contribution": 15.43,
+    "vocab_contribution": 4.54
+  }
+}

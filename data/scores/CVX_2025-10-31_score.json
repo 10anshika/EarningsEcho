@@ -1,0 +1,175 @@
+{
+  "ticker": "CVX",
+  "date": "2025-10-31",
+  "source_file": "CVX_2025-10-31_parsed.json",
+  "word_count": 4860,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 23,
+    "word_count": 3766,
+    "hedging_density": 0.6107,
+    "epistemic_count": 2,
+    "approximator_count": 9,
+    "shield_count": 12,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "about",
+        4
+      ],
+      [
+        "may",
+        3
+      ],
+      [
+        "generally",
+        3
+      ],
+      [
+        "could",
+        3
+      ],
+      [
+        "we believe",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "largely",
+        1
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "difficult to predict",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3506,
+    "opening_negative_ratio": 0.1688,
+    "opening_neutral_ratio": 0.4805,
+    "opening_sentence_count": 77,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 5,
+    "overall_positive_ratio": 0.3293,
+    "overall_negative_ratio": 0.1585,
+    "overall_neutral_ratio": 0.5122,
+    "sentiment_trajectory": 0.3083
+  },
+  "vocab": {
+    "forward_count": 36,
+    "backward_count": 39,
+    "total_signal": 75,
+    "forward_ratio": 0.48,
+    "backward_ratio": 0.52,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "projects",
+        4
+      ],
+      [
+        "will",
+        4
+      ],
+      [
+        "project",
+        3
+      ],
+      [
+        "guidance",
+        3
+      ],
+      [
+        "growth",
+        2
+      ],
+      [
+        "grow",
+        2
+      ],
+      [
+        "investing",
+        2
+      ],
+      [
+        "aim",
+        1
+      ],
+      [
+        "anticipates",
+        1
+      ],
+      [
+        "expects",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        8
+      ],
+      [
+        "increased",
+        7
+      ],
+      [
+        "were",
+        5
+      ],
+      [
+        "ended",
+        4
+      ],
+      [
+        "reported",
+        3
+      ],
+      [
+        "decreased",
+        3
+      ],
+      [
+        "returned",
+        2
+      ],
+      [
+        "divested",
+        1
+      ],
+      [
+        "benefited",
+        1
+      ],
+      [
+        "achieved",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2036,
+  "negative_sentiment_norm": 0.7925,
+  "backward_ratio_norm": 0.52,
+  "EW_Risk_Score": 48.88,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 8.14,
+    "sentiment_contribution": 27.74,
+    "vocab_contribution": 13.0
+  }
+}

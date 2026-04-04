@@ -1,0 +1,111 @@
+{
+  "ticker": "JNJ",
+  "date": "2026-01-21",
+  "source_file": "JNJ_2026-01-21_parsed.json",
+  "word_count": 2684,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 6,
+    "word_count": 1172,
+    "hedging_density": 0.5119,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 5,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        3
+      ],
+      [
+        "in general",
+        1
+      ],
+      [
+        "uncertain",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3,
+    "opening_negative_ratio": 0.25,
+    "opening_neutral_ratio": 0.45,
+    "opening_sentence_count": 20,
+    "qa_positive_ratio": 0.1154,
+    "qa_negative_ratio": 0.0385,
+    "qa_neutral_ratio": 0.8462,
+    "qa_sentence_count": 26,
+    "overall_positive_ratio": 0.1957,
+    "overall_negative_ratio": 0.1304,
+    "overall_neutral_ratio": 0.6739,
+    "sentiment_trajectory": 0.2064
+  },
+  "vocab": {
+    "forward_count": 17,
+    "backward_count": 17,
+    "total_signal": 34,
+    "forward_ratio": 0.5,
+    "backward_ratio": 0.5,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        12
+      ],
+      [
+        "guidance",
+        2
+      ],
+      [
+        "pipeline",
+        1
+      ],
+      [
+        "expanding",
+        1
+      ],
+      [
+        "will",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "reported",
+        9
+      ],
+      [
+        "was",
+        4
+      ],
+      [
+        "grew",
+        2
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "reflected",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1706,
+  "negative_sentiment_norm": 0.652,
+  "backward_ratio_norm": 0.5,
+  "EW_Risk_Score": 42.15,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 6.83,
+    "sentiment_contribution": 22.82,
+    "vocab_contribution": 12.5
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "ticker": "CRM",
+  "date": "2025-09-03",
+  "source_file": "CRM_2025-09-03_parsed.json",
+  "word_count": 6342,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 6,
+    "word_count": 776,
+    "hedging_density": 0.7732,
+    "epistemic_count": 0,
+    "approximator_count": 6,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        6
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.6,
+    "opening_sentence_count": 10,
+    "qa_positive_ratio": 0.0357,
+    "qa_negative_ratio": 0.0833,
+    "qa_neutral_ratio": 0.881,
+    "qa_sentence_count": 84,
+    "overall_positive_ratio": 0.0745,
+    "overall_negative_ratio": 0.0745,
+    "overall_neutral_ratio": 0.8511,
+    "sentiment_trajectory": 0.3438
+  },
+  "vocab": {
+    "forward_count": 29,
+    "backward_count": 10,
+    "total_signal": 39,
+    "forward_ratio": 0.7436,
+    "backward_ratio": 0.2564,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "guidance",
+        13
+      ],
+      [
+        "growth",
+        12
+      ],
+      [
+        "expansion",
+        2
+      ],
+      [
+        "accelerate",
+        1
+      ],
+      [
+        "targets",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        2
+      ],
+      [
+        "closed",
+        2
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "returned",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "exceeded",
+        1
+      ],
+      [
+        "paid",
+        1
+      ],
+      [
+        "were",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2577,
+  "negative_sentiment_norm": 0.3725,
+  "backward_ratio_norm": 0.2564,
+  "EW_Risk_Score": 29.76,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 10.31,
+    "sentiment_contribution": 13.04,
+    "vocab_contribution": 6.41
+  }
+}

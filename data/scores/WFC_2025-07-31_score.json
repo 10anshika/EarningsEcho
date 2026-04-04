@@ -1,0 +1,90 @@
+{
+  "ticker": "WFC",
+  "date": "2025-07-31",
+  "source_file": "WFC_2025-07-31_parsed.json",
+  "word_count": 700,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 0,
+    "word_count": 280,
+    "hedging_density": 0.0,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": []
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.625,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.375,
+    "opening_sentence_count": 8,
+    "qa_positive_ratio": 0.2941,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.7059,
+    "qa_sentence_count": 17,
+    "overall_positive_ratio": 0.4,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.6,
+    "sentiment_trajectory": 0.2599
+  },
+  "vocab": {
+    "forward_count": 6,
+    "backward_count": 4,
+    "total_signal": 10,
+    "forward_ratio": 0.6,
+    "backward_ratio": 0.4,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "intends",
+        2
+      ],
+      [
+        "intention",
+        1
+      ],
+      [
+        "growth",
+        1
+      ],
+      [
+        "will",
+        1
+      ],
+      [
+        "planning",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ],
+      [
+        "improved",
+        1
+      ],
+      [
+        "achieved",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.4,
+  "EW_Risk_Score": 10.0,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 0.0,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 10.0
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "ticker": "AMZN",
+  "date": "2025-07-31",
+  "source_file": "AMZN_2025-07-31_parsed.json",
+  "word_count": 4959,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 21,
+    "word_count": 1806,
+    "hedging_density": 1.1628,
+    "epistemic_count": 0,
+    "approximator_count": 11,
+    "shield_count": 9,
+    "plausibility_count": 1,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "about",
+        5
+      ],
+      [
+        "may",
+        4
+      ],
+      [
+        "up to",
+        3
+      ],
+      [
+        "approximately",
+        2
+      ],
+      [
+        "could",
+        2
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "unpredictable",
+        1
+      ],
+      [
+        "at least",
+        1
+      ],
+      [
+        "difficult to predict",
+        1
+      ],
+      [
+        "potentially",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4265,
+    "opening_negative_ratio": 0.0441,
+    "opening_neutral_ratio": 0.5294,
+    "opening_sentence_count": 68,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 25,
+    "overall_positive_ratio": 0.3118,
+    "overall_negative_ratio": 0.0323,
+    "overall_neutral_ratio": 0.6559,
+    "sentiment_trajectory": 0.4114
+  },
+  "vocab": {
+    "forward_count": 23,
+    "backward_count": 39,
+    "total_signal": 62,
+    "forward_ratio": 0.371,
+    "backward_ratio": 0.629,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        5
+      ],
+      [
+        "growth",
+        4
+      ],
+      [
+        "guidance",
+        4
+      ],
+      [
+        "expansion",
+        3
+      ],
+      [
+        "project",
+        1
+      ],
+      [
+        "expand",
+        1
+      ],
+      [
+        "scale",
+        1
+      ],
+      [
+        "forecasting",
+        1
+      ],
+      [
+        "grow",
+        1
+      ],
+      [
+        "anticipates",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        12
+      ],
+      [
+        "increased",
+        10
+      ],
+      [
+        "launched",
+        5
+      ],
+      [
+        "ended",
+        3
+      ],
+      [
+        "was",
+        3
+      ],
+      [
+        "decreased",
+        1
+      ],
+      [
+        "signed",
+        1
+      ],
+      [
+        "impacted",
+        1
+      ],
+      [
+        "affected",
+        1
+      ],
+      [
+        "completed",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.3876,
+  "negative_sentiment_norm": 0.1615,
+  "backward_ratio_norm": 0.629,
+  "EW_Risk_Score": 36.88,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 15.5,
+    "sentiment_contribution": 5.65,
+    "vocab_contribution": 15.72
+  }
+}

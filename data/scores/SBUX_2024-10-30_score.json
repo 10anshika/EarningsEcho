@@ -1,0 +1,176 @@
+{
+  "ticker": "SBUX",
+  "date": "2024-10-30",
+  "source": "motleyfool",
+  "source_file": "SBUX_2024-10-30_parsed.json",
+  "word_count": 11091,
+  "sections_found": true,
+  "hedging": {
+    "hedge_count": 26,
+    "word_count": 3414,
+    "hedging_density": 0.7616,
+    "epistemic_count": 4,
+    "approximator_count": 12,
+    "shield_count": 10,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "about",
+        5
+      ],
+      [
+        "approximately",
+        4
+      ],
+      [
+        "could",
+        3
+      ],
+      [
+        "should",
+        3
+      ],
+      [
+        "would",
+        2
+      ],
+      [
+        "we expect",
+        2
+      ],
+      [
+        "around",
+        2
+      ],
+      [
+        "may",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "roughly",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3519,
+    "opening_negative_ratio": 0.1481,
+    "opening_neutral_ratio": 0.5,
+    "opening_sentence_count": 162,
+    "qa_positive_ratio": 0.1221,
+    "qa_negative_ratio": 0.0182,
+    "qa_neutral_ratio": 0.8597,
+    "qa_sentence_count": 385,
+    "overall_positive_ratio": 0.1901,
+    "overall_negative_ratio": 0.0567,
+    "overall_neutral_ratio": 0.7532,
+    "sentiment_trajectory": 0.1684
+  },
+  "vocab": {
+    "forward_count": 68,
+    "backward_count": 31,
+    "total_signal": 99,
+    "forward_ratio": 0.6869,
+    "backward_ratio": 0.3131,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        19
+      ],
+      [
+        "growth",
+        11
+      ],
+      [
+        "plan",
+        8
+      ],
+      [
+        "expect",
+        3
+      ],
+      [
+        "opportunity",
+        3
+      ],
+      [
+        "confidence",
+        3
+      ],
+      [
+        "grow",
+        3
+      ],
+      [
+        "confident",
+        3
+      ],
+      [
+        "planning",
+        2
+      ],
+      [
+        "goal",
+        2
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        10
+      ],
+      [
+        "increased",
+        4
+      ],
+      [
+        "impacted",
+        3
+      ],
+      [
+        "were",
+        3
+      ],
+      [
+        "declined",
+        2
+      ],
+      [
+        "grew",
+        1
+      ],
+      [
+        "did",
+        1
+      ],
+      [
+        "reflected",
+        1
+      ],
+      [
+        "reduced",
+        1
+      ],
+      [
+        "exceeded",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2539,
+  "negative_sentiment_norm": 0.2835,
+  "backward_ratio_norm": 0.3131,
+  "EW_Risk_Score": 27.9,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 10.15,
+    "sentiment_contribution": 9.92,
+    "vocab_contribution": 7.83
+  }
+}

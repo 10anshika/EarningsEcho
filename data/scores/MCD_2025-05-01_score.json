@@ -1,0 +1,151 @@
+{
+  "ticker": "MCD",
+  "date": "2025-05-01",
+  "source_file": "MCD_2025-05-01_parsed.json",
+  "word_count": 1600,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 14,
+    "word_count": 1419,
+    "hedging_density": 0.9866,
+    "epistemic_count": 2,
+    "approximator_count": 5,
+    "shield_count": 7,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        5
+      ],
+      [
+        "approximately",
+        2
+      ],
+      [
+        "management believes",
+        2
+      ],
+      [
+        "at least",
+        1
+      ],
+      [
+        "generally",
+        1
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.1163,
+    "opening_negative_ratio": 0.2791,
+    "opening_neutral_ratio": 0.6047,
+    "opening_sentence_count": 43,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 1,
+    "overall_positive_ratio": 0.1136,
+    "overall_negative_ratio": 0.2727,
+    "overall_neutral_ratio": 0.6136,
+    "sentiment_trajectory": 0.0886
+  },
+  "vocab": {
+    "forward_count": 9,
+    "backward_count": 35,
+    "total_signal": 44,
+    "forward_ratio": 0.2045,
+    "backward_ratio": 0.7955,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "will",
+        3
+      ],
+      [
+        "accelerating",
+        2
+      ],
+      [
+        "confidence",
+        1
+      ],
+      [
+        "plans",
+        1
+      ],
+      [
+        "expansion",
+        1
+      ],
+      [
+        "opportunities",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "decreased",
+        8
+      ],
+      [
+        "ended",
+        7
+      ],
+      [
+        "were",
+        5
+      ],
+      [
+        "impacted",
+        3
+      ],
+      [
+        "was",
+        3
+      ],
+      [
+        "increased",
+        2
+      ],
+      [
+        "reflected",
+        2
+      ],
+      [
+        "closed",
+        2
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "affected",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.3289,
+  "negative_sentiment_norm": 1.0,
+  "backward_ratio_norm": 0.7955,
+  "EW_Risk_Score": 68.04,
+  "risk_class": "High Risk",
+  "component_scores": {
+    "hedging_contribution": 13.15,
+    "sentiment_contribution": 35.0,
+    "vocab_contribution": 19.89
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "ticker": "MCD",
+  "date": "2026-02-10",
+  "source_file": "MCD_2026-02-10_parsed.json",
+  "word_count": 386,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 0,
+    "word_count": 156,
+    "hedging_density": 0.0,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": []
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.0,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 1.0,
+    "opening_sentence_count": 6,
+    "qa_positive_ratio": 0.6667,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.3333,
+    "qa_sentence_count": 9,
+    "overall_positive_ratio": 0.4,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.6,
+    "sentiment_trajectory": -0.4697
+  },
+  "vocab": {
+    "forward_count": 0,
+    "backward_count": 1,
+    "total_signal": 1,
+    "forward_ratio": 0.0,
+    "backward_ratio": 1.0,
+    "deflection_flag": true,
+    "top_forward": [],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 1.0,
+  "EW_Risk_Score": 25.0,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 0.0,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 25.0
+  }
+}

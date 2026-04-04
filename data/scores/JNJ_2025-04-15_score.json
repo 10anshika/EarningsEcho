@@ -1,0 +1,123 @@
+{
+  "ticker": "JNJ",
+  "date": "2025-04-15",
+  "source_file": "JNJ_2025-04-15_parsed.json",
+  "word_count": 2508,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 6,
+    "word_count": 1064,
+    "hedging_density": 0.5639,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 5,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        3
+      ],
+      [
+        "in general",
+        1
+      ],
+      [
+        "uncertain",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3889,
+    "opening_negative_ratio": 0.2778,
+    "opening_neutral_ratio": 0.3333,
+    "opening_sentence_count": 18,
+    "qa_positive_ratio": 0.12,
+    "qa_negative_ratio": 0.04,
+    "qa_neutral_ratio": 0.84,
+    "qa_sentence_count": 25,
+    "overall_positive_ratio": 0.2326,
+    "overall_negative_ratio": 0.1395,
+    "overall_neutral_ratio": 0.6279,
+    "sentiment_trajectory": 0.2686
+  },
+  "vocab": {
+    "forward_count": 18,
+    "backward_count": 16,
+    "total_signal": 34,
+    "forward_ratio": 0.5294,
+    "backward_ratio": 0.4706,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        9
+      ],
+      [
+        "guidance",
+        3
+      ],
+      [
+        "pipeline",
+        2
+      ],
+      [
+        "outlook",
+        1
+      ],
+      [
+        "confidence",
+        1
+      ],
+      [
+        "expect",
+        1
+      ],
+      [
+        "will",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "reported",
+        6
+      ],
+      [
+        "was",
+        4
+      ],
+      [
+        "increased",
+        2
+      ],
+      [
+        "grew",
+        2
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "reflected",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.188,
+  "negative_sentiment_norm": 0.6975,
+  "backward_ratio_norm": 0.4706,
+  "EW_Risk_Score": 43.7,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 7.52,
+    "sentiment_contribution": 24.41,
+    "vocab_contribution": 11.77
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "ticker": "BAC",
+  "date": "2025-07-16",
+  "source_file": "BAC_2025-07-16_parsed.json",
+  "word_count": 10565,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 14,
+    "word_count": 4191,
+    "hedging_density": 0.334,
+    "epistemic_count": 1,
+    "approximator_count": 3,
+    "shield_count": 10,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        8
+      ],
+      [
+        "approximately",
+        3
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "we believe",
+        1
+      ],
+      [
+        "would",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2178,
+    "opening_negative_ratio": 0.0297,
+    "opening_neutral_ratio": 0.7525,
+    "opening_sentence_count": 101,
+    "qa_positive_ratio": 0.024,
+    "qa_negative_ratio": 0.008,
+    "qa_neutral_ratio": 0.968,
+    "qa_sentence_count": 125,
+    "overall_positive_ratio": 0.1106,
+    "overall_negative_ratio": 0.0177,
+    "overall_neutral_ratio": 0.8717,
+    "sentiment_trajectory": 0.1722
+  },
+  "vocab": {
+    "forward_count": 31,
+    "backward_count": 66,
+    "total_signal": 97,
+    "forward_ratio": 0.3196,
+    "backward_ratio": 0.6804,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "investment",
+        15
+      ],
+      [
+        "growth",
+        10
+      ],
+      [
+        "plan",
+        2
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "plans",
+        1
+      ],
+      [
+        "planning",
+        1
+      ],
+      [
+        "confidence",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "increased",
+        23
+      ],
+      [
+        "ended",
+        10
+      ],
+      [
+        "were",
+        7
+      ],
+      [
+        "was",
+        6
+      ],
+      [
+        "decreased",
+        6
+      ],
+      [
+        "declined",
+        3
+      ],
+      [
+        "improved",
+        3
+      ],
+      [
+        "grew",
+        2
+      ],
+      [
+        "delivered",
+        2
+      ],
+      [
+        "returned",
+        2
+      ]
+    ]
+  },
+  "hedging_norm": 0.1113,
+  "negative_sentiment_norm": 0.0885,
+  "backward_ratio_norm": 0.6804,
+  "EW_Risk_Score": 24.56,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 4.45,
+    "sentiment_contribution": 3.1,
+    "vocab_contribution": 17.01
+  }
+}

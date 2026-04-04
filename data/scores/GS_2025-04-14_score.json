@@ -1,0 +1,155 @@
+{
+  "ticker": "GS",
+  "date": "2025-04-14",
+  "source_file": "GS_2025-04-14_parsed.json",
+  "word_count": 3604,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 29,
+    "word_count": 2447,
+    "hedging_density": 1.1851,
+    "epistemic_count": 0,
+    "approximator_count": 10,
+    "shield_count": 16,
+    "plausibility_count": 3,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        7
+      ],
+      [
+        "about",
+        3
+      ],
+      [
+        "could",
+        3
+      ],
+      [
+        "largely",
+        2
+      ],
+      [
+        "possibly",
+        2
+      ],
+      [
+        "subject to",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "up to",
+        1
+      ],
+      [
+        "around",
+        1
+      ],
+      [
+        "uncertain",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2727,
+    "opening_negative_ratio": 0.3182,
+    "opening_neutral_ratio": 0.4091,
+    "opening_sentence_count": 66,
+    "qa_positive_ratio": 0.1818,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.8182,
+    "qa_sentence_count": 11,
+    "overall_positive_ratio": 0.2597,
+    "overall_negative_ratio": 0.2727,
+    "overall_neutral_ratio": 0.4675,
+    "sentiment_trajectory": 0.1256
+  },
+  "vocab": {
+    "forward_count": 16,
+    "backward_count": 51,
+    "total_signal": 67,
+    "forward_ratio": 0.2388,
+    "backward_ratio": 0.7612,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "investment",
+        8
+      ],
+      [
+        "will",
+        4
+      ],
+      [
+        "backlog",
+        2
+      ],
+      [
+        "confident",
+        1
+      ],
+      [
+        "outlook",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        15
+      ],
+      [
+        "reflected",
+        9
+      ],
+      [
+        "was",
+        8
+      ],
+      [
+        "ended",
+        5
+      ],
+      [
+        "increased",
+        3
+      ],
+      [
+        "generated",
+        2
+      ],
+      [
+        "completed",
+        2
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "contributed",
+        1
+      ],
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.395,
+  "negative_sentiment_norm": 1.0,
+  "backward_ratio_norm": 0.7612,
+  "EW_Risk_Score": 69.83,
+  "risk_class": "High Risk",
+  "component_scores": {
+    "hedging_contribution": 15.8,
+    "sentiment_contribution": 35.0,
+    "vocab_contribution": 19.03
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "ticker": "BLK",
+  "date": "2025-07-15",
+  "source_file": "BLK_2025-07-15_parsed.json",
+  "word_count": 10223,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 773,
+    "hedging_density": 0.1294,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "around",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.625,
+    "opening_negative_ratio": 0.0625,
+    "opening_neutral_ratio": 0.3125,
+    "opening_sentence_count": 16,
+    "qa_positive_ratio": 0.1438,
+    "qa_negative_ratio": 0.085,
+    "qa_neutral_ratio": 0.7712,
+    "qa_sentence_count": 153,
+    "overall_positive_ratio": 0.1893,
+    "overall_negative_ratio": 0.0828,
+    "overall_neutral_ratio": 0.7278,
+    "sentiment_trajectory": 0.4229
+  },
+  "vocab": {
+    "forward_count": 15,
+    "backward_count": 7,
+    "total_signal": 22,
+    "forward_ratio": 0.6818,
+    "backward_ratio": 0.3182,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        7
+      ],
+      [
+        "target",
+        3
+      ],
+      [
+        "investment",
+        1
+      ],
+      [
+        "investing",
+        1
+      ],
+      [
+        "expanding",
+        1
+      ],
+      [
+        "scale",
+        1
+      ],
+      [
+        "will",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "reported",
+        1
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "closed",
+        1
+      ],
+      [
+        "generated",
+        1
+      ],
+      [
+        "had",
+        1
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "launched",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0431,
+  "negative_sentiment_norm": 0.414,
+  "backward_ratio_norm": 0.3182,
+  "EW_Risk_Score": 24.17,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 1.73,
+    "sentiment_contribution": 14.49,
+    "vocab_contribution": 7.95
+  }
+}

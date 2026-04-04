@@ -1,0 +1,176 @@
+{
+  "ticker": "WFC",
+  "date": "2024-07-12",
+  "source": "motleyfool",
+  "source_file": "WFC_2024-07-12_parsed.json",
+  "word_count": 10682,
+  "sections_found": true,
+  "hedging": {
+    "hedge_count": 38,
+    "word_count": 4255,
+    "hedging_density": 0.8931,
+    "epistemic_count": 9,
+    "approximator_count": 16,
+    "shield_count": 13,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "we expect",
+        8
+      ],
+      [
+        "approximately",
+        8
+      ],
+      [
+        "about",
+        5
+      ],
+      [
+        "would",
+        4
+      ],
+      [
+        "may",
+        3
+      ],
+      [
+        "subject to",
+        3
+      ],
+      [
+        "up to",
+        1
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "we think",
+        1
+      ],
+      [
+        "generally",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4639,
+    "opening_negative_ratio": 0.2474,
+    "opening_neutral_ratio": 0.2887,
+    "opening_sentence_count": 194,
+    "qa_positive_ratio": 0.1497,
+    "qa_negative_ratio": 0.0659,
+    "qa_neutral_ratio": 0.7844,
+    "qa_sentence_count": 334,
+    "overall_positive_ratio": 0.2652,
+    "overall_negative_ratio": 0.1326,
+    "overall_neutral_ratio": 0.6023,
+    "sentiment_trajectory": 0.2468
+  },
+  "vocab": {
+    "forward_count": 97,
+    "backward_count": 96,
+    "total_signal": 193,
+    "forward_ratio": 0.5026,
+    "backward_ratio": 0.4974,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        24
+      ],
+      [
+        "will",
+        16
+      ],
+      [
+        "investment",
+        16
+      ],
+      [
+        "expect",
+        13
+      ],
+      [
+        "opportunities",
+        7
+      ],
+      [
+        "momentum",
+        4
+      ],
+      [
+        "growing",
+        3
+      ],
+      [
+        "outlook",
+        3
+      ],
+      [
+        "guidance",
+        2
+      ],
+      [
+        "plans",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        22
+      ],
+      [
+        "increased",
+        16
+      ],
+      [
+        "were",
+        14
+      ],
+      [
+        "declined",
+        8
+      ],
+      [
+        "grew",
+        6
+      ],
+      [
+        "had",
+        5
+      ],
+      [
+        "improved",
+        5
+      ],
+      [
+        "benefited",
+        3
+      ],
+      [
+        "reflected",
+        3
+      ],
+      [
+        "recorded",
+        2
+      ]
+    ]
+  },
+  "hedging_norm": 0.2977,
+  "negative_sentiment_norm": 0.663,
+  "backward_ratio_norm": 0.4974,
+  "EW_Risk_Score": 47.55,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 11.91,
+    "sentiment_contribution": 23.2,
+    "vocab_contribution": 12.44
+  }
+}

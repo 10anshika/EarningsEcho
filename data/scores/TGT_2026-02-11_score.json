@@ -1,0 +1,85 @@
+{
+  "ticker": "TGT",
+  "date": "2026-02-11",
+  "source_file": "TGT_2026-02-11_parsed.json",
+  "word_count": 548,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 0,
+    "word_count": 210,
+    "hedging_density": 0.0,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": []
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.6667,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.3333,
+    "opening_sentence_count": 6,
+    "qa_positive_ratio": 0.4615,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.5385,
+    "qa_sentence_count": 13,
+    "overall_positive_ratio": 0.5263,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.4737,
+    "sentiment_trajectory": 0.1473
+  },
+  "vocab": {
+    "forward_count": 16,
+    "backward_count": 0,
+    "total_signal": 16,
+    "forward_ratio": 1.0,
+    "backward_ratio": 0.0,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "target",
+        5
+      ],
+      [
+        "growth",
+        3
+      ],
+      [
+        "guidance",
+        2
+      ],
+      [
+        "will",
+        2
+      ],
+      [
+        "accelerate",
+        1
+      ],
+      [
+        "accelerating",
+        1
+      ],
+      [
+        "plans",
+        1
+      ],
+      [
+        "expects",
+        1
+      ]
+    ],
+    "top_backward": []
+  },
+  "hedging_norm": 0.0,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.0,
+  "EW_Risk_Score": 0.0,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 0.0,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 0.0
+  }
+}

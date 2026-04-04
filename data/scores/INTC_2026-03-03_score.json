@@ -1,0 +1,71 @@
+{
+  "ticker": "INTC",
+  "date": "2026-03-03",
+  "source_file": "INTC_2026-03-03_parsed.json",
+  "word_count": 766,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 323,
+    "hedging_density": 0.3096,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.5455,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.4545,
+    "opening_sentence_count": 11,
+    "qa_positive_ratio": 0.3571,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.6429,
+    "qa_sentence_count": 14,
+    "overall_positive_ratio": 0.44,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.56,
+    "sentiment_trajectory": 0.1706
+  },
+  "vocab": {
+    "forward_count": 4,
+    "backward_count": 1,
+    "total_signal": 5,
+    "forward_ratio": 0.8,
+    "backward_ratio": 0.2,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        3
+      ],
+      [
+        "guide",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1032,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.2,
+  "EW_Risk_Score": 9.13,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 4.13,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 5.0
+  }
+}

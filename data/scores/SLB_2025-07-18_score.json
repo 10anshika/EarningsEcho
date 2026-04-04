@@ -1,0 +1,151 @@
+{
+  "ticker": "SLB",
+  "date": "2025-07-18",
+  "source_file": "SLB_2025-07-18_parsed.json",
+  "word_count": 8298,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 6,
+    "word_count": 4456,
+    "hedging_density": 0.1346,
+    "epistemic_count": 0,
+    "approximator_count": 5,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "largely",
+        3
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "may",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.6,
+    "opening_negative_ratio": 0.1742,
+    "opening_neutral_ratio": 0.2258,
+    "opening_sentence_count": 155,
+    "qa_positive_ratio": 0.0353,
+    "qa_negative_ratio": 0.0706,
+    "qa_neutral_ratio": 0.8941,
+    "qa_sentence_count": 85,
+    "overall_positive_ratio": 0.4,
+    "overall_negative_ratio": 0.1375,
+    "overall_neutral_ratio": 0.4625,
+    "sentiment_trajectory": 0.4939
+  },
+  "vocab": {
+    "forward_count": 71,
+    "backward_count": 104,
+    "total_signal": 175,
+    "forward_ratio": 0.4057,
+    "backward_ratio": 0.5943,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        18
+      ],
+      [
+        "growth",
+        11
+      ],
+      [
+        "project",
+        10
+      ],
+      [
+        "scale",
+        5
+      ],
+      [
+        "planning",
+        4
+      ],
+      [
+        "growing",
+        3
+      ],
+      [
+        "projects",
+        2
+      ],
+      [
+        "expansion",
+        2
+      ],
+      [
+        "investment",
+        2
+      ],
+      [
+        "aims",
+        2
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        23
+      ],
+      [
+        "increased",
+        15
+      ],
+      [
+        "were",
+        11
+      ],
+      [
+        "decreased",
+        9
+      ],
+      [
+        "reduced",
+        8
+      ],
+      [
+        "ended",
+        7
+      ],
+      [
+        "declined",
+        5
+      ],
+      [
+        "announced",
+        4
+      ],
+      [
+        "achieved",
+        4
+      ],
+      [
+        "launched",
+        3
+      ]
+    ]
+  },
+  "hedging_norm": 0.0449,
+  "negative_sentiment_norm": 0.6875,
+  "backward_ratio_norm": 0.5943,
+  "EW_Risk_Score": 40.71,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 1.79,
+    "sentiment_contribution": 24.06,
+    "vocab_contribution": 14.86
+  }
+}

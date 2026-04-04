@@ -1,0 +1,123 @@
+{
+  "ticker": "BLK",
+  "date": "2025-04-11",
+  "source_file": "BLK_2025-04-11_parsed.json",
+  "word_count": 8758,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 2,
+    "word_count": 762,
+    "hedging_density": 0.2625,
+    "epistemic_count": 1,
+    "approximator_count": 1,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "about",
+        1
+      ],
+      [
+        "we expect",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.5294,
+    "opening_negative_ratio": 0.1176,
+    "opening_neutral_ratio": 0.3529,
+    "opening_sentence_count": 17,
+    "qa_positive_ratio": 0.1351,
+    "qa_negative_ratio": 0.0878,
+    "qa_neutral_ratio": 0.777,
+    "qa_sentence_count": 148,
+    "overall_positive_ratio": 0.1758,
+    "overall_negative_ratio": 0.0909,
+    "overall_neutral_ratio": 0.7333,
+    "sentiment_trajectory": 0.3273
+  },
+  "vocab": {
+    "forward_count": 17,
+    "backward_count": 8,
+    "total_signal": 25,
+    "forward_ratio": 0.68,
+    "backward_ratio": 0.32,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        8
+      ],
+      [
+        "opportunities",
+        2
+      ],
+      [
+        "investment",
+        2
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "objectives",
+        1
+      ],
+      [
+        "goal",
+        1
+      ],
+      [
+        "expect",
+        1
+      ],
+      [
+        "optimism",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        2
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "was",
+        1
+      ],
+      [
+        "closed",
+        1
+      ],
+      [
+        "impacted",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0875,
+  "negative_sentiment_norm": 0.4545,
+  "backward_ratio_norm": 0.32,
+  "EW_Risk_Score": 27.41,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 3.5,
+    "sentiment_contribution": 15.91,
+    "vocab_contribution": 8.0
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "ticker": "C",
+  "date": "2024-01-12",
+  "source": "motleyfool",
+  "source_file": "C_2024-01-12_parsed.json",
+  "word_count": 15082,
+  "sections_found": true,
+  "hedging": {
+    "hedge_count": 73,
+    "word_count": 5935,
+    "hedging_density": 1.23,
+    "epistemic_count": 18,
+    "approximator_count": 41,
+    "shield_count": 14,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        23
+      ],
+      [
+        "we expect",
+        13
+      ],
+      [
+        "largely",
+        8
+      ],
+      [
+        "may",
+        3
+      ],
+      [
+        "subject to",
+        3
+      ],
+      [
+        "should",
+        3
+      ],
+      [
+        "roughly",
+        3
+      ],
+      [
+        "about",
+        3
+      ],
+      [
+        "around",
+        2
+      ],
+      [
+        "uncertain",
+        2
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.498,
+    "opening_negative_ratio": 0.1897,
+    "opening_neutral_ratio": 0.3123,
+    "opening_sentence_count": 253,
+    "qa_positive_ratio": 0.1949,
+    "qa_negative_ratio": 0.0551,
+    "qa_neutral_ratio": 0.75,
+    "qa_sentence_count": 508,
+    "overall_positive_ratio": 0.2957,
+    "overall_negative_ratio": 0.0999,
+    "overall_neutral_ratio": 0.6045,
+    "sentiment_trajectory": 0.226
+  },
+  "vocab": {
+    "forward_count": 127,
+    "backward_count": 137,
+    "total_signal": 264,
+    "forward_ratio": 0.4811,
+    "backward_ratio": 0.5189,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        27
+      ],
+      [
+        "growth",
+        23
+      ],
+      [
+        "investment",
+        20
+      ],
+      [
+        "expect",
+        18
+      ],
+      [
+        "guidance",
+        6
+      ],
+      [
+        "momentum",
+        6
+      ],
+      [
+        "target",
+        4
+      ],
+      [
+        "targets",
+        3
+      ],
+      [
+        "invest",
+        3
+      ],
+      [
+        "committed",
+        3
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        25
+      ],
+      [
+        "was",
+        24
+      ],
+      [
+        "increased",
+        22
+      ],
+      [
+        "decreased",
+        13
+      ],
+      [
+        "impacted",
+        11
+      ],
+      [
+        "reported",
+        7
+      ],
+      [
+        "had",
+        4
+      ],
+      [
+        "closed",
+        4
+      ],
+      [
+        "delivered",
+        4
+      ],
+      [
+        "benefited",
+        3
+      ]
+    ]
+  },
+  "hedging_norm": 0.41,
+  "negative_sentiment_norm": 0.4995,
+  "backward_ratio_norm": 0.5189,
+  "EW_Risk_Score": 46.86,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 16.4,
+    "sentiment_contribution": 17.48,
+    "vocab_contribution": 12.97
+  }
+}

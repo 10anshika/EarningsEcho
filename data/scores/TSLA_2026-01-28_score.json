@@ -1,0 +1,143 @@
+{
+  "ticker": "TSLA",
+  "date": "2026-01-28",
+  "source_file": "TSLA_2026-01-28_parsed.json",
+  "word_count": 9650,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 7,
+    "word_count": 3297,
+    "hedging_density": 0.2123,
+    "epistemic_count": 2,
+    "approximator_count": 0,
+    "shield_count": 4,
+    "plausibility_count": 1,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "subject to",
+        2
+      ],
+      [
+        "may",
+        2
+      ],
+      [
+        "we believe",
+        1
+      ],
+      [
+        "we expect",
+        1
+      ],
+      [
+        "potentially",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4179,
+    "opening_negative_ratio": 0.0149,
+    "opening_neutral_ratio": 0.5672,
+    "opening_sentence_count": 67,
+    "qa_positive_ratio": 0.2222,
+    "qa_negative_ratio": 0.037,
+    "qa_neutral_ratio": 0.7407,
+    "qa_sentence_count": 81,
+    "overall_positive_ratio": 0.3108,
+    "overall_negative_ratio": 0.027,
+    "overall_neutral_ratio": 0.6622,
+    "sentiment_trajectory": 0.15
+  },
+  "vocab": {
+    "forward_count": 22,
+    "backward_count": 8,
+    "total_signal": 30,
+    "forward_ratio": 0.7333,
+    "backward_ratio": 0.2667,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "scale",
+        3
+      ],
+      [
+        "growth",
+        3
+      ],
+      [
+        "will",
+        3
+      ],
+      [
+        "plan",
+        3
+      ],
+      [
+        "targeting",
+        2
+      ],
+      [
+        "outlook",
+        1
+      ],
+      [
+        "expanding",
+        1
+      ],
+      [
+        "invest",
+        1
+      ],
+      [
+        "aim",
+        1
+      ],
+      [
+        "scaling",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "delivered",
+        2
+      ],
+      [
+        "launched",
+        1
+      ],
+      [
+        "completed",
+        1
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "declined",
+        1
+      ],
+      [
+        "improved",
+        1
+      ],
+      [
+        "achieved",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0708,
+  "negative_sentiment_norm": 0.135,
+  "backward_ratio_norm": 0.2667,
+  "EW_Risk_Score": 14.22,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 2.83,
+    "sentiment_contribution": 4.72,
+    "vocab_contribution": 6.67
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "ticker": "TSLA",
+  "date": "2025-10-22",
+  "source_file": "TSLA_2025-10-22_parsed.json",
+  "word_count": 7536,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 9,
+    "word_count": 2647,
+    "hedging_density": 0.34,
+    "epistemic_count": 4,
+    "approximator_count": 2,
+    "shield_count": 3,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "we believe",
+        3
+      ],
+      [
+        "up to",
+        2
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "may",
+        1
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "we expect",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.5345,
+    "opening_negative_ratio": 0.0345,
+    "opening_neutral_ratio": 0.431,
+    "opening_sentence_count": 58,
+    "qa_positive_ratio": 0.1154,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.8846,
+    "qa_sentence_count": 52,
+    "overall_positive_ratio": 0.3364,
+    "overall_negative_ratio": 0.0182,
+    "overall_neutral_ratio": 0.6455,
+    "sentiment_trajectory": 0.3783
+  },
+  "vocab": {
+    "forward_count": 25,
+    "backward_count": 30,
+    "total_signal": 55,
+    "forward_ratio": 0.4545,
+    "backward_ratio": 0.5455,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        7
+      ],
+      [
+        "growth",
+        6
+      ],
+      [
+        "scale",
+        3
+      ],
+      [
+        "outlook",
+        1
+      ],
+      [
+        "scaling",
+        1
+      ],
+      [
+        "plan",
+        1
+      ],
+      [
+        "projects",
+        1
+      ],
+      [
+        "aim",
+        1
+      ],
+      [
+        "expand",
+        1
+      ],
+      [
+        "expanding",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "launched",
+        10
+      ],
+      [
+        "was",
+        4
+      ],
+      [
+        "achieved",
+        3
+      ],
+      [
+        "increased",
+        3
+      ],
+      [
+        "impacted",
+        2
+      ],
+      [
+        "resulted",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "decreased",
+        1
+      ],
+      [
+        "produced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1133,
+  "negative_sentiment_norm": 0.091,
+  "backward_ratio_norm": 0.5455,
+  "EW_Risk_Score": 21.36,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 4.53,
+    "sentiment_contribution": 3.18,
+    "vocab_contribution": 13.64
+  }
+}

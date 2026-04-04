@@ -1,0 +1,175 @@
+{
+  "ticker": "MDT",
+  "date": "2025-08-19",
+  "source_file": "MDT_2025-08-19_parsed.json",
+  "word_count": 4184,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 30,
+    "word_count": 1781,
+    "hedging_density": 1.6844,
+    "epistemic_count": 2,
+    "approximator_count": 10,
+    "shield_count": 17,
+    "plausibility_count": 1,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        5
+      ],
+      [
+        "may",
+        5
+      ],
+      [
+        "would",
+        4
+      ],
+      [
+        "could",
+        3
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "management believes",
+        2
+      ],
+      [
+        "generally",
+        2
+      ],
+      [
+        "in the range of",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3061,
+    "opening_negative_ratio": 0.0816,
+    "opening_neutral_ratio": 0.6122,
+    "opening_sentence_count": 49,
+    "qa_positive_ratio": 0.0263,
+    "qa_negative_ratio": 0.2632,
+    "qa_neutral_ratio": 0.7105,
+    "qa_sentence_count": 38,
+    "overall_positive_ratio": 0.1839,
+    "overall_negative_ratio": 0.1609,
+    "overall_neutral_ratio": 0.6552,
+    "sentiment_trajectory": 0.2527
+  },
+  "vocab": {
+    "forward_count": 48,
+    "backward_count": 29,
+    "total_signal": 77,
+    "forward_ratio": 0.6234,
+    "backward_ratio": 0.3766,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        17
+      ],
+      [
+        "guidance",
+        12
+      ],
+      [
+        "will",
+        4
+      ],
+      [
+        "expect",
+        3
+      ],
+      [
+        "accelerate",
+        2
+      ],
+      [
+        "confident",
+        1
+      ],
+      [
+        "expects",
+        1
+      ],
+      [
+        "confidence",
+        1
+      ],
+      [
+        "anticipate",
+        1
+      ],
+      [
+        "forecast",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "reported",
+        9
+      ],
+      [
+        "increased",
+        7
+      ],
+      [
+        "were",
+        4
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "posted",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "grew",
+        1
+      ],
+      [
+        "had",
+        1
+      ],
+      [
+        "reduced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.5615,
+  "negative_sentiment_norm": 0.8045,
+  "backward_ratio_norm": 0.3766,
+  "EW_Risk_Score": 60.03,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 22.46,
+    "sentiment_contribution": 28.16,
+    "vocab_contribution": 9.41
+  }
+}

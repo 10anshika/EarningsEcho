@@ -1,0 +1,175 @@
+{
+  "ticker": "HD",
+  "date": "2025-02-25",
+  "source_file": "HD_2025-02-25_parsed.json",
+  "word_count": 3138,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 33,
+    "word_count": 1594,
+    "hedging_density": 2.0703,
+    "epistemic_count": 1,
+    "approximator_count": 17,
+    "shield_count": 14,
+    "plausibility_count": 1,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        14
+      ],
+      [
+        "could",
+        4
+      ],
+      [
+        "may",
+        3
+      ],
+      [
+        "generally",
+        2
+      ],
+      [
+        "would",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "uncertain",
+        1
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "beyond our control",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2558,
+    "opening_negative_ratio": 0.2326,
+    "opening_neutral_ratio": 0.5116,
+    "opening_sentence_count": 43,
+    "qa_positive_ratio": 0.1071,
+    "qa_negative_ratio": 0.0357,
+    "qa_neutral_ratio": 0.8571,
+    "qa_sentence_count": 28,
+    "overall_positive_ratio": 0.1972,
+    "overall_negative_ratio": 0.1549,
+    "overall_neutral_ratio": 0.6479,
+    "sentiment_trajectory": 0.1509
+  },
+  "vocab": {
+    "forward_count": 23,
+    "backward_count": 17,
+    "total_signal": 40,
+    "forward_ratio": 0.575,
+    "backward_ratio": 0.425,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "guidance",
+        4
+      ],
+      [
+        "will",
+        4
+      ],
+      [
+        "growth",
+        3
+      ],
+      [
+        "anticipate",
+        2
+      ],
+      [
+        "projects",
+        1
+      ],
+      [
+        "intend",
+        1
+      ],
+      [
+        "project",
+        1
+      ],
+      [
+        "plan",
+        1
+      ],
+      [
+        "expect",
+        1
+      ],
+      [
+        "target",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        6
+      ],
+      [
+        "increased",
+        2
+      ],
+      [
+        "decreased",
+        2
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "exceeded",
+        1
+      ],
+      [
+        "impacted",
+        1
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "paid",
+        1
+      ],
+      [
+        "acquired",
+        1
+      ],
+      [
+        "ended",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.6901,
+  "negative_sentiment_norm": 0.7745,
+  "backward_ratio_norm": 0.425,
+  "EW_Risk_Score": 65.34,
+  "risk_class": "High Risk",
+  "component_scores": {
+    "hedging_contribution": 27.6,
+    "sentiment_contribution": 27.11,
+    "vocab_contribution": 10.62
+  }
+}

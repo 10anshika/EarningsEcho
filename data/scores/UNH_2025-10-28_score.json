@@ -1,0 +1,163 @@
+{
+  "ticker": "UNH",
+  "date": "2025-10-28",
+  "source_file": "UNH_2025-10-28_parsed.json",
+  "word_count": 4094,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 16,
+    "word_count": 2129,
+    "hedging_density": 0.7515,
+    "epistemic_count": 0,
+    "approximator_count": 7,
+    "shield_count": 9,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "at least",
+        4
+      ],
+      [
+        "may",
+        3
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "generally",
+        1
+      ],
+      [
+        "could",
+        1
+      ],
+      [
+        "depending on",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "difficult to predict",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4,
+    "opening_negative_ratio": 0.2308,
+    "opening_neutral_ratio": 0.3692,
+    "opening_sentence_count": 65,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.1,
+    "qa_neutral_ratio": 0.9,
+    "qa_sentence_count": 20,
+    "overall_positive_ratio": 0.3059,
+    "overall_negative_ratio": 0.2,
+    "overall_neutral_ratio": 0.4941,
+    "sentiment_trajectory": 0.3422
+  },
+  "vocab": {
+    "forward_count": 36,
+    "backward_count": 39,
+    "total_signal": 75,
+    "forward_ratio": 0.48,
+    "backward_ratio": 0.52,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        13
+      ],
+      [
+        "outlook",
+        6
+      ],
+      [
+        "will",
+        3
+      ],
+      [
+        "guidance",
+        2
+      ],
+      [
+        "accelerating",
+        1
+      ],
+      [
+        "goal",
+        1
+      ],
+      [
+        "backlog",
+        1
+      ],
+      [
+        "expect",
+        1
+      ],
+      [
+        "intend",
+        1
+      ],
+      [
+        "anticipate",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        15
+      ],
+      [
+        "grew",
+        9
+      ],
+      [
+        "was",
+        6
+      ],
+      [
+        "ended",
+        4
+      ],
+      [
+        "increased",
+        2
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "reflected",
+        1
+      ],
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2505,
+  "negative_sentiment_norm": 1.0,
+  "backward_ratio_norm": 0.52,
+  "EW_Risk_Score": 58.02,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 10.02,
+    "sentiment_contribution": 35.0,
+    "vocab_contribution": 13.0
+  }
+}

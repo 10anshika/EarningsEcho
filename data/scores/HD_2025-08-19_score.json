@@ -1,0 +1,163 @@
+{
+  "ticker": "HD",
+  "date": "2025-08-19",
+  "source_file": "HD_2025-08-19_parsed.json",
+  "word_count": 2843,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 31,
+    "word_count": 1376,
+    "hedging_density": 2.2529,
+    "epistemic_count": 1,
+    "approximator_count": 16,
+    "shield_count": 13,
+    "plausibility_count": 1,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        12
+      ],
+      [
+        "could",
+        4
+      ],
+      [
+        "may",
+        3
+      ],
+      [
+        "would",
+        2
+      ],
+      [
+        "generally",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "broadly",
+        1
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "beyond our control",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2121,
+    "opening_negative_ratio": 0.1818,
+    "opening_neutral_ratio": 0.6061,
+    "opening_sentence_count": 33,
+    "qa_positive_ratio": 0.0625,
+    "qa_negative_ratio": 0.0625,
+    "qa_neutral_ratio": 0.875,
+    "qa_sentence_count": 16,
+    "overall_positive_ratio": 0.1633,
+    "overall_negative_ratio": 0.1429,
+    "overall_neutral_ratio": 0.6939,
+    "sentiment_trajectory": 0.1461
+  },
+  "vocab": {
+    "forward_count": 25,
+    "backward_count": 10,
+    "total_signal": 35,
+    "forward_ratio": 0.7143,
+    "backward_ratio": 0.2857,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "guidance",
+        4
+      ],
+      [
+        "will",
+        4
+      ],
+      [
+        "growth",
+        3
+      ],
+      [
+        "anticipate",
+        2
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "projects",
+        1
+      ],
+      [
+        "grow",
+        1
+      ],
+      [
+        "intend",
+        1
+      ],
+      [
+        "project",
+        1
+      ],
+      [
+        "plan",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        3
+      ],
+      [
+        "increased",
+        2
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "impacted",
+        1
+      ],
+      [
+        "acquired",
+        1
+      ],
+      [
+        "completed",
+        1
+      ],
+      [
+        "ended",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.751,
+  "negative_sentiment_norm": 0.7145,
+  "backward_ratio_norm": 0.2857,
+  "EW_Risk_Score": 62.19,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 30.04,
+    "sentiment_contribution": 25.01,
+    "vocab_contribution": 7.14
+  }
+}

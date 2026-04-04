@@ -1,0 +1,139 @@
+{
+  "ticker": "MRK",
+  "date": "2025-10-30",
+  "source_file": "MRK_2025-10-30_parsed.json",
+  "word_count": 6961,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 5,
+    "word_count": 2438,
+    "hedging_density": 0.2051,
+    "epistemic_count": 1,
+    "approximator_count": 3,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "largely",
+        2
+      ],
+      [
+        "generally",
+        1
+      ],
+      [
+        "management believes",
+        1
+      ],
+      [
+        "should",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3333,
+    "opening_negative_ratio": 0.3188,
+    "opening_neutral_ratio": 0.3478,
+    "opening_sentence_count": 69,
+    "qa_positive_ratio": 0.3077,
+    "qa_negative_ratio": 0.0989,
+    "qa_neutral_ratio": 0.5934,
+    "qa_sentence_count": 91,
+    "overall_positive_ratio": 0.3187,
+    "overall_negative_ratio": 0.1938,
+    "overall_neutral_ratio": 0.4875,
+    "sentiment_trajectory": 0.0455
+  },
+  "vocab": {
+    "forward_count": 19,
+    "backward_count": 50,
+    "total_signal": 69,
+    "forward_ratio": 0.2754,
+    "backward_ratio": 0.7246,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "growth",
+        10
+      ],
+      [
+        "expansion",
+        3
+      ],
+      [
+        "pipeline",
+        2
+      ],
+      [
+        "outlook",
+        1
+      ],
+      [
+        "expects",
+        1
+      ],
+      [
+        "planning",
+        1
+      ],
+      [
+        "forecasting",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        24
+      ],
+      [
+        "were",
+        8
+      ],
+      [
+        "grew",
+        5
+      ],
+      [
+        "declined",
+        3
+      ],
+      [
+        "announced",
+        2
+      ],
+      [
+        "completed",
+        2
+      ],
+      [
+        "increased",
+        2
+      ],
+      [
+        "recognized",
+        2
+      ],
+      [
+        "acquired",
+        1
+      ],
+      [
+        "improved",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0684,
+  "negative_sentiment_norm": 0.969,
+  "backward_ratio_norm": 0.7246,
+  "EW_Risk_Score": 54.76,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 2.73,
+    "sentiment_contribution": 33.91,
+    "vocab_contribution": 18.12
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "ticker": "MRK",
+  "date": "2024-11-22",
+  "source_file": "MRK_2024-11-22_parsed.json",
+  "word_count": 687,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 2,
+    "word_count": 216,
+    "hedging_density": 0.9259,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        1
+      ],
+      [
+        "about",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.25,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.75,
+    "opening_sentence_count": 8,
+    "qa_positive_ratio": 0.2308,
+    "qa_negative_ratio": 0.0769,
+    "qa_neutral_ratio": 0.6923,
+    "qa_sentence_count": 13,
+    "overall_positive_ratio": 0.2381,
+    "overall_negative_ratio": 0.0476,
+    "overall_neutral_ratio": 0.7143,
+    "sentiment_trajectory": 0.0494
+  },
+  "vocab": {
+    "forward_count": 3,
+    "backward_count": 1,
+    "total_signal": 4,
+    "forward_ratio": 0.75,
+    "backward_ratio": 0.25,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        3
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.3086,
+  "negative_sentiment_norm": 0.238,
+  "backward_ratio_norm": 0.25,
+  "EW_Risk_Score": 26.93,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 12.35,
+    "sentiment_contribution": 8.33,
+    "vocab_contribution": 6.25
+  }
+}

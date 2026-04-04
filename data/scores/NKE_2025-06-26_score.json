@@ -1,0 +1,143 @@
+{
+  "ticker": "NKE",
+  "date": "2025-06-26",
+  "source_file": "NKE_2025-06-26_parsed.json",
+  "word_count": 3244,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 13,
+    "word_count": 1439,
+    "hedging_density": 0.9034,
+    "epistemic_count": 2,
+    "approximator_count": 6,
+    "shield_count": 5,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        5
+      ],
+      [
+        "may",
+        3
+      ],
+      [
+        "we expect",
+        2
+      ],
+      [
+        "uncertain",
+        1
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.1915,
+    "opening_negative_ratio": 0.4681,
+    "opening_neutral_ratio": 0.3404,
+    "opening_sentence_count": 47,
+    "qa_positive_ratio": 0.1176,
+    "qa_negative_ratio": 0.1176,
+    "qa_neutral_ratio": 0.7647,
+    "qa_sentence_count": 34,
+    "overall_positive_ratio": 0.1605,
+    "overall_negative_ratio": 0.321,
+    "overall_neutral_ratio": 0.5185,
+    "sentiment_trajectory": 0.0962
+  },
+  "vocab": {
+    "forward_count": 11,
+    "backward_count": 57,
+    "total_signal": 68,
+    "forward_ratio": 0.1618,
+    "backward_ratio": 0.8382,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "will",
+        5
+      ],
+      [
+        "expect",
+        2
+      ],
+      [
+        "accelerate",
+        1
+      ],
+      [
+        "growth",
+        1
+      ],
+      [
+        "growing",
+        1
+      ],
+      [
+        "confident",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        17
+      ],
+      [
+        "reported",
+        15
+      ],
+      [
+        "was",
+        10
+      ],
+      [
+        "decreased",
+        8
+      ],
+      [
+        "returned",
+        2
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "reflected",
+        1
+      ],
+      [
+        "increased",
+        1
+      ],
+      [
+        "generated",
+        1
+      ],
+      [
+        "repurchased",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.3011,
+  "negative_sentiment_norm": 1.0,
+  "backward_ratio_norm": 0.8382,
+  "EW_Risk_Score": 68.0,
+  "risk_class": "High Risk",
+  "component_scores": {
+    "hedging_contribution": 12.05,
+    "sentiment_contribution": 35.0,
+    "vocab_contribution": 20.95
+  }
+}

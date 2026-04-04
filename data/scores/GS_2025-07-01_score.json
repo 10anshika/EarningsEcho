@@ -1,0 +1,70 @@
+{
+  "ticker": "GS",
+  "date": "2025-07-01",
+  "source_file": "GS_2025-07-01_parsed.json",
+  "word_count": 524,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 2,
+    "word_count": 113,
+    "hedging_density": 1.7699,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 2,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.0,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 1.0,
+    "opening_sentence_count": 4,
+    "qa_positive_ratio": 0.3333,
+    "qa_negative_ratio": 0.0667,
+    "qa_neutral_ratio": 0.6,
+    "qa_sentence_count": 15,
+    "overall_positive_ratio": 0.2632,
+    "overall_negative_ratio": 0.0526,
+    "overall_neutral_ratio": 0.6842,
+    "sentiment_trajectory": -0.1907
+  },
+  "vocab": {
+    "forward_count": 3,
+    "backward_count": 0,
+    "total_signal": 3,
+    "forward_ratio": 1.0,
+    "backward_ratio": 0.0,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        2
+      ],
+      [
+        "expects",
+        1
+      ]
+    ],
+    "top_backward": []
+  },
+  "hedging_norm": 0.59,
+  "negative_sentiment_norm": 0.263,
+  "backward_ratio_norm": 0.0,
+  "EW_Risk_Score": 32.8,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 23.6,
+    "sentiment_contribution": 9.21,
+    "vocab_contribution": 0.0
+  }
+}

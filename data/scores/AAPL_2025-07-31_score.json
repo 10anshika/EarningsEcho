@@ -1,0 +1,107 @@
+{
+  "ticker": "AAPL",
+  "date": "2025-07-31",
+  "source_file": "AAPL_2025-07-31_parsed.json",
+  "word_count": 1647,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 6,
+    "word_count": 706,
+    "hedging_density": 0.8499,
+    "epistemic_count": 0,
+    "approximator_count": 4,
+    "shield_count": 2,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "about",
+        2
+      ],
+      [
+        "around",
+        1
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "may",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2381,
+    "opening_negative_ratio": 0.0952,
+    "opening_neutral_ratio": 0.6667,
+    "opening_sentence_count": 21,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 1,
+    "overall_positive_ratio": 0.2273,
+    "overall_negative_ratio": 0.0909,
+    "overall_neutral_ratio": 0.6818,
+    "sentiment_trajectory": 0.2331
+  },
+  "vocab": {
+    "forward_count": 6,
+    "backward_count": 6,
+    "total_signal": 12,
+    "forward_ratio": 0.5,
+    "backward_ratio": 0.5,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        3
+      ],
+      [
+        "will",
+        2
+      ],
+      [
+        "plans",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        2
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "posted",
+        1
+      ],
+      [
+        "were",
+        1
+      ],
+      [
+        "generated",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2833,
+  "negative_sentiment_norm": 0.4545,
+  "backward_ratio_norm": 0.5,
+  "EW_Risk_Score": 39.74,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 11.33,
+    "sentiment_contribution": 15.91,
+    "vocab_contribution": 12.5
+  }
+}

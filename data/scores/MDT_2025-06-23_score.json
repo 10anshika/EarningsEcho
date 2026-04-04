@@ -1,0 +1,71 @@
+{
+  "ticker": "MDT",
+  "date": "2025-06-23",
+  "source_file": "MDT_2025-06-23_parsed.json",
+  "word_count": 569,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 2,
+    "word_count": 233,
+    "hedging_density": 0.8584,
+    "epistemic_count": 0,
+    "approximator_count": 2,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "about",
+        1
+      ],
+      [
+        "around",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.1667,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.8333,
+    "opening_sentence_count": 6,
+    "qa_positive_ratio": 0.1111,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.8889,
+    "qa_sentence_count": 18,
+    "overall_positive_ratio": 0.125,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.875,
+    "sentiment_trajectory": 0.1122
+  },
+  "vocab": {
+    "forward_count": 2,
+    "backward_count": 1,
+    "total_signal": 3,
+    "forward_ratio": 0.6667,
+    "backward_ratio": 0.3333,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        2
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2861,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.3333,
+  "EW_Risk_Score": 19.78,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 11.45,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 8.33
+  }
+}

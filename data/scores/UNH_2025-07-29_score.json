@@ -1,0 +1,91 @@
+{
+  "ticker": "UNH",
+  "date": "2025-07-29",
+  "source_file": "UNH_2025-07-29_parsed.json",
+  "word_count": 5186,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 8,
+    "word_count": 301,
+    "hedging_density": 2.6578,
+    "epistemic_count": 0,
+    "approximator_count": 7,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "at least",
+        6
+      ],
+      [
+        "broadly",
+        1
+      ],
+      [
+        "may",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.5714,
+    "opening_negative_ratio": 0.1429,
+    "opening_neutral_ratio": 0.2857,
+    "opening_sentence_count": 7,
+    "qa_positive_ratio": 0.3232,
+    "qa_negative_ratio": 0.2222,
+    "qa_neutral_ratio": 0.4545,
+    "qa_sentence_count": 99,
+    "overall_positive_ratio": 0.3396,
+    "overall_negative_ratio": 0.217,
+    "overall_neutral_ratio": 0.4434,
+    "sentiment_trajectory": 0.1752
+  },
+  "vocab": {
+    "forward_count": 13,
+    "backward_count": 3,
+    "total_signal": 16,
+    "forward_ratio": 0.8125,
+    "backward_ratio": 0.1875,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "outlook",
+        9
+      ],
+      [
+        "growth",
+        2
+      ],
+      [
+        "will",
+        1
+      ],
+      [
+        "expects",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        2
+      ],
+      [
+        "reported",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.8859,
+  "negative_sentiment_norm": 1.0,
+  "backward_ratio_norm": 0.1875,
+  "EW_Risk_Score": 75.12,
+  "risk_class": "High Risk",
+  "component_scores": {
+    "hedging_contribution": 35.44,
+    "sentiment_contribution": 35.0,
+    "vocab_contribution": 4.69
+  }
+}

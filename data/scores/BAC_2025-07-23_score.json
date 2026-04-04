@@ -1,0 +1,91 @@
+{
+  "ticker": "BAC",
+  "date": "2025-07-23",
+  "source_file": "BAC_2025-07-23_parsed.json",
+  "word_count": 860,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 5,
+    "word_count": 349,
+    "hedging_density": 1.4327,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 4,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        3
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2727,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.7273,
+    "opening_sentence_count": 11,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 15,
+    "overall_positive_ratio": 0.1154,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.8846,
+    "sentiment_trajectory": 0.1546
+  },
+  "vocab": {
+    "forward_count": 5,
+    "backward_count": 2,
+    "total_signal": 7,
+    "forward_ratio": 0.7143,
+    "backward_ratio": 0.2857,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        2
+      ],
+      [
+        "growth",
+        1
+      ],
+      [
+        "invest",
+        1
+      ],
+      [
+        "plans",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ],
+      [
+        "had",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.4776,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.2857,
+  "EW_Risk_Score": 26.25,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 19.1,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 7.14
+  }
+}

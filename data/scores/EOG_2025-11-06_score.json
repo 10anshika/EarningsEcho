@@ -1,0 +1,103 @@
+{
+  "ticker": "EOG",
+  "date": "2025-11-06",
+  "source_file": "EOG_2025-11-06_parsed.json",
+  "word_count": 8668,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 11,
+    "word_count": 3607,
+    "hedging_density": 0.305,
+    "epistemic_count": 0,
+    "approximator_count": 2,
+    "shield_count": 9,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        6
+      ],
+      [
+        "should",
+        3
+      ],
+      [
+        "generally",
+        2
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.0,
+    "opening_negative_ratio": 0.0541,
+    "opening_neutral_ratio": 0.9459,
+    "opening_sentence_count": 37,
+    "qa_positive_ratio": 0.0714,
+    "qa_negative_ratio": 0.0238,
+    "qa_neutral_ratio": 0.9048,
+    "qa_sentence_count": 42,
+    "overall_positive_ratio": 0.038,
+    "overall_negative_ratio": 0.038,
+    "overall_neutral_ratio": 0.9241,
+    "sentiment_trajectory": -0.0451
+  },
+  "vocab": {
+    "forward_count": 6,
+    "backward_count": 28,
+    "total_signal": 34,
+    "forward_ratio": 0.1765,
+    "backward_ratio": 0.8235,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "investing",
+        4
+      ],
+      [
+        "plan",
+        1
+      ],
+      [
+        "guidance",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "reported",
+        13
+      ],
+      [
+        "ended",
+        5
+      ],
+      [
+        "paid",
+        4
+      ],
+      [
+        "was",
+        4
+      ],
+      [
+        "had",
+        1
+      ],
+      [
+        "acquired",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1017,
+  "negative_sentiment_norm": 0.19,
+  "backward_ratio_norm": 0.8235,
+  "EW_Risk_Score": 31.3,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 4.07,
+    "sentiment_contribution": 6.65,
+    "vocab_contribution": 20.59
+  }
+}

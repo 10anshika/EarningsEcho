@@ -1,0 +1,151 @@
+{
+  "ticker": "TGT",
+  "date": "2026-03-03",
+  "source_file": "TGT_2026-03-03_parsed.json",
+  "word_count": 4410,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 7,
+    "word_count": 1611,
+    "hedging_density": 0.4345,
+    "epistemic_count": 0,
+    "approximator_count": 5,
+    "shield_count": 2,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        2
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "around",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.35,
+    "opening_negative_ratio": 0.2667,
+    "opening_neutral_ratio": 0.3833,
+    "opening_sentence_count": 60,
+    "qa_positive_ratio": 0.087,
+    "qa_negative_ratio": 0.0435,
+    "qa_neutral_ratio": 0.8696,
+    "qa_sentence_count": 46,
+    "overall_positive_ratio": 0.2358,
+    "overall_negative_ratio": 0.1698,
+    "overall_neutral_ratio": 0.5943,
+    "sentiment_trajectory": 0.2477
+  },
+  "vocab": {
+    "forward_count": 44,
+    "backward_count": 37,
+    "total_signal": 81,
+    "forward_ratio": 0.5432,
+    "backward_ratio": 0.4568,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "target",
+        20
+      ],
+      [
+        "growth",
+        13
+      ],
+      [
+        "will",
+        3
+      ],
+      [
+        "guidance",
+        2
+      ],
+      [
+        "expects",
+        2
+      ],
+      [
+        "invest",
+        1
+      ],
+      [
+        "confidence",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "grow",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        21
+      ],
+      [
+        "were",
+        3
+      ],
+      [
+        "grew",
+        2
+      ],
+      [
+        "decreased",
+        2
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "declined",
+        1
+      ],
+      [
+        "increased",
+        1
+      ],
+      [
+        "paid",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1448,
+  "negative_sentiment_norm": 0.849,
+  "backward_ratio_norm": 0.4568,
+  "EW_Risk_Score": 46.93,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 5.79,
+    "sentiment_contribution": 29.71,
+    "vocab_contribution": 11.42
+  }
+}

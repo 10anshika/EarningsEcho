@@ -1,0 +1,78 @@
+{
+  "ticker": "VLO",
+  "date": "2025-10-29",
+  "source_file": "VLO_2025-10-29_parsed.json",
+  "word_count": 739,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 0,
+    "word_count": 316,
+    "hedging_density": 0.0,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": []
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.6,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.4,
+    "opening_sentence_count": 10,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 13,
+    "overall_positive_ratio": 0.2609,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.7391,
+    "sentiment_trajectory": 0.3876
+  },
+  "vocab": {
+    "forward_count": 7,
+    "backward_count": 2,
+    "total_signal": 9,
+    "forward_ratio": 0.7778,
+    "backward_ratio": 0.2222,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        4
+      ],
+      [
+        "confident",
+        1
+      ],
+      [
+        "objectives",
+        1
+      ],
+      [
+        "planning",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ],
+      [
+        "established",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.2222,
+  "EW_Risk_Score": 5.56,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 0.0,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 5.56
+  }
+}

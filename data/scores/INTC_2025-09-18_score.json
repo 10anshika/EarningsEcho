@@ -1,0 +1,91 @@
+{
+  "ticker": "INTC",
+  "date": "2025-09-18",
+  "source_file": "INTC_2025-09-18_parsed.json",
+  "word_count": 1243,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 448,
+    "hedging_density": 0.2232,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "subject to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2667,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.7333,
+    "opening_sentence_count": 15,
+    "qa_positive_ratio": 0.0625,
+    "qa_negative_ratio": 0.125,
+    "qa_neutral_ratio": 0.8125,
+    "qa_sentence_count": 16,
+    "overall_positive_ratio": 0.1613,
+    "overall_negative_ratio": 0.0645,
+    "overall_neutral_ratio": 0.7742,
+    "sentiment_trajectory": 0.2553
+  },
+  "vocab": {
+    "forward_count": 18,
+    "backward_count": 1,
+    "total_signal": 19,
+    "forward_ratio": 0.9474,
+    "backward_ratio": 0.0526,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        10
+      ],
+      [
+        "invest",
+        2
+      ],
+      [
+        "investment",
+        2
+      ],
+      [
+        "accelerate",
+        1
+      ],
+      [
+        "expand",
+        1
+      ],
+      [
+        "confidence",
+        1
+      ],
+      [
+        "grow",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0744,
+  "negative_sentiment_norm": 0.3225,
+  "backward_ratio_norm": 0.0526,
+  "EW_Risk_Score": 15.58,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 2.98,
+    "sentiment_contribution": 11.29,
+    "vocab_contribution": 1.31
+  }
+}

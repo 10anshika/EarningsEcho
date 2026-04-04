@@ -1,0 +1,147 @@
+{
+  "ticker": "MRK",
+  "date": "2025-02-04",
+  "source_file": "MRK_2025-02-04_parsed.json",
+  "word_count": 7535,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 13,
+    "word_count": 3526,
+    "hedging_density": 0.3687,
+    "epistemic_count": 1,
+    "approximator_count": 11,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "largely",
+        6
+      ],
+      [
+        "approximately",
+        4
+      ],
+      [
+        "generally",
+        1
+      ],
+      [
+        "management believes",
+        1
+      ],
+      [
+        "should",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4105,
+    "opening_negative_ratio": 0.3263,
+    "opening_neutral_ratio": 0.2632,
+    "opening_sentence_count": 95,
+    "qa_positive_ratio": 0.2588,
+    "qa_negative_ratio": 0.1294,
+    "qa_neutral_ratio": 0.6118,
+    "qa_sentence_count": 85,
+    "overall_positive_ratio": 0.3389,
+    "overall_negative_ratio": 0.2333,
+    "overall_neutral_ratio": 0.4278,
+    "sentiment_trajectory": 0.1747
+  },
+  "vocab": {
+    "forward_count": 33,
+    "backward_count": 85,
+    "total_signal": 118,
+    "forward_ratio": 0.2797,
+    "backward_ratio": 0.7203,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "growth",
+        21
+      ],
+      [
+        "pipeline",
+        3
+      ],
+      [
+        "outlook",
+        2
+      ],
+      [
+        "expansion",
+        2
+      ],
+      [
+        "anticipates",
+        1
+      ],
+      [
+        "expects",
+        1
+      ],
+      [
+        "confident",
+        1
+      ],
+      [
+        "planning",
+        1
+      ],
+      [
+        "forecasting",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        39
+      ],
+      [
+        "were",
+        23
+      ],
+      [
+        "grew",
+        8
+      ],
+      [
+        "increased",
+        5
+      ],
+      [
+        "ended",
+        4
+      ],
+      [
+        "declined",
+        2
+      ],
+      [
+        "announced",
+        2
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "affected",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1229,
+  "negative_sentiment_norm": 1.0,
+  "backward_ratio_norm": 0.7203,
+  "EW_Risk_Score": 57.92,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 4.92,
+    "sentiment_contribution": 35.0,
+    "vocab_contribution": 18.01
+  }
+}

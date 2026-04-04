@@ -1,0 +1,163 @@
+{
+  "ticker": "XOM",
+  "date": "2025-08-01",
+  "source_file": "XOM_2025-08-01_parsed.json",
+  "word_count": 7630,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 14,
+    "word_count": 4911,
+    "hedging_density": 0.2851,
+    "epistemic_count": 0,
+    "approximator_count": 4,
+    "shield_count": 10,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        7
+      ],
+      [
+        "approximately",
+        2
+      ],
+      [
+        "depending on",
+        1
+      ],
+      [
+        "could",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "at least",
+        1
+      ],
+      [
+        "generally",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3333,
+    "opening_negative_ratio": 0.1111,
+    "opening_neutral_ratio": 0.5556,
+    "opening_sentence_count": 126,
+    "qa_positive_ratio": 0.025,
+    "qa_negative_ratio": 0.075,
+    "qa_neutral_ratio": 0.9,
+    "qa_sentence_count": 40,
+    "overall_positive_ratio": 0.259,
+    "overall_negative_ratio": 0.1024,
+    "overall_neutral_ratio": 0.6386,
+    "sentiment_trajectory": 0.2609
+  },
+  "vocab": {
+    "forward_count": 88,
+    "backward_count": 52,
+    "total_signal": 140,
+    "forward_ratio": 0.6286,
+    "backward_ratio": 0.3714,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "projects",
+        17
+      ],
+      [
+        "plans",
+        12
+      ],
+      [
+        "growth",
+        8
+      ],
+      [
+        "will",
+        7
+      ],
+      [
+        "investment",
+        7
+      ],
+      [
+        "project",
+        6
+      ],
+      [
+        "opportunities",
+        5
+      ],
+      [
+        "outlook",
+        5
+      ],
+      [
+        "investing",
+        4
+      ],
+      [
+        "plan",
+        3
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        15
+      ],
+      [
+        "reported",
+        8
+      ],
+      [
+        "was",
+        6
+      ],
+      [
+        "increased",
+        5
+      ],
+      [
+        "delivered",
+        3
+      ],
+      [
+        "repurchased",
+        2
+      ],
+      [
+        "announced",
+        2
+      ],
+      [
+        "achieved",
+        2
+      ],
+      [
+        "ended",
+        2
+      ],
+      [
+        "returned",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.095,
+  "negative_sentiment_norm": 0.512,
+  "backward_ratio_norm": 0.3714,
+  "EW_Risk_Score": 31.01,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 3.8,
+    "sentiment_contribution": 17.92,
+    "vocab_contribution": 9.29
+  }
+}

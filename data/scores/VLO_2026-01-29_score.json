@@ -1,0 +1,151 @@
+{
+  "ticker": "VLO",
+  "date": "2026-01-29",
+  "source_file": "VLO_2026-01-29_parsed.json",
+  "word_count": 8146,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 10,
+    "word_count": 2607,
+    "hedging_density": 0.3836,
+    "epistemic_count": 0,
+    "approximator_count": 5,
+    "shield_count": 5,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        3
+      ],
+      [
+        "may",
+        2
+      ],
+      [
+        "could",
+        2
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "generally",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.1754,
+    "opening_negative_ratio": 0.1579,
+    "opening_neutral_ratio": 0.6667,
+    "opening_sentence_count": 57,
+    "qa_positive_ratio": 0.0899,
+    "qa_negative_ratio": 0.1573,
+    "qa_neutral_ratio": 0.7528,
+    "qa_sentence_count": 89,
+    "overall_positive_ratio": 0.1233,
+    "overall_negative_ratio": 0.1575,
+    "overall_neutral_ratio": 0.7192,
+    "sentiment_trajectory": 0.0919
+  },
+  "vocab": {
+    "forward_count": 16,
+    "backward_count": 42,
+    "total_signal": 58,
+    "forward_ratio": 0.2759,
+    "backward_ratio": 0.7241,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "project",
+        3
+      ],
+      [
+        "will",
+        2
+      ],
+      [
+        "plans",
+        2
+      ],
+      [
+        "investing",
+        1
+      ],
+      [
+        "committed",
+        1
+      ],
+      [
+        "expect",
+        1
+      ],
+      [
+        "intend",
+        1
+      ],
+      [
+        "target",
+        1
+      ],
+      [
+        "forecast",
+        1
+      ],
+      [
+        "guidance",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        14
+      ],
+      [
+        "reflected",
+        10
+      ],
+      [
+        "ended",
+        7
+      ],
+      [
+        "reported",
+        6
+      ],
+      [
+        "were",
+        2
+      ],
+      [
+        "increased",
+        1
+      ],
+      [
+        "achieved",
+        1
+      ],
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1279,
+  "negative_sentiment_norm": 0.7875,
+  "backward_ratio_norm": 0.7241,
+  "EW_Risk_Score": 50.78,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 5.11,
+    "sentiment_contribution": 27.56,
+    "vocab_contribution": 18.1
+  }
+}

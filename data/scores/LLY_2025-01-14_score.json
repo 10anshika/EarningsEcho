@@ -1,0 +1,139 @@
+{
+  "ticker": "LLY",
+  "date": "2025-01-14",
+  "source_file": "LLY_2025-01-14_parsed.json",
+  "word_count": 1580,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 14,
+    "word_count": 678,
+    "hedging_density": 2.0649,
+    "epistemic_count": 2,
+    "approximator_count": 10,
+    "shield_count": 2,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        7
+      ],
+      [
+        "we expect",
+        2
+      ],
+      [
+        "may",
+        2
+      ],
+      [
+        "in the range of",
+        1
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "at least",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.45,
+    "opening_negative_ratio": 0.1,
+    "opening_neutral_ratio": 0.45,
+    "opening_sentence_count": 20,
+    "qa_positive_ratio": 0.0588,
+    "qa_negative_ratio": 0.0588,
+    "qa_neutral_ratio": 0.8824,
+    "qa_sentence_count": 17,
+    "overall_positive_ratio": 0.2703,
+    "overall_negative_ratio": 0.0811,
+    "overall_neutral_ratio": 0.6486,
+    "sentiment_trajectory": 0.3283
+  },
+  "vocab": {
+    "forward_count": 30,
+    "backward_count": 9,
+    "total_signal": 39,
+    "forward_ratio": 0.7692,
+    "backward_ratio": 0.2308,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "guidance",
+        10
+      ],
+      [
+        "growth",
+        6
+      ],
+      [
+        "will",
+        4
+      ],
+      [
+        "expect",
+        3
+      ],
+      [
+        "anticipates",
+        2
+      ],
+      [
+        "expects",
+        2
+      ],
+      [
+        "anticipating",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "plans",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        2
+      ],
+      [
+        "grew",
+        2
+      ],
+      [
+        "was",
+        2
+      ],
+      [
+        "had",
+        1
+      ],
+      [
+        "contributed",
+        1
+      ],
+      [
+        "posted",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.6883,
+  "negative_sentiment_norm": 0.4055,
+  "backward_ratio_norm": 0.2308,
+  "EW_Risk_Score": 47.49,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 27.53,
+    "sentiment_contribution": 14.19,
+    "vocab_contribution": 5.77
+  }
+}

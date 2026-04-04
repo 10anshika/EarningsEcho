@@ -1,0 +1,135 @@
+{
+  "ticker": "ADBE",
+  "date": "2025-03-12",
+  "source_file": "ADBE_2025-03-12_parsed.json",
+  "word_count": 3122,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 7,
+    "word_count": 1376,
+    "hedging_density": 0.5087,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 6,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "could",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "beyond our control",
+        1
+      ],
+      [
+        "might",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2778,
+    "opening_negative_ratio": 0.0556,
+    "opening_neutral_ratio": 0.6667,
+    "opening_sentence_count": 36,
+    "qa_positive_ratio": 0.05,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.95,
+    "qa_sentence_count": 20,
+    "overall_positive_ratio": 0.1964,
+    "overall_negative_ratio": 0.0357,
+    "overall_neutral_ratio": 0.7679,
+    "sentiment_trajectory": 0.1666
+  },
+  "vocab": {
+    "forward_count": 32,
+    "backward_count": 24,
+    "total_signal": 56,
+    "forward_ratio": 0.5714,
+    "backward_ratio": 0.4286,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        10
+      ],
+      [
+        "will",
+        9
+      ],
+      [
+        "targets",
+        8
+      ],
+      [
+        "opportunity",
+        2
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "expects",
+        1
+      ],
+      [
+        "intend",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        11
+      ],
+      [
+        "reported",
+        4
+      ],
+      [
+        "were",
+        3
+      ],
+      [
+        "ended",
+        2
+      ],
+      [
+        "increased",
+        1
+      ],
+      [
+        "achieved",
+        1
+      ],
+      [
+        "repurchased",
+        1
+      ],
+      [
+        "posted",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1696,
+  "negative_sentiment_norm": 0.1785,
+  "backward_ratio_norm": 0.4286,
+  "EW_Risk_Score": 23.75,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 6.78,
+    "sentiment_contribution": 6.25,
+    "vocab_contribution": 10.71
+  }
+}

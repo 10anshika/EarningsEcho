@@ -1,0 +1,127 @@
+{
+  "ticker": "MSFT",
+  "date": "2026-01-28",
+  "source_file": "MSFT_2026-01-28_parsed.json",
+  "word_count": 3281,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 4,
+    "word_count": 1154,
+    "hedging_density": 0.3466,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 3,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "should",
+        2
+      ],
+      [
+        "generally",
+        1
+      ],
+      [
+        "may",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2593,
+    "opening_negative_ratio": 0.0741,
+    "opening_neutral_ratio": 0.6667,
+    "opening_sentence_count": 27,
+    "qa_positive_ratio": 0.0833,
+    "qa_negative_ratio": 0.0833,
+    "qa_neutral_ratio": 0.8333,
+    "qa_sentence_count": 12,
+    "overall_positive_ratio": 0.2051,
+    "overall_negative_ratio": 0.0769,
+    "overall_neutral_ratio": 0.7179,
+    "sentiment_trajectory": 0.2032
+  },
+  "vocab": {
+    "forward_count": 8,
+    "backward_count": 44,
+    "total_signal": 52,
+    "forward_ratio": 0.1538,
+    "backward_ratio": 0.8462,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "will",
+        3
+      ],
+      [
+        "growth",
+        2
+      ],
+      [
+        "outlook",
+        1
+      ],
+      [
+        "guidance",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "increased",
+        17
+      ],
+      [
+        "was",
+        10
+      ],
+      [
+        "reported",
+        3
+      ],
+      [
+        "ended",
+        2
+      ],
+      [
+        "decreased",
+        2
+      ],
+      [
+        "were",
+        2
+      ],
+      [
+        "impacted",
+        2
+      ],
+      [
+        "resulted",
+        2
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "exceeded",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1155,
+  "negative_sentiment_norm": 0.3845,
+  "backward_ratio_norm": 0.8462,
+  "EW_Risk_Score": 39.23,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 4.62,
+    "sentiment_contribution": 13.46,
+    "vocab_contribution": 21.15
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "ticker": "COST",
+  "date": "2025-12-11",
+  "source_file": "COST_2025-12-11_parsed.json",
+  "word_count": 1230,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 9,
+    "word_count": 625,
+    "hedging_density": 1.44,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 7,
+    "plausibility_count": 1,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        3
+      ],
+      [
+        "in some cases",
+        1
+      ],
+      [
+        "could",
+        1
+      ],
+      [
+        "might",
+        1
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "would",
+        1
+      ],
+      [
+        "generally",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.0625,
+    "opening_negative_ratio": 0.125,
+    "opening_neutral_ratio": 0.8125,
+    "opening_sentence_count": 16,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 1,
+    "overall_positive_ratio": 0.0588,
+    "overall_negative_ratio": 0.1176,
+    "overall_neutral_ratio": 0.8235,
+    "sentiment_trajectory": 0.0982
+  },
+  "vocab": {
+    "forward_count": 9,
+    "backward_count": 6,
+    "total_signal": 15,
+    "forward_ratio": 0.6,
+    "backward_ratio": 0.4,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "expects",
+        1
+      ],
+      [
+        "anticipates",
+        1
+      ],
+      [
+        "anticipate",
+        1
+      ],
+      [
+        "expect",
+        1
+      ],
+      [
+        "intend",
+        1
+      ],
+      [
+        "plan",
+        1
+      ],
+      [
+        "project",
+        1
+      ],
+      [
+        "target",
+        1
+      ],
+      [
+        "will",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        2
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "increased",
+        1
+      ],
+      [
+        "were",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.48,
+  "negative_sentiment_norm": 0.588,
+  "backward_ratio_norm": 0.4,
+  "EW_Risk_Score": 49.78,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 19.2,
+    "sentiment_contribution": 20.58,
+    "vocab_contribution": 10.0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "ticker": "CRM",
+  "date": "2025-11-18",
+  "source_file": "CRM_2025-11-18_parsed.json",
+  "word_count": 1362,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 0,
+    "word_count": 538,
+    "hedging_density": 0.0,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": []
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.6667,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.3333,
+    "opening_sentence_count": 18,
+    "qa_positive_ratio": 0.0909,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.9091,
+    "qa_sentence_count": 22,
+    "overall_positive_ratio": 0.35,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.65,
+    "sentiment_trajectory": 0.4499
+  },
+  "vocab": {
+    "forward_count": 16,
+    "backward_count": 2,
+    "total_signal": 18,
+    "forward_ratio": 0.8889,
+    "backward_ratio": 0.1111,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        10
+      ],
+      [
+        "scale",
+        3
+      ],
+      [
+        "confidence",
+        1
+      ],
+      [
+        "pipeline",
+        1
+      ],
+      [
+        "accelerate",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ],
+      [
+        "completed",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.1111,
+  "EW_Risk_Score": 2.78,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 0.0,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 2.78
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "ticker": "CVS",
+  "date": "2025-12-09",
+  "source_file": "CVS_2025-12-09_parsed.json",
+  "word_count": 3119,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 12,
+    "word_count": 1627,
+    "hedging_density": 0.7376,
+    "epistemic_count": 1,
+    "approximator_count": 8,
+    "shield_count": 3,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "at least",
+        4
+      ],
+      [
+        "approximately",
+        2
+      ],
+      [
+        "we expect",
+        1
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "around",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "difficult to predict",
+        1
+      ],
+      [
+        "may",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3889,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.6111,
+    "opening_sentence_count": 36,
+    "qa_positive_ratio": 0.1481,
+    "qa_negative_ratio": 0.3333,
+    "qa_neutral_ratio": 0.5185,
+    "qa_sentence_count": 27,
+    "overall_positive_ratio": 0.2857,
+    "overall_negative_ratio": 0.1429,
+    "overall_neutral_ratio": 0.5714,
+    "sentiment_trajectory": 0.2609
+  },
+  "vocab": {
+    "forward_count": 58,
+    "backward_count": 4,
+    "total_signal": 62,
+    "forward_ratio": 0.9355,
+    "backward_ratio": 0.0645,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "guidance",
+        27
+      ],
+      [
+        "growth",
+        7
+      ],
+      [
+        "will",
+        6
+      ],
+      [
+        "plan",
+        3
+      ],
+      [
+        "targets",
+        3
+      ],
+      [
+        "committed",
+        2
+      ],
+      [
+        "outlook",
+        2
+      ],
+      [
+        "scale",
+        1
+      ],
+      [
+        "opportunity",
+        1
+      ],
+      [
+        "target",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "improved",
+        1
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "had",
+        1
+      ],
+      [
+        "ended",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2459,
+  "negative_sentiment_norm": 0.7145,
+  "backward_ratio_norm": 0.0645,
+  "EW_Risk_Score": 36.45,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 9.83,
+    "sentiment_contribution": 25.01,
+    "vocab_contribution": 1.61
+  }
+}

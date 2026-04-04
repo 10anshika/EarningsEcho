@@ -1,0 +1,151 @@
+{
+  "ticker": "ADBE",
+  "date": "2024-12-11",
+  "source_file": "ADBE_2024-12-11_parsed.json",
+  "word_count": 3438,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 9,
+    "word_count": 1522,
+    "hedging_density": 0.5913,
+    "epistemic_count": 1,
+    "approximator_count": 2,
+    "shield_count": 6,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        2
+      ],
+      [
+        "could",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "we expect",
+        1
+      ],
+      [
+        "beyond our control",
+        1
+      ],
+      [
+        "might",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3778,
+    "opening_negative_ratio": 0.0889,
+    "opening_neutral_ratio": 0.5333,
+    "opening_sentence_count": 45,
+    "qa_positive_ratio": 0.05,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.95,
+    "qa_sentence_count": 20,
+    "overall_positive_ratio": 0.2769,
+    "overall_negative_ratio": 0.0615,
+    "overall_neutral_ratio": 0.6615,
+    "sentiment_trajectory": 0.2545
+  },
+  "vocab": {
+    "forward_count": 27,
+    "backward_count": 48,
+    "total_signal": 75,
+    "forward_ratio": 0.36,
+    "backward_ratio": 0.64,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        15
+      ],
+      [
+        "targets",
+        5
+      ],
+      [
+        "opportunity",
+        2
+      ],
+      [
+        "expect",
+        1
+      ],
+      [
+        "will",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "expects",
+        1
+      ],
+      [
+        "intend",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        20
+      ],
+      [
+        "reported",
+        11
+      ],
+      [
+        "grew",
+        4
+      ],
+      [
+        "ended",
+        2
+      ],
+      [
+        "achieved",
+        2
+      ],
+      [
+        "were",
+        2
+      ],
+      [
+        "repurchased",
+        2
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "generated",
+        1
+      ],
+      [
+        "resulted",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1971,
+  "negative_sentiment_norm": 0.3075,
+  "backward_ratio_norm": 0.64,
+  "EW_Risk_Score": 34.65,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 7.88,
+    "sentiment_contribution": 10.76,
+    "vocab_contribution": 16.0
+  }
+}

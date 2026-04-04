@@ -1,0 +1,79 @@
+{
+  "ticker": "JNJ",
+  "date": "2025-06-10",
+  "source_file": "JNJ_2025-06-10_parsed.json",
+  "word_count": 583,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 2,
+    "word_count": 222,
+    "hedging_density": 0.9009,
+    "epistemic_count": 0,
+    "approximator_count": 2,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "around",
+        1
+      ],
+      [
+        "about",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.6,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.4,
+    "opening_sentence_count": 5,
+    "qa_positive_ratio": 0.1176,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.8824,
+    "qa_sentence_count": 17,
+    "overall_positive_ratio": 0.2273,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.7727,
+    "sentiment_trajectory": 0.4144
+  },
+  "vocab": {
+    "forward_count": 3,
+    "backward_count": 1,
+    "total_signal": 4,
+    "forward_ratio": 0.75,
+    "backward_ratio": 0.25,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        1
+      ],
+      [
+        "invest",
+        1
+      ],
+      [
+        "investment",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.3003,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.25,
+  "EW_Risk_Score": 18.26,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 12.01,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 6.25
+  }
+}

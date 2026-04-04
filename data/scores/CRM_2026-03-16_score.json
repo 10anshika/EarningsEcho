@@ -1,0 +1,83 @@
+{
+  "ticker": "CRM",
+  "date": "2026-03-16",
+  "source_file": "CRM_2026-03-16_parsed.json",
+  "word_count": 572,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 166,
+    "hedging_density": 0.6024,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.75,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.25,
+    "opening_sentence_count": 4,
+    "qa_positive_ratio": 0.0769,
+    "qa_negative_ratio": 0.0769,
+    "qa_neutral_ratio": 0.8462,
+    "qa_sentence_count": 13,
+    "overall_positive_ratio": 0.2353,
+    "overall_negative_ratio": 0.0588,
+    "overall_neutral_ratio": 0.7059,
+    "sentiment_trajectory": 0.6016
+  },
+  "vocab": {
+    "forward_count": 3,
+    "backward_count": 3,
+    "total_signal": 6,
+    "forward_ratio": 0.5,
+    "backward_ratio": 0.5,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "confidence",
+        1
+      ],
+      [
+        "confident",
+        1
+      ],
+      [
+        "growth",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ],
+      [
+        "entered",
+        1
+      ],
+      [
+        "increased",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2008,
+  "negative_sentiment_norm": 0.294,
+  "backward_ratio_norm": 0.5,
+  "EW_Risk_Score": 30.82,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 8.03,
+    "sentiment_contribution": 10.29,
+    "vocab_contribution": 12.5
+  }
+}

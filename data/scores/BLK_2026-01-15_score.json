@@ -1,0 +1,107 @@
+{
+  "ticker": "BLK",
+  "date": "2026-01-15",
+  "source_file": "BLK_2026-01-15_parsed.json",
+  "word_count": 9853,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 809,
+    "hedging_density": 0.1236,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "around",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.6,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.4,
+    "opening_sentence_count": 15,
+    "qa_positive_ratio": 0.1728,
+    "qa_negative_ratio": 0.0741,
+    "qa_neutral_ratio": 0.7531,
+    "qa_sentence_count": 162,
+    "overall_positive_ratio": 0.209,
+    "overall_negative_ratio": 0.0678,
+    "overall_neutral_ratio": 0.7232,
+    "sentiment_trajectory": 0.3649
+  },
+  "vocab": {
+    "forward_count": 16,
+    "backward_count": 4,
+    "total_signal": 20,
+    "forward_ratio": 0.8,
+    "backward_ratio": 0.2,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        7
+      ],
+      [
+        "momentum",
+        2
+      ],
+      [
+        "accelerating",
+        1
+      ],
+      [
+        "will",
+        1
+      ],
+      [
+        "pipeline",
+        1
+      ],
+      [
+        "goal",
+        1
+      ],
+      [
+        "scale",
+        1
+      ],
+      [
+        "investing",
+        1
+      ],
+      [
+        "opportunities",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "ended",
+        2
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "returned",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0412,
+  "negative_sentiment_norm": 0.339,
+  "backward_ratio_norm": 0.2,
+  "EW_Risk_Score": 18.51,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 1.65,
+    "sentiment_contribution": 11.86,
+    "vocab_contribution": 5.0
+  }
+}

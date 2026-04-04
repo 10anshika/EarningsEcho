@@ -1,0 +1,115 @@
+{
+  "ticker": "MS",
+  "date": "2025-07-16",
+  "source_file": "MS_2025-07-16_parsed.json",
+  "word_count": 3599,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 1487,
+    "hedging_density": 0.0672,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "up to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.68,
+    "opening_negative_ratio": 0.14,
+    "opening_neutral_ratio": 0.18,
+    "opening_sentence_count": 50,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0577,
+    "qa_neutral_ratio": 0.9423,
+    "qa_sentence_count": 52,
+    "overall_positive_ratio": 0.3333,
+    "overall_negative_ratio": 0.098,
+    "overall_neutral_ratio": 0.5686,
+    "sentiment_trajectory": 0.5989
+  },
+  "vocab": {
+    "forward_count": 14,
+    "backward_count": 40,
+    "total_signal": 54,
+    "forward_ratio": 0.2593,
+    "backward_ratio": 0.7407,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "investment",
+        9
+      ],
+      [
+        "growth",
+        3
+      ],
+      [
+        "scale",
+        1
+      ],
+      [
+        "outlook",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "increased",
+        16
+      ],
+      [
+        "was",
+        6
+      ],
+      [
+        "reported",
+        5
+      ],
+      [
+        "delivered",
+        3
+      ],
+      [
+        "decreased",
+        3
+      ],
+      [
+        "were",
+        2
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "completed",
+        1
+      ],
+      [
+        "resulted",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0224,
+  "negative_sentiment_norm": 0.49,
+  "backward_ratio_norm": 0.7407,
+  "EW_Risk_Score": 36.56,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 0.9,
+    "sentiment_contribution": 17.15,
+    "vocab_contribution": 18.52
+  }
+}

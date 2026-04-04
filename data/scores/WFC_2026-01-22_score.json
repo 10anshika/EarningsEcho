@@ -1,0 +1,95 @@
+{
+  "ticker": "WFC",
+  "date": "2026-01-22",
+  "source_file": "WFC_2026-01-22_parsed.json",
+  "word_count": 5500,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 10,
+    "word_count": 1949,
+    "hedging_density": 0.5131,
+    "epistemic_count": 0,
+    "approximator_count": 2,
+    "shield_count": 8,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        4
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "should",
+        2
+      ],
+      [
+        "subject to",
+        2
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.0597,
+    "opening_negative_ratio": 0.2239,
+    "opening_neutral_ratio": 0.7164,
+    "opening_sentence_count": 67,
+    "qa_positive_ratio": 0.0125,
+    "qa_negative_ratio": 0.0625,
+    "qa_neutral_ratio": 0.925,
+    "qa_sentence_count": 80,
+    "overall_positive_ratio": 0.034,
+    "overall_negative_ratio": 0.1361,
+    "overall_neutral_ratio": 0.8299,
+    "sentiment_trajectory": 0.0425
+  },
+  "vocab": {
+    "forward_count": 5,
+    "backward_count": 9,
+    "total_signal": 14,
+    "forward_ratio": 0.3571,
+    "backward_ratio": 0.6429,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        5
+      ]
+    ],
+    "top_backward": [
+      [
+        "entered",
+        4
+      ],
+      [
+        "was",
+        2
+      ],
+      [
+        "affected",
+        1
+      ],
+      [
+        "were",
+        1
+      ],
+      [
+        "did",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.171,
+  "negative_sentiment_norm": 0.6805,
+  "backward_ratio_norm": 0.6429,
+  "EW_Risk_Score": 46.73,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 6.84,
+    "sentiment_contribution": 23.82,
+    "vocab_contribution": 16.07
+  }
+}

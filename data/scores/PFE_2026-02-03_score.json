@@ -1,0 +1,147 @@
+{
+  "ticker": "PFE",
+  "date": "2026-02-03",
+  "source_file": "PFE_2026-02-03_parsed.json",
+  "word_count": 12427,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 8,
+    "word_count": 2334,
+    "hedging_density": 0.3428,
+    "epistemic_count": 0,
+    "approximator_count": 7,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        6
+      ],
+      [
+        "may",
+        1
+      ],
+      [
+        "largely",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3077,
+    "opening_negative_ratio": 0.2821,
+    "opening_neutral_ratio": 0.4103,
+    "opening_sentence_count": 39,
+    "qa_positive_ratio": 0.1529,
+    "qa_negative_ratio": 0.0941,
+    "qa_neutral_ratio": 0.7529,
+    "qa_sentence_count": 170,
+    "overall_positive_ratio": 0.1818,
+    "overall_negative_ratio": 0.1292,
+    "overall_neutral_ratio": 0.689,
+    "sentiment_trajectory": 0.1316
+  },
+  "vocab": {
+    "forward_count": 34,
+    "backward_count": 36,
+    "total_signal": 70,
+    "forward_ratio": 0.4857,
+    "backward_ratio": 0.5143,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "guidance",
+        13
+      ],
+      [
+        "growth",
+        4
+      ],
+      [
+        "growing",
+        2
+      ],
+      [
+        "pipeline",
+        2
+      ],
+      [
+        "investment",
+        2
+      ],
+      [
+        "plan",
+        2
+      ],
+      [
+        "plans",
+        2
+      ],
+      [
+        "will",
+        1
+      ],
+      [
+        "opportunities",
+        1
+      ],
+      [
+        "projects",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "reported",
+        10
+      ],
+      [
+        "acquired",
+        5
+      ],
+      [
+        "were",
+        4
+      ],
+      [
+        "increased",
+        4
+      ],
+      [
+        "grew",
+        3
+      ],
+      [
+        "delivered",
+        2
+      ],
+      [
+        "was",
+        2
+      ],
+      [
+        "decreased",
+        2
+      ],
+      [
+        "completed",
+        1
+      ],
+      [
+        "reflected",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1143,
+  "negative_sentiment_norm": 0.646,
+  "backward_ratio_norm": 0.5143,
+  "EW_Risk_Score": 40.04,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 4.57,
+    "sentiment_contribution": 22.61,
+    "vocab_contribution": 12.86
+  }
+}

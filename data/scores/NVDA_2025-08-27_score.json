@@ -1,0 +1,147 @@
+{
+  "ticker": "NVDA",
+  "date": "2025-08-27",
+  "source_file": "NVDA_2025-08-27_parsed.json",
+  "word_count": 3921,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 13,
+    "word_count": 2375,
+    "hedging_density": 0.5474,
+    "epistemic_count": 0,
+    "approximator_count": 4,
+    "shield_count": 9,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        3
+      ],
+      [
+        "subject to",
+        3
+      ],
+      [
+        "would",
+        2
+      ],
+      [
+        "may",
+        2
+      ],
+      [
+        "could",
+        2
+      ],
+      [
+        "about",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4324,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.5676,
+    "opening_sentence_count": 74,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 2,
+    "overall_positive_ratio": 0.4211,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.5789,
+    "sentiment_trajectory": 0.3717
+  },
+  "vocab": {
+    "forward_count": 24,
+    "backward_count": 32,
+    "total_signal": 56,
+    "forward_ratio": 0.4286,
+    "backward_ratio": 0.5714,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "scale",
+        6
+      ],
+      [
+        "will",
+        5
+      ],
+      [
+        "outlook",
+        4
+      ],
+      [
+        "accelerate",
+        4
+      ],
+      [
+        "growth",
+        3
+      ],
+      [
+        "expect",
+        1
+      ],
+      [
+        "expansion",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        9
+      ],
+      [
+        "was",
+        6
+      ],
+      [
+        "were",
+        3
+      ],
+      [
+        "grew",
+        2
+      ],
+      [
+        "achieved",
+        2
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "benefited",
+        1
+      ],
+      [
+        "returned",
+        1
+      ],
+      [
+        "repurchased",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1825,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.5714,
+  "EW_Risk_Score": 21.58,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 7.3,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 14.29
+  }
+}

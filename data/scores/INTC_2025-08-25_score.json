@@ -1,0 +1,111 @@
+{
+  "ticker": "INTC",
+  "date": "2025-08-25",
+  "source_file": "INTC_2025-08-25_parsed.json",
+  "word_count": 1842,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 766,
+    "hedging_density": 0.1305,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "at least",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.5652,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.4348,
+    "opening_sentence_count": 23,
+    "qa_positive_ratio": 0.5,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.5,
+    "qa_sentence_count": 16,
+    "overall_positive_ratio": 0.5385,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.4615,
+    "sentiment_trajectory": 0.0778
+  },
+  "vocab": {
+    "forward_count": 29,
+    "backward_count": 3,
+    "total_signal": 32,
+    "forward_ratio": 0.9062,
+    "backward_ratio": 0.0938,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "investment",
+        7
+      ],
+      [
+        "will",
+        6
+      ],
+      [
+        "expansion",
+        3
+      ],
+      [
+        "confidence",
+        2
+      ],
+      [
+        "expanding",
+        2
+      ],
+      [
+        "committed",
+        2
+      ],
+      [
+        "invest",
+        2
+      ],
+      [
+        "investing",
+        2
+      ],
+      [
+        "accelerate",
+        1
+      ],
+      [
+        "plans",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ],
+      [
+        "paid",
+        1
+      ],
+      [
+        "were",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0435,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 0.0938,
+  "EW_Risk_Score": 4.08,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 1.74,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 2.34
+  }
+}

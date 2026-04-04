@@ -1,0 +1,176 @@
+{
+  "ticker": "NKE",
+  "date": "2024-10-01",
+  "source": "motleyfool",
+  "source_file": "NKE_2024-10-01_parsed.json",
+  "word_count": 7458,
+  "sections_found": true,
+  "hedging": {
+    "hedge_count": 35,
+    "word_count": 3298,
+    "hedging_density": 1.0612,
+    "epistemic_count": 13,
+    "approximator_count": 16,
+    "shield_count": 6,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "we expect",
+        12
+      ],
+      [
+        "around",
+        6
+      ],
+      [
+        "largely",
+        3
+      ],
+      [
+        "roughly",
+        3
+      ],
+      [
+        "would",
+        2
+      ],
+      [
+        "could",
+        2
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "may",
+        1
+      ],
+      [
+        "broadly",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3977,
+    "opening_negative_ratio": 0.2281,
+    "opening_neutral_ratio": 0.3743,
+    "opening_sentence_count": 171,
+    "qa_positive_ratio": 0.2827,
+    "qa_negative_ratio": 0.1099,
+    "qa_neutral_ratio": 0.6073,
+    "qa_sentence_count": 191,
+    "overall_positive_ratio": 0.337,
+    "overall_negative_ratio": 0.1657,
+    "overall_neutral_ratio": 0.4972,
+    "sentiment_trajectory": 0.0652
+  },
+  "vocab": {
+    "forward_count": 92,
+    "backward_count": 59,
+    "total_signal": 151,
+    "forward_ratio": 0.6093,
+    "backward_ratio": 0.3907,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        18
+      ],
+      [
+        "growth",
+        15
+      ],
+      [
+        "expect",
+        13
+      ],
+      [
+        "scale",
+        7
+      ],
+      [
+        "guidance",
+        4
+      ],
+      [
+        "momentum",
+        4
+      ],
+      [
+        "plan",
+        4
+      ],
+      [
+        "investment",
+        4
+      ],
+      [
+        "pipeline",
+        3
+      ],
+      [
+        "opportunity",
+        2
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        19
+      ],
+      [
+        "declined",
+        13
+      ],
+      [
+        "reported",
+        8
+      ],
+      [
+        "had",
+        4
+      ],
+      [
+        "were",
+        4
+      ],
+      [
+        "delivered",
+        3
+      ],
+      [
+        "fell",
+        1
+      ],
+      [
+        "reflected",
+        1
+      ],
+      [
+        "came in",
+        1
+      ],
+      [
+        "launched",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.3537,
+  "negative_sentiment_norm": 0.8285,
+  "backward_ratio_norm": 0.3907,
+  "EW_Risk_Score": 52.91,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 14.15,
+    "sentiment_contribution": 29.0,
+    "vocab_contribution": 9.77
+  }
+}

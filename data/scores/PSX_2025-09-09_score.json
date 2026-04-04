@@ -1,0 +1,99 @@
+{
+  "ticker": "PSX",
+  "date": "2025-09-09",
+  "source_file": "PSX_2025-09-09_parsed.json",
+  "word_count": 1158,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 5,
+    "word_count": 398,
+    "hedging_density": 1.2563,
+    "epistemic_count": 0,
+    "approximator_count": 4,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        2
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "around",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3571,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.6429,
+    "opening_sentence_count": 14,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.125,
+    "qa_neutral_ratio": 0.875,
+    "qa_sentence_count": 8,
+    "overall_positive_ratio": 0.2273,
+    "overall_negative_ratio": 0.0455,
+    "overall_neutral_ratio": 0.7273,
+    "sentiment_trajectory": 0.3111
+  },
+  "vocab": {
+    "forward_count": 5,
+    "backward_count": 2,
+    "total_signal": 7,
+    "forward_ratio": 0.7143,
+    "backward_ratio": 0.2857,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "expanding",
+        1
+      ],
+      [
+        "expect",
+        1
+      ],
+      [
+        "opportunities",
+        1
+      ],
+      [
+        "projects",
+        1
+      ],
+      [
+        "committed",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ],
+      [
+        "entered",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.4188,
+  "negative_sentiment_norm": 0.2275,
+  "backward_ratio_norm": 0.2857,
+  "EW_Risk_Score": 31.86,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 16.75,
+    "sentiment_contribution": 7.96,
+    "vocab_contribution": 7.14
+  }
+}

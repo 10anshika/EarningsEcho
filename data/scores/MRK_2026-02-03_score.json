@@ -1,0 +1,163 @@
+{
+  "ticker": "MRK",
+  "date": "2026-02-03",
+  "source_file": "MRK_2026-02-03_parsed.json",
+  "word_count": 7510,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 13,
+    "word_count": 3452,
+    "hedging_density": 0.3766,
+    "epistemic_count": 1,
+    "approximator_count": 11,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "largely",
+        7
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "around",
+        1
+      ],
+      [
+        "generally",
+        1
+      ],
+      [
+        "management believes",
+        1
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "up to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3918,
+    "opening_negative_ratio": 0.299,
+    "opening_neutral_ratio": 0.3093,
+    "opening_sentence_count": 97,
+    "qa_positive_ratio": 0.3297,
+    "qa_negative_ratio": 0.0549,
+    "qa_neutral_ratio": 0.6154,
+    "qa_sentence_count": 91,
+    "overall_positive_ratio": 0.3617,
+    "overall_negative_ratio": 0.1809,
+    "overall_neutral_ratio": 0.4574,
+    "sentiment_trajectory": 0.0777
+  },
+  "vocab": {
+    "forward_count": 42,
+    "backward_count": 80,
+    "total_signal": 122,
+    "forward_ratio": 0.3443,
+    "backward_ratio": 0.6557,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "growth",
+        29
+      ],
+      [
+        "pipeline",
+        2
+      ],
+      [
+        "outlook",
+        2
+      ],
+      [
+        "expansion",
+        2
+      ],
+      [
+        "opportunity",
+        1
+      ],
+      [
+        "expand",
+        1
+      ],
+      [
+        "anticipates",
+        1
+      ],
+      [
+        "expects",
+        1
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "planning",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        39
+      ],
+      [
+        "were",
+        23
+      ],
+      [
+        "announced",
+        4
+      ],
+      [
+        "ended",
+        4
+      ],
+      [
+        "increased",
+        3
+      ],
+      [
+        "reduced",
+        1
+      ],
+      [
+        "benefited",
+        1
+      ],
+      [
+        "acquired",
+        1
+      ],
+      [
+        "resulted",
+        1
+      ],
+      [
+        "improved",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1255,
+  "negative_sentiment_norm": 0.9045,
+  "backward_ratio_norm": 0.6557,
+  "EW_Risk_Score": 53.07,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 5.02,
+    "sentiment_contribution": 31.66,
+    "vocab_contribution": 16.39
+  }
+}

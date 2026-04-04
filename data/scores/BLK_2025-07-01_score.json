@@ -1,0 +1,82 @@
+{
+  "ticker": "BLK",
+  "date": "2025-07-01",
+  "source_file": "BLK_2025-07-01_parsed.json",
+  "word_count": 1680,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 0,
+    "word_count": 629,
+    "hedging_density": 0.0,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": []
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.65,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.35,
+    "opening_sentence_count": 20,
+    "qa_positive_ratio": 0.1429,
+    "qa_negative_ratio": 0.0476,
+    "qa_neutral_ratio": 0.8095,
+    "qa_sentence_count": 21,
+    "overall_positive_ratio": 0.3902,
+    "overall_negative_ratio": 0.0244,
+    "overall_neutral_ratio": 0.5854,
+    "sentiment_trajectory": 0.426
+  },
+  "vocab": {
+    "forward_count": 20,
+    "backward_count": 1,
+    "total_signal": 21,
+    "forward_ratio": 0.9524,
+    "backward_ratio": 0.0476,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        10
+      ],
+      [
+        "investment",
+        4
+      ],
+      [
+        "opportunities",
+        3
+      ],
+      [
+        "growth",
+        1
+      ],
+      [
+        "accelerating",
+        1
+      ],
+      [
+        "scale",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0,
+  "negative_sentiment_norm": 0.122,
+  "backward_ratio_norm": 0.0476,
+  "EW_Risk_Score": 5.46,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 0.0,
+    "sentiment_contribution": 4.27,
+    "vocab_contribution": 1.19
+  }
+}

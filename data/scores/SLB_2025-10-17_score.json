@@ -1,0 +1,147 @@
+{
+  "ticker": "SLB",
+  "date": "2025-10-17",
+  "source_file": "SLB_2025-10-17_parsed.json",
+  "word_count": 12978,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 3,
+    "word_count": 5247,
+    "hedging_density": 0.0572,
+    "epistemic_count": 1,
+    "approximator_count": 1,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "uncertain",
+        1
+      ],
+      [
+        "we expect",
+        1
+      ],
+      [
+        "up to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4804,
+    "opening_negative_ratio": 0.1899,
+    "opening_neutral_ratio": 0.3296,
+    "opening_sentence_count": 179,
+    "qa_positive_ratio": 0.0783,
+    "qa_negative_ratio": 0.0422,
+    "qa_neutral_ratio": 0.8795,
+    "qa_sentence_count": 166,
+    "overall_positive_ratio": 0.287,
+    "overall_negative_ratio": 0.1188,
+    "overall_neutral_ratio": 0.5942,
+    "sentiment_trajectory": 0.3319
+  },
+  "vocab": {
+    "forward_count": 70,
+    "backward_count": 134,
+    "total_signal": 204,
+    "forward_ratio": 0.3431,
+    "backward_ratio": 0.6569,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "will",
+        16
+      ],
+      [
+        "project",
+        11
+      ],
+      [
+        "growth",
+        10
+      ],
+      [
+        "planning",
+        4
+      ],
+      [
+        "pipeline",
+        4
+      ],
+      [
+        "growing",
+        3
+      ],
+      [
+        "investment",
+        2
+      ],
+      [
+        "accelerate",
+        2
+      ],
+      [
+        "projects",
+        2
+      ],
+      [
+        "plan",
+        2
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        28
+      ],
+      [
+        "decreased",
+        15
+      ],
+      [
+        "increased",
+        12
+      ],
+      [
+        "declined",
+        12
+      ],
+      [
+        "ended",
+        10
+      ],
+      [
+        "acquired",
+        10
+      ],
+      [
+        "were",
+        8
+      ],
+      [
+        "improved",
+        7
+      ],
+      [
+        "reduced",
+        6
+      ],
+      [
+        "contributed",
+        5
+      ]
+    ]
+  },
+  "hedging_norm": 0.0191,
+  "negative_sentiment_norm": 0.594,
+  "backward_ratio_norm": 0.6569,
+  "EW_Risk_Score": 37.98,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 0.76,
+    "sentiment_contribution": 20.79,
+    "vocab_contribution": 16.42
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "ticker": "C",
+  "date": "2026-01-14",
+  "source_file": "C_2026-01-14_parsed.json",
+  "word_count": 7137,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 9,
+    "word_count": 2969,
+    "hedging_density": 0.3031,
+    "epistemic_count": 0,
+    "approximator_count": 9,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        6
+      ],
+      [
+        "largely",
+        2
+      ],
+      [
+        "generally",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4878,
+    "opening_negative_ratio": 0.1585,
+    "opening_neutral_ratio": 0.3537,
+    "opening_sentence_count": 82,
+    "qa_positive_ratio": 0.218,
+    "qa_negative_ratio": 0.2105,
+    "qa_neutral_ratio": 0.5714,
+    "qa_sentence_count": 133,
+    "overall_positive_ratio": 0.3209,
+    "overall_negative_ratio": 0.1907,
+    "overall_neutral_ratio": 0.4884,
+    "sentiment_trajectory": 0.2211
+  },
+  "vocab": {
+    "forward_count": 14,
+    "backward_count": 71,
+    "total_signal": 85,
+    "forward_ratio": 0.1647,
+    "backward_ratio": 0.8353,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "growth",
+        8
+      ],
+      [
+        "plan",
+        2
+      ],
+      [
+        "momentum",
+        1
+      ],
+      [
+        "committed",
+        1
+      ],
+      [
+        "target",
+        1
+      ],
+      [
+        "outlook",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        23
+      ],
+      [
+        "increased",
+        13
+      ],
+      [
+        "were",
+        13
+      ],
+      [
+        "reported",
+        7
+      ],
+      [
+        "returned",
+        3
+      ],
+      [
+        "decreased",
+        3
+      ],
+      [
+        "improved",
+        2
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "launched",
+        1
+      ],
+      [
+        "ended",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.101,
+  "negative_sentiment_norm": 0.9535,
+  "backward_ratio_norm": 0.8353,
+  "EW_Risk_Score": 58.3,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 4.04,
+    "sentiment_contribution": 33.37,
+    "vocab_contribution": 20.88
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "ticker": "JPM",
+  "date": "2025-10-14",
+  "source_file": "JPM_2025-10-14_parsed.json",
+  "word_count": 3958,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 3,
+    "word_count": 1503,
+    "hedging_density": 0.1996,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 2,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        2
+      ],
+      [
+        "largely",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3125,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.6875,
+    "opening_sentence_count": 16,
+    "qa_positive_ratio": 0.0667,
+    "qa_negative_ratio": 0.0167,
+    "qa_neutral_ratio": 0.9167,
+    "qa_sentence_count": 60,
+    "overall_positive_ratio": 0.1184,
+    "overall_negative_ratio": 0.0132,
+    "overall_neutral_ratio": 0.8684,
+    "sentiment_trajectory": 0.1746
+  },
+  "vocab": {
+    "forward_count": 5,
+    "backward_count": 1,
+    "total_signal": 6,
+    "forward_ratio": 0.8333,
+    "backward_ratio": 0.1667,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "investment",
+        3
+      ],
+      [
+        "growth",
+        2
+      ]
+    ],
+    "top_backward": [
+      [
+        "reduced",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.0665,
+  "negative_sentiment_norm": 0.066,
+  "backward_ratio_norm": 0.1667,
+  "EW_Risk_Score": 9.14,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 2.66,
+    "sentiment_contribution": 2.31,
+    "vocab_contribution": 4.17
+  }
+}

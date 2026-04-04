@@ -1,0 +1,127 @@
+{
+  "ticker": "META",
+  "date": "2025-12-12",
+  "source_file": "META_2025-12-12_parsed.json",
+  "word_count": 15223,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 31,
+    "word_count": 5777,
+    "hedging_density": 0.5366,
+    "epistemic_count": 0,
+    "approximator_count": 1,
+    "shield_count": 30,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        11
+      ],
+      [
+        "could",
+        9
+      ],
+      [
+        "subject to",
+        5
+      ],
+      [
+        "might",
+        3
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "would",
+        1
+      ],
+      [
+        "up to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.0252,
+    "opening_negative_ratio": 0.0377,
+    "opening_neutral_ratio": 0.9371,
+    "opening_sentence_count": 159,
+    "qa_positive_ratio": 0.0109,
+    "qa_negative_ratio": 0.0054,
+    "qa_neutral_ratio": 0.9837,
+    "qa_sentence_count": 184,
+    "overall_positive_ratio": 0.0175,
+    "overall_negative_ratio": 0.0204,
+    "overall_neutral_ratio": 0.9621,
+    "sentiment_trajectory": 0.0194
+  },
+  "vocab": {
+    "forward_count": 3,
+    "backward_count": 25,
+    "total_signal": 28,
+    "forward_ratio": 0.1071,
+    "backward_ratio": 0.8929,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "committed",
+        1
+      ],
+      [
+        "intention",
+        1
+      ],
+      [
+        "invest",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "entered",
+        6
+      ],
+      [
+        "paid",
+        5
+      ],
+      [
+        "was",
+        4
+      ],
+      [
+        "were",
+        4
+      ],
+      [
+        "produced",
+        2
+      ],
+      [
+        "affected",
+        2
+      ],
+      [
+        "closed",
+        1
+      ],
+      [
+        "returned",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1789,
+  "negative_sentiment_norm": 0.102,
+  "backward_ratio_norm": 0.8929,
+  "EW_Risk_Score": 33.05,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 7.15,
+    "sentiment_contribution": 3.57,
+    "vocab_contribution": 22.32
+  }
+}

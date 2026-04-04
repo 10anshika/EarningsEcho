@@ -1,0 +1,176 @@
+{
+  "ticker": "CVS",
+  "date": "2024-08-07",
+  "source": "motleyfool",
+  "source_file": "CVS_2024-08-07_parsed.json",
+  "word_count": 10405,
+  "sections_found": true,
+  "hedging": {
+    "hedge_count": 52,
+    "word_count": 4427,
+    "hedging_density": 1.1746,
+    "epistemic_count": 10,
+    "approximator_count": 34,
+    "shield_count": 8,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        22
+      ],
+      [
+        "largely",
+        5
+      ],
+      [
+        "we expect",
+        5
+      ],
+      [
+        "we believe",
+        5
+      ],
+      [
+        "could",
+        3
+      ],
+      [
+        "about",
+        3
+      ],
+      [
+        "may",
+        3
+      ],
+      [
+        "in the range of",
+        2
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "broadly",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.5961,
+    "opening_negative_ratio": 0.1232,
+    "opening_neutral_ratio": 0.2808,
+    "opening_sentence_count": 203,
+    "qa_positive_ratio": 0.2379,
+    "qa_negative_ratio": 0.0579,
+    "qa_neutral_ratio": 0.7042,
+    "qa_sentence_count": 311,
+    "overall_positive_ratio": 0.3794,
+    "overall_negative_ratio": 0.0837,
+    "overall_neutral_ratio": 0.537,
+    "sentiment_trajectory": 0.2728
+  },
+  "vocab": {
+    "forward_count": 106,
+    "backward_count": 84,
+    "total_signal": 190,
+    "forward_ratio": 0.5579,
+    "backward_ratio": 0.4421,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        24
+      ],
+      [
+        "growth",
+        14
+      ],
+      [
+        "guidance",
+        10
+      ],
+      [
+        "expect",
+        8
+      ],
+      [
+        "outlook",
+        7
+      ],
+      [
+        "committed",
+        6
+      ],
+      [
+        "plan",
+        4
+      ],
+      [
+        "confident",
+        4
+      ],
+      [
+        "growing",
+        4
+      ],
+      [
+        "opportunity",
+        3
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        13
+      ],
+      [
+        "was",
+        13
+      ],
+      [
+        "increased",
+        10
+      ],
+      [
+        "generated",
+        8
+      ],
+      [
+        "delivered",
+        6
+      ],
+      [
+        "grew",
+        5
+      ],
+      [
+        "reflected",
+        5
+      ],
+      [
+        "improved",
+        4
+      ],
+      [
+        "posted",
+        2
+      ],
+      [
+        "exceeded",
+        2
+      ]
+    ]
+  },
+  "hedging_norm": 0.3915,
+  "negative_sentiment_norm": 0.4185,
+  "backward_ratio_norm": 0.4421,
+  "EW_Risk_Score": 41.36,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 15.66,
+    "sentiment_contribution": 14.65,
+    "vocab_contribution": 11.05
+  }
+}

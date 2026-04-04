@@ -1,0 +1,107 @@
+{
+  "ticker": "TSLA",
+  "date": "2025-11-07",
+  "source_file": "TSLA_2025-11-07_parsed.json",
+  "word_count": 3563,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 24,
+    "word_count": 1324,
+    "hedging_density": 1.8127,
+    "epistemic_count": 0,
+    "approximator_count": 3,
+    "shield_count": 20,
+    "plausibility_count": 1,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        10
+      ],
+      [
+        "subject to",
+        9
+      ],
+      [
+        "up to",
+        2
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "would",
+        1
+      ],
+      [
+        "under certain circumstances",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.0,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 1.0,
+    "opening_sentence_count": 31,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0161,
+    "qa_neutral_ratio": 0.9839,
+    "qa_sentence_count": 62,
+    "overall_positive_ratio": 0.0,
+    "overall_negative_ratio": 0.0108,
+    "overall_neutral_ratio": 0.9892,
+    "sentiment_trajectory": 0.0387
+  },
+  "vocab": {
+    "forward_count": 54,
+    "backward_count": 9,
+    "total_signal": 63,
+    "forward_ratio": 0.8571,
+    "backward_ratio": 0.1429,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "plan",
+        43
+      ],
+      [
+        "will",
+        11
+      ]
+    ],
+    "top_backward": [
+      [
+        "repurchased",
+        4
+      ],
+      [
+        "had",
+        2
+      ],
+      [
+        "were",
+        1
+      ],
+      [
+        "returned",
+        1
+      ],
+      [
+        "paid",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.6042,
+  "negative_sentiment_norm": 0.054,
+  "backward_ratio_norm": 0.1429,
+  "EW_Risk_Score": 29.63,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 24.17,
+    "sentiment_contribution": 1.89,
+    "vocab_contribution": 3.57
+  }
+}

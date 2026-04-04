@@ -1,0 +1,103 @@
+{
+  "ticker": "GOOGL",
+  "date": "2025-07-18",
+  "source_file": "GOOGL_2025-07-18_parsed.json",
+  "word_count": 6404,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 11,
+    "word_count": 2435,
+    "hedging_density": 0.4517,
+    "epistemic_count": 0,
+    "approximator_count": 2,
+    "shield_count": 9,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        7
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "should",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.0366,
+    "opening_negative_ratio": 0.1951,
+    "opening_neutral_ratio": 0.7683,
+    "opening_sentence_count": 82,
+    "qa_positive_ratio": 0.0722,
+    "qa_negative_ratio": 0.0206,
+    "qa_neutral_ratio": 0.9072,
+    "qa_sentence_count": 97,
+    "overall_positive_ratio": 0.0559,
+    "overall_negative_ratio": 0.1006,
+    "overall_neutral_ratio": 0.8436,
+    "sentiment_trajectory": -0.051
+  },
+  "vocab": {
+    "forward_count": 6,
+    "backward_count": 18,
+    "total_signal": 24,
+    "forward_ratio": 0.25,
+    "backward_ratio": 0.75,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "will",
+        5
+      ],
+      [
+        "guidance",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "produced",
+        7
+      ],
+      [
+        "were",
+        4
+      ],
+      [
+        "was",
+        3
+      ],
+      [
+        "entered",
+        2
+      ],
+      [
+        "affected",
+        1
+      ],
+      [
+        "had",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1506,
+  "negative_sentiment_norm": 0.503,
+  "backward_ratio_norm": 0.75,
+  "EW_Risk_Score": 42.38,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 6.02,
+    "sentiment_contribution": 17.6,
+    "vocab_contribution": 18.75
+  }
+}

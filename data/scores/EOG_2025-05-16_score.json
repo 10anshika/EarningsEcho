@@ -1,0 +1,66 @@
+{
+  "ticker": "EOG",
+  "date": "2025-05-16",
+  "source_file": "EOG_2025-05-16_parsed.json",
+  "word_count": 259,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 1,
+    "word_count": 53,
+    "hedging_density": 1.8868,
+    "epistemic_count": 0,
+    "approximator_count": 0,
+    "shield_count": 1,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 1.0,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.0,
+    "opening_sentence_count": 1,
+    "qa_positive_ratio": 0.25,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 0.75,
+    "qa_sentence_count": 8,
+    "overall_positive_ratio": 0.3333,
+    "overall_negative_ratio": 0.0,
+    "overall_neutral_ratio": 0.6667,
+    "sentiment_trajectory": 0.6757
+  },
+  "vocab": {
+    "forward_count": 0,
+    "backward_count": 2,
+    "total_signal": 2,
+    "forward_ratio": 0.0,
+    "backward_ratio": 1.0,
+    "deflection_flag": true,
+    "top_forward": [],
+    "top_backward": [
+      [
+        "announced",
+        1
+      ],
+      [
+        "was",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.6289,
+  "negative_sentiment_norm": 0.0,
+  "backward_ratio_norm": 1.0,
+  "EW_Risk_Score": 50.16,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 25.16,
+    "sentiment_contribution": 0.0,
+    "vocab_contribution": 25.0
+  }
+}

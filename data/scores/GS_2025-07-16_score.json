@@ -1,0 +1,147 @@
+{
+  "ticker": "GS",
+  "date": "2025-07-16",
+  "source_file": "GS_2025-07-16_parsed.json",
+  "word_count": 3703,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 10,
+    "word_count": 1645,
+    "hedging_density": 0.6079,
+    "epistemic_count": 0,
+    "approximator_count": 3,
+    "shield_count": 4,
+    "plausibility_count": 3,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "possibly",
+        2
+      ],
+      [
+        "largely",
+        1
+      ],
+      [
+        "around",
+        1
+      ],
+      [
+        "uncertain",
+        1
+      ],
+      [
+        "it is possible",
+        1
+      ],
+      [
+        "may",
+        1
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "could",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.3191,
+    "opening_negative_ratio": 0.3404,
+    "opening_neutral_ratio": 0.3404,
+    "opening_sentence_count": 47,
+    "qa_positive_ratio": 0.05,
+    "qa_negative_ratio": 0.1,
+    "qa_neutral_ratio": 0.85,
+    "qa_sentence_count": 20,
+    "overall_positive_ratio": 0.2388,
+    "overall_negative_ratio": 0.2687,
+    "overall_neutral_ratio": 0.4925,
+    "sentiment_trajectory": 0.2853
+  },
+  "vocab": {
+    "forward_count": 7,
+    "backward_count": 44,
+    "total_signal": 51,
+    "forward_ratio": 0.1373,
+    "backward_ratio": 0.8627,
+    "deflection_flag": true,
+    "top_forward": [
+      [
+        "investment",
+        3
+      ],
+      [
+        "growth",
+        2
+      ],
+      [
+        "backlog",
+        1
+      ],
+      [
+        "will",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "were",
+        18
+      ],
+      [
+        "reflected",
+        9
+      ],
+      [
+        "was",
+        8
+      ],
+      [
+        "ended",
+        2
+      ],
+      [
+        "increased",
+        2
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "improved",
+        1
+      ],
+      [
+        "decreased",
+        1
+      ],
+      [
+        "paid",
+        1
+      ],
+      [
+        "returned",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2026,
+  "negative_sentiment_norm": 1.0,
+  "backward_ratio_norm": 0.8627,
+  "EW_Risk_Score": 64.67,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 8.11,
+    "sentiment_contribution": 35.0,
+    "vocab_contribution": 21.57
+  }
+}

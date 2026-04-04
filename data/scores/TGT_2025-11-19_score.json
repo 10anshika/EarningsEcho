@@ -1,0 +1,139 @@
+{
+  "ticker": "TGT",
+  "date": "2025-11-19",
+  "source_file": "TGT_2025-11-19_parsed.json",
+  "word_count": 4019,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 8,
+    "word_count": 1302,
+    "hedging_density": 0.6144,
+    "epistemic_count": 0,
+    "approximator_count": 5,
+    "shield_count": 3,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        3
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "may",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "could",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2308,
+    "opening_negative_ratio": 0.2115,
+    "opening_neutral_ratio": 0.5577,
+    "opening_sentence_count": 52,
+    "qa_positive_ratio": 0.0784,
+    "qa_negative_ratio": 0.098,
+    "qa_neutral_ratio": 0.8235,
+    "qa_sentence_count": 51,
+    "overall_positive_ratio": 0.1553,
+    "overall_negative_ratio": 0.1553,
+    "overall_neutral_ratio": 0.6893,
+    "sentiment_trajectory": 0.1316
+  },
+  "vocab": {
+    "forward_count": 36,
+    "backward_count": 26,
+    "total_signal": 62,
+    "forward_ratio": 0.5806,
+    "backward_ratio": 0.4194,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "target",
+        24
+      ],
+      [
+        "growth",
+        5
+      ],
+      [
+        "will",
+        3
+      ],
+      [
+        "guidance",
+        2
+      ],
+      [
+        "growing",
+        1
+      ],
+      [
+        "expect",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        13
+      ],
+      [
+        "were",
+        2
+      ],
+      [
+        "grew",
+        2
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "announced",
+        1
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "decreased",
+        1
+      ],
+      [
+        "increased",
+        1
+      ],
+      [
+        "paid",
+        1
+      ],
+      [
+        "repurchased",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2048,
+  "negative_sentiment_norm": 0.7765,
+  "backward_ratio_norm": 0.4194,
+  "EW_Risk_Score": 45.85,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 8.19,
+    "sentiment_contribution": 27.18,
+    "vocab_contribution": 10.48
+  }
+}

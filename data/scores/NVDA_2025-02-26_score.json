@@ -1,0 +1,147 @@
+{
+  "ticker": "NVDA",
+  "date": "2025-02-26",
+  "source_file": "NVDA_2025-02-26_parsed.json",
+  "word_count": 3771,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 12,
+    "word_count": 2300,
+    "hedging_density": 0.5217,
+    "epistemic_count": 0,
+    "approximator_count": 7,
+    "shield_count": 5,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "up to",
+        3
+      ],
+      [
+        "approximately",
+        2
+      ],
+      [
+        "may",
+        2
+      ],
+      [
+        "could",
+        2
+      ],
+      [
+        "around",
+        1
+      ],
+      [
+        "about",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.4925,
+    "opening_negative_ratio": 0.0149,
+    "opening_neutral_ratio": 0.4925,
+    "opening_sentence_count": 67,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 1,
+    "overall_positive_ratio": 0.4853,
+    "overall_negative_ratio": 0.0147,
+    "overall_neutral_ratio": 0.5,
+    "sentiment_trajectory": 0.4419
+  },
+  "vocab": {
+    "forward_count": 18,
+    "backward_count": 26,
+    "total_signal": 44,
+    "forward_ratio": 0.4091,
+    "backward_ratio": 0.5909,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        7
+      ],
+      [
+        "outlook",
+        3
+      ],
+      [
+        "project",
+        2
+      ],
+      [
+        "growth",
+        2
+      ],
+      [
+        "scaling",
+        1
+      ],
+      [
+        "scale",
+        1
+      ],
+      [
+        "expand",
+        1
+      ],
+      [
+        "accelerate",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        10
+      ],
+      [
+        "announced",
+        7
+      ],
+      [
+        "launched",
+        4
+      ],
+      [
+        "reported",
+        1
+      ],
+      [
+        "ended",
+        1
+      ],
+      [
+        "achieved",
+        1
+      ],
+      [
+        "recorded",
+        1
+      ],
+      [
+        "posted",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.1739,
+  "negative_sentiment_norm": 0.0735,
+  "backward_ratio_norm": 0.5909,
+  "EW_Risk_Score": 24.3,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 6.96,
+    "sentiment_contribution": 2.57,
+    "vocab_contribution": 14.77
+  }
+}

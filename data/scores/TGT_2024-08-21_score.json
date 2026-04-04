@@ -1,0 +1,176 @@
+{
+  "ticker": "TGT",
+  "date": "2024-08-21",
+  "source": "motleyfool",
+  "source_file": "TGT_2024-08-21_parsed.json",
+  "word_count": 11210,
+  "sections_found": true,
+  "hedging": {
+    "hedge_count": 41,
+    "word_count": 7576,
+    "hedging_density": 0.5412,
+    "epistemic_count": 3,
+    "approximator_count": 25,
+    "shield_count": 12,
+    "plausibility_count": 1,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "about",
+        13
+      ],
+      [
+        "would",
+        5
+      ],
+      [
+        "largely",
+        5
+      ],
+      [
+        "around",
+        5
+      ],
+      [
+        "we expect",
+        3
+      ],
+      [
+        "should",
+        3
+      ],
+      [
+        "may",
+        3
+      ],
+      [
+        "subject to",
+        1
+      ],
+      [
+        "potentially",
+        1
+      ],
+      [
+        "up to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.5507,
+    "opening_negative_ratio": 0.0405,
+    "opening_neutral_ratio": 0.4088,
+    "opening_sentence_count": 296,
+    "qa_positive_ratio": 0.2663,
+    "qa_negative_ratio": 0.0251,
+    "qa_neutral_ratio": 0.7085,
+    "qa_sentence_count": 199,
+    "overall_positive_ratio": 0.4364,
+    "overall_negative_ratio": 0.0343,
+    "overall_neutral_ratio": 0.5293,
+    "sentiment_trajectory": 0.2287
+  },
+  "vocab": {
+    "forward_count": 168,
+    "backward_count": 90,
+    "total_signal": 258,
+    "forward_ratio": 0.6512,
+    "backward_ratio": 0.3488,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "target",
+        47
+      ],
+      [
+        "growth",
+        45
+      ],
+      [
+        "will",
+        15
+      ],
+      [
+        "expect",
+        7
+      ],
+      [
+        "guidance",
+        6
+      ],
+      [
+        "goal",
+        5
+      ],
+      [
+        "momentum",
+        5
+      ],
+      [
+        "growing",
+        5
+      ],
+      [
+        "outlook",
+        3
+      ],
+      [
+        "committed",
+        3
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        30
+      ],
+      [
+        "were",
+        15
+      ],
+      [
+        "grew",
+        9
+      ],
+      [
+        "delivered",
+        7
+      ],
+      [
+        "had",
+        5
+      ],
+      [
+        "affected",
+        3
+      ],
+      [
+        "reflected",
+        3
+      ],
+      [
+        "generated",
+        2
+      ],
+      [
+        "improved",
+        2
+      ],
+      [
+        "launched",
+        2
+      ]
+    ]
+  },
+  "hedging_norm": 0.1804,
+  "negative_sentiment_norm": 0.1715,
+  "backward_ratio_norm": 0.3488,
+  "EW_Risk_Score": 21.94,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 7.22,
+    "sentiment_contribution": 6.0,
+    "vocab_contribution": 8.72
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "ticker": "XOM",
+  "date": "2026-01-07",
+  "source_file": "XOM_2026-01-07_parsed.json",
+  "word_count": 1253,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 5,
+    "word_count": 505,
+    "hedging_density": 0.9901,
+    "epistemic_count": 1,
+    "approximator_count": 1,
+    "shield_count": 3,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "may",
+        2
+      ],
+      [
+        "management believes",
+        1
+      ],
+      [
+        "generally",
+        1
+      ],
+      [
+        "subject to",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.0,
+    "opening_negative_ratio": 0.3636,
+    "opening_neutral_ratio": 0.6364,
+    "opening_sentence_count": 11,
+    "qa_positive_ratio": 0.1333,
+    "qa_negative_ratio": 0.0667,
+    "qa_neutral_ratio": 0.8,
+    "qa_sentence_count": 15,
+    "overall_positive_ratio": 0.0769,
+    "overall_negative_ratio": 0.1923,
+    "overall_neutral_ratio": 0.7308,
+    "sentiment_trajectory": -0.0776
+  },
+  "vocab": {
+    "forward_count": 1,
+    "backward_count": 0,
+    "total_signal": 1,
+    "forward_ratio": 1.0,
+    "backward_ratio": 0.0,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        1
+      ]
+    ],
+    "top_backward": []
+  },
+  "hedging_norm": 0.33,
+  "negative_sentiment_norm": 0.9615,
+  "backward_ratio_norm": 0.0,
+  "EW_Risk_Score": 46.85,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 13.2,
+    "sentiment_contribution": 33.65,
+    "vocab_contribution": 0.0
+  }
+}

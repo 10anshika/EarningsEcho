@@ -1,0 +1,171 @@
+{
+  "ticker": "META",
+  "date": "2026-01-28",
+  "source_file": "META_2026-01-28_parsed.json",
+  "word_count": 3174,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 29,
+    "word_count": 1926,
+    "hedging_density": 1.5057,
+    "epistemic_count": 11,
+    "approximator_count": 9,
+    "shield_count": 9,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "we expect",
+        5
+      ],
+      [
+        "we believe",
+        5
+      ],
+      [
+        "may",
+        4
+      ],
+      [
+        "in the range of",
+        3
+      ],
+      [
+        "could",
+        3
+      ],
+      [
+        "around",
+        2
+      ],
+      [
+        "would",
+        2
+      ],
+      [
+        "about",
+        2
+      ],
+      [
+        "approximately",
+        1
+      ],
+      [
+        "we anticipate",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.2623,
+    "opening_negative_ratio": 0.082,
+    "opening_neutral_ratio": 0.6557,
+    "opening_sentence_count": 61,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.0,
+    "qa_neutral_ratio": 1.0,
+    "qa_sentence_count": 4,
+    "overall_positive_ratio": 0.2462,
+    "overall_negative_ratio": 0.0769,
+    "overall_neutral_ratio": 0.6769,
+    "sentiment_trajectory": 0.251
+  },
+  "vocab": {
+    "forward_count": 24,
+    "backward_count": 26,
+    "total_signal": 50,
+    "forward_ratio": 0.48,
+    "backward_ratio": 0.52,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        6
+      ],
+      [
+        "will",
+        6
+      ],
+      [
+        "expect",
+        5
+      ],
+      [
+        "investment",
+        2
+      ],
+      [
+        "outlook",
+        1
+      ],
+      [
+        "guidance",
+        1
+      ],
+      [
+        "anticipate",
+        1
+      ],
+      [
+        "plans",
+        1
+      ],
+      [
+        "scale",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        6
+      ],
+      [
+        "were",
+        5
+      ],
+      [
+        "ended",
+        4
+      ],
+      [
+        "increased",
+        4
+      ],
+      [
+        "reported",
+        2
+      ],
+      [
+        "had",
+        1
+      ],
+      [
+        "decreased",
+        1
+      ],
+      [
+        "delivered",
+        1
+      ],
+      [
+        "posted",
+        1
+      ],
+      [
+        "launched",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.5019,
+  "negative_sentiment_norm": 0.3845,
+  "backward_ratio_norm": 0.52,
+  "EW_Risk_Score": 46.53,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 20.08,
+    "sentiment_contribution": 13.46,
+    "vocab_contribution": 13.0
+  }
+}

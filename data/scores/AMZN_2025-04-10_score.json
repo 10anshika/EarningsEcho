@@ -1,0 +1,147 @@
+{
+  "ticker": "AMZN",
+  "date": "2025-04-10",
+  "source_file": "AMZN_2025-04-10_parsed.json",
+  "word_count": 6935,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 29,
+    "word_count": 2763,
+    "hedging_density": 1.0496,
+    "epistemic_count": 3,
+    "approximator_count": 13,
+    "shield_count": 12,
+    "plausibility_count": 1,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "about",
+        10
+      ],
+      [
+        "should",
+        5
+      ],
+      [
+        "would",
+        4
+      ],
+      [
+        "might",
+        3
+      ],
+      [
+        "we think",
+        3
+      ],
+      [
+        "around",
+        2
+      ],
+      [
+        "in general",
+        1
+      ],
+      [
+        "perhaps",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.1103,
+    "opening_negative_ratio": 0.0515,
+    "opening_neutral_ratio": 0.8382,
+    "opening_sentence_count": 136,
+    "qa_positive_ratio": 0.2871,
+    "qa_negative_ratio": 0.0526,
+    "qa_neutral_ratio": 0.6603,
+    "qa_sentence_count": 209,
+    "overall_positive_ratio": 0.2174,
+    "overall_negative_ratio": 0.0522,
+    "overall_neutral_ratio": 0.7304,
+    "sentiment_trajectory": -0.1543
+  },
+  "vocab": {
+    "forward_count": 17,
+    "backward_count": 25,
+    "total_signal": 42,
+    "forward_ratio": 0.4048,
+    "backward_ratio": 0.5952,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "will",
+        5
+      ],
+      [
+        "commit",
+        4
+      ],
+      [
+        "guide",
+        3
+      ],
+      [
+        "project",
+        2
+      ],
+      [
+        "expansion",
+        1
+      ],
+      [
+        "growth",
+        1
+      ],
+      [
+        "confidence",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "was",
+        8
+      ],
+      [
+        "were",
+        6
+      ],
+      [
+        "launched",
+        3
+      ],
+      [
+        "grew",
+        2
+      ],
+      [
+        "increased",
+        2
+      ],
+      [
+        "improved",
+        2
+      ],
+      [
+        "had",
+        1
+      ],
+      [
+        "did",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.3499,
+  "negative_sentiment_norm": 0.261,
+  "backward_ratio_norm": 0.5952,
+  "EW_Risk_Score": 38.01,
+  "risk_class": "Medium Risk",
+  "component_scores": {
+    "hedging_contribution": 13.99,
+    "sentiment_contribution": 9.13,
+    "vocab_contribution": 14.88
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "ticker": "SLB",
+  "date": "2025-07-16",
+  "source_file": "SLB_2025-07-16_parsed.json",
+  "word_count": 1122,
+  "sections_found": false,
+  "hedging": {
+    "hedge_count": 3,
+    "word_count": 450,
+    "hedging_density": 0.6667,
+    "epistemic_count": 0,
+    "approximator_count": 3,
+    "shield_count": 0,
+    "plausibility_count": 0,
+    "uncertainty_flag": false,
+    "top_phrases": [
+      [
+        "approximately",
+        2
+      ],
+      [
+        "about",
+        1
+      ]
+    ]
+  },
+  "sentiment": {
+    "opening_positive_ratio": 0.5,
+    "opening_negative_ratio": 0.0,
+    "opening_neutral_ratio": 0.5,
+    "opening_sentence_count": 14,
+    "qa_positive_ratio": 0.0,
+    "qa_negative_ratio": 0.25,
+    "qa_neutral_ratio": 0.75,
+    "qa_sentence_count": 8,
+    "overall_positive_ratio": 0.3182,
+    "overall_negative_ratio": 0.0909,
+    "overall_neutral_ratio": 0.5909,
+    "sentiment_trajectory": 0.4507
+  },
+  "vocab": {
+    "forward_count": 10,
+    "backward_count": 3,
+    "total_signal": 13,
+    "forward_ratio": 0.7692,
+    "backward_ratio": 0.2308,
+    "deflection_flag": false,
+    "top_forward": [
+      [
+        "growth",
+        3
+      ],
+      [
+        "will",
+        1
+      ],
+      [
+        "growing",
+        1
+      ],
+      [
+        "accelerating",
+        1
+      ],
+      [
+        "expects",
+        1
+      ],
+      [
+        "scale",
+        1
+      ],
+      [
+        "scaling",
+        1
+      ],
+      [
+        "accelerate",
+        1
+      ]
+    ],
+    "top_backward": [
+      [
+        "announced",
+        2
+      ],
+      [
+        "closed",
+        1
+      ]
+    ]
+  },
+  "hedging_norm": 0.2222,
+  "negative_sentiment_norm": 0.4545,
+  "backward_ratio_norm": 0.2308,
+  "EW_Risk_Score": 30.57,
+  "risk_class": "Low Risk",
+  "component_scores": {
+    "hedging_contribution": 8.89,
+    "sentiment_contribution": 15.91,
+    "vocab_contribution": 5.77
+  }
+}
