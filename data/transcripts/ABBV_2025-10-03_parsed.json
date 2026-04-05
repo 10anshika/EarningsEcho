@@ -1,0 +1,9 @@
+{
+  "ticker": "ABBV",
+  "date": "2025-10-03",
+  "source_file": "ABBV_2025-10-03_000155115225000043.json",
+  "word_count": 156,
+  "opening_remarks": "AbbVie Inc.\nGuidance Including the Impact of Acquired IPR&D and Milestones Expense\n(Unaudited) \n(in millions, except per share data)\nQuarter Ended September 30, 2025\nFull-Year Ended December 31, 2025\nAcquired IPR&D and Milestones Expense\nAdjusted Diluted EPS Range\nAcquired IPR&D and Milestones Expense\nAdjusted Diluted EPS Range\nLow\nHigh\nLow\nHigh\nP",
+  "qa_section": "reviously announced guidance excluding Q3 2025 acquired IPR&D and milestones expense\n3.24 \n3.28 \n1,071 \n11.88 \n12.08 \nQ3 2025 acquired IPR&D and milestones expense\n2,680 \n(1.50)\n(1.50)\n2,680 \n(1.50)\n(1.50)\nGuidance including Q3 2025 acquired IPR&D and milestones expense\na\n2,680 \n1.74 \n1.78 \n3,751 \n10.38 \n10.58 \na    \nThe Company's 2025 adjusted diluted EPS guidance excludes any impact from acquired IPR&D and milestones expense that may be incurred beyond the third quarter of 2025, as both cannot be reliably forecasted.",
+  "sections_found": false
+}

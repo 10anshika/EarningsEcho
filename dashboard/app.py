@@ -537,10 +537,24 @@ def render_scatter_panel(current_ticker: str, current_date: str) -> None:
 # Sidebar — MLflow panel
 # ---------------------------------------------------------------------------
 
+def _check_mlflow_available() -> bool:
+    """Return True if the local MLflow tracking server is reachable."""
+    import urllib.request
+    try:
+        urllib.request.urlopen("http://localhost:5000", timeout=1)
+        return True
+    except Exception:
+        return False
+
+
 def render_mlflow_sidebar() -> None:
     """Render the MLflow recent-runs table and link button in the sidebar."""
     st.markdown("---")
     st.markdown("**Recent analysis runs**")
+
+    if not _check_mlflow_available():
+        st.caption("MLflow tracking available in local mode only.")
+        return
 
     runs = get_recent_runs(n=10)
     if runs:

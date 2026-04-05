@@ -21,7 +21,9 @@ ENV/
 .env.*
 
 # Data (keep directory structure, not contents)
+# Ignore raw EDGAR filings but keep parsed transcripts and scores
 data/transcripts/*.json
+!data/transcripts/*_parsed.json
 data/transcripts/*.htm
 data/transcripts/*.txt
 data/scores/*.csv
