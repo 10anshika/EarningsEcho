@@ -5,10 +5,12 @@
 ### *Decoding what executives say — and what they're carefully avoiding.*
 
 [![Python](https://img.shields.io/badge/Python-3.11-3572A5?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Live%20App-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live%20App-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://earningsecho.streamlit.app)
 [![MLflow](https://img.shields.io/badge/MLflow-Tracked-0194E2?style=flat-square&logo=mlflow&logoColor=white)](https://mlflow.org)
 [![FinBERT](https://img.shields.io/badge/NLP-FinBERT-F7931E?style=flat-square)](https://huggingface.co/ProsusAI/finbert)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
+
+### 🚀 [**Live Demo → earningsecho.streamlit.app**](https://earningsecho.streamlit.app)
 
 **264 earnings calls · 40 S&P 500 companies · 5 sectors · 1 signal**
 
@@ -297,6 +299,10 @@ Included because production ML systems track experiments. Most academic projects
 ---
 
 ## Quick Start
+
+**No install needed** — the dashboard is live at [earningsecho.streamlit.app](https://earningsecho.streamlit.app). Browse all 264 pre-scored transcripts instantly.
+
+To run locally (enables MLflow tracking and live EDGAR pipeline):
 
 ```bash
 # 1. Clone
