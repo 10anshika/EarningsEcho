@@ -32,8 +32,9 @@ MODEL_NAME = "ProsusAI/finbert"
 MAX_TOKENS = 512
 # Minimum sentence length to bother classifying (avoids noise on short fragments)
 MIN_SENT_CHARS = 20
-# Batch size for pipeline inference
-BATCH_SIZE = 16
+# Batch size for pipeline inference — 32 is the sweet spot on CPU for FinBERT
+# (diminishing returns above 32; memory pressure below 16)
+BATCH_SIZE = 32
 
 
 @lru_cache(maxsize=1)

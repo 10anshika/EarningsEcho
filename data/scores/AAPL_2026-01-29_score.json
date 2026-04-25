@@ -1,6 +1,7 @@
 {
   "ticker": "AAPL",
   "date": "2026-01-29",
+  "source": "edgar",
   "source_file": "AAPL_2026-01-29_parsed.json",
   "word_count": 1537,
   "sections_found": false,
@@ -101,11 +102,13 @@
   "hedging_norm": 0.2243,
   "negative_sentiment_norm": 0.2085,
   "backward_ratio_norm": 0.6364,
+  "sentiment_trajectory_norm": 0.5422,
   "EW_Risk_Score": 32.18,
   "risk_class": "Low Risk",
   "component_scores": {
     "hedging_contribution": 8.97,
     "sentiment_contribution": 7.3,
-    "vocab_contribution": 15.91
+    "vocab_contribution": 15.91,
+    "trajectory_contribution": 0.0
   }
 }

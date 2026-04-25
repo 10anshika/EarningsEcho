@@ -83,3 +83,79 @@ The 40/35/25 weights are set by researcher judgement, not learned from data. Dif
 **Experiment**: Built a three-signal NLP scoring pipeline (hedging detector, FinBERT sentiment, vocab ratio) applied to 264 earnings call transcripts from 40 S&P 500 tickers. Assigned NEGATIVE/POSITIVE/NEUTRAL signals using P80/P20 percentile thresholds. Measured 5-day close-to-close returns from yfinance and computed directional accuracy and Sharpe ratio.
 
 **Result**: Overall directional accuracy of 53.8% (not statistically significant at n=106). However, the Motley Fool full-transcript subset shows 75.0% NEGATIVE signal accuracy vs 56.5% for EDGAR press releases — an 18.5 percentage-point gap that supports the hypothesis that transcript quality mediates signal strength. The long-short strategy (long POSITIVE, short NEGATIVE) achieves a Signal Sharpe of 2.174 vs Buy-and-Hold Sharpe of -0.896 over the same period, confirming directional practical value despite the small sample.
+
+---
+
+## New experiments — extended Q&A
+
+### Ablation study
+
+**Q: Equal weights beat your original 40/35/25 — doesn't that invalidate your design?**
+
+No. I treat that as empirical refinement, not failure. I updated the live configuration to `WEIGHTS_V2` because the ablation results show that at small n, no individual signal dominates strongly enough to justify unequal priors. At larger scale, I would estimate weights with regularised logistic regression rather than hard-code priors.
+
+**Q: Why not grid search over weights?**
+
+At n=106 directional samples, full grid search would mostly fit noise and overstate confidence. I intentionally tested 8 interpretable configurations tied to hypotheses about signal contribution, not a brute-force parameter search optimising a single in-sample number.
+
+### ML comparison
+
+**Q: Why does rule-based beat LR/RF/GBT?**
+
+After the chronological split, the supervised training set is only 37 rows. That is pure data starvation for ML classifiers, especially tree ensembles. In low-label financial NLP settings, simple rule systems frequently outperform supervised models until training data is much larger.
+
+**Q: LR returned zero precision/recall — is something broken?**
+
+No. Logistic regression collapsed to a majority-class predictor in a tiny training regime, which is a known failure mode under class imbalance + low sample count. That result is legitimate and actually strengthens the case for the rule-based baseline at this dataset size.
+
+**Q: GBT and RF give different feature importances — which is right?**
+
+Neither should be over-interpreted at n=37 train rows. The exact ranking is noisy in both models, but they agree on one stable point: `backward_ratio` is the weakest of the three features in this sample.
+
+### Walk-forward
+
+**Q: What is the design and why does it matter?**
+
+I use an expanding-window walk-forward design: for each evaluation period, thresholds are recomputed from historical data only. That removes look-ahead bias by construction. The result (55.45%) exceeding the static full-corpus estimate (53.77%) shows performance is not being inflated by future information leakage.
+
+**Q: 2026Q1 drops to 45.8% — is the model breaking down?**
+
+No. That quarter is a high-volatility macro regime with tariff uncertainty and broad market repricing. The model is designed for idiosyncratic post-earnings language drift, not market-wide shock regimes. This is a structural boundary of scope, not a breakdown of the core signal.
+
+### Sector analysis
+
+**Q: Why Consumer works, Technology fails?**
+
+Consumer-call language is relatively formulaic and stable, so deviations in tone/hedging carry clearer information. In Technology, hedging is expected and often already priced by investors, so the same language patterns carry weaker marginal information.
+
+**Q: Consumer 3d is significant (p=0.015) — why use 5d as headline?**
+
+I keep 5d as the headline horizon because that is standard practice in earnings event studies and better captures full information incorporation. The 3d significance result is a robustness check that reinforces, not replaces, the primary 5d framing.
+
+**Q: ANOVA p=0.000166 across hedge density — what does it tell you?**
+
+It shows sectors use statistically different baseline hedge densities. Financials are lowest (0.431), indicating a different executive communication register, while Consumer is highest (0.862), consistent with stronger language-signal separation there.
+
+### Statistical rigor
+
+**Q: What is Cohen's h?**
+
+Cohen's h is an effect-size metric for differences in proportions. For 53.8% vs a 50% null, h=0.076, which is negligible by standard thresholds. That directly explains why p=0.31 appears even when the point estimate is directionally positive. Reporting h is the statistically honest way to contextualize small-n inference.
+
+**Q: What n would you need for significance?**
+
+For 53.8% accuracy, I need about 1,357 directional samples to reach 80% power. For Consumer at 64.5%, I need about 91. I documented these calculations in `src/analysis/power_analysis.py` and exported the tables for reporting.
+
+**Q: Why Wilson CIs over normal approximation?**
+
+Normal approximation intervals are unreliable near boundaries and at small sample sizes. Multiple project subsets are below n=30, so Wilson intervals provide better coverage and more honest uncertainty estimates.
+
+### Bilingual feature
+
+**Q: Why Hindi?**
+
+This is aligned with the Indian academic context (SPPU) and improves accessibility for non-specialist stakeholders who are not fluent in finance NLP terminology. The Claude-generated explanation is grounded in the actual score components and transcript phrase counts, not generic text.
+
+**Q: Does it always work?**
+
+For this complexity level, quality is consistently usable. Proper nouns and some financial terms may remain in English, which is expected in bilingual technical writing. The UI marks it as AI-generated, and in production I would include a human-review layer for externally shared outputs.

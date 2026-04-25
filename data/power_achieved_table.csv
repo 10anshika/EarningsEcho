@@ -1,0 +1,12 @@
+subset,n,accuracy,cohens_h,achieved_power,min_n_for_80pct_power,interpretation
+All signals,106,0.538,0.076073,0.119649,1357,underpowered
+EDGAR,228,0.565,0.130369,0.503417,462,moderate_power
+Motley Fool NEGATIVE,33,0.714,0.442279,0.71929,41,moderate_power
+Walk-forward,110,0.5545,0.109217,0.207683,659,underpowered
+Consumer 5d,31,0.645,0.294227,0.37381,91,underpowered
+Healthcare 5d,23,0.565,0.130369,0.090981,462,underpowered
+Financials 5d,29,0.517,0.034007,0.037798,6788,underpowered
+Technology 5d,12,0.417,0.166772,0.083448,283,underpowered
+Energy 5d,11,0.364,0.275471,0.147704,104,underpowered
+Ablation equal_33,106,0.5755,0.15158,0.344816,342,underpowered
+Ablation original_40_35_25,106,0.5472,0.094541,0.161918,879,underpowered

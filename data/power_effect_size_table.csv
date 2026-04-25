@@ -1,0 +1,9 @@
+accuracy,cohens_h,label
+0.51,0.020001,negligible
+0.538,0.076073,negligible
+0.545,0.090122,negligible
+0.5545,0.109217,negligible
+0.5755,0.15158,negligible
+0.6,0.201358,small
+0.645,0.294227,small
+0.714,0.442279,small

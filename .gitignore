@@ -50,3 +50,7 @@ logs/
 # Model cache
 .cache/
 huggingface/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+

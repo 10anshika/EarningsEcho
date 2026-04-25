@@ -1,0 +1,5 @@
+model,accuracy,precision,recall,f1,roc_auc,n_eval,coverage
+RuleBaseline_P80P20,0.5481,0.5,0.5902,0.5414,0.5518,135,0.5947
+LogisticRegression,0.4846,0.0,0.0,0.0,0.4856,227,1.0
+RandomForest,0.4758,0.4909,0.4615,0.4758,0.4733,227,1.0
+GradientBoosting,0.4626,0.4793,0.4957,0.4874,0.4809,227,1.0

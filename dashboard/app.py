@@ -9,6 +9,7 @@ Panels
 3. Earnings-day price candlestick
 4. Backtest summary (EDGAR vs Motley Fool accuracy split)
 5. Corpus scatter (EW_Risk_Score vs actual 5d return)
+6. Bilingual Summary (English + Hindi explanation via Claude)
 
 Sidebar also shows last 10 MLflow runs.
 
@@ -19,12 +20,14 @@ streamlit run dashboard/app.py
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 from datetime import date, timedelta
 from typing import Optional
 
 import pandas as pd
+import requests
 import streamlit as st
 import plotly.graph_objects as go
 import plotly.express as px
@@ -49,6 +52,56 @@ SCORES_DIR      = ROOT / "data" / "scores"
 TRANSCRIPTS_DIR = ROOT / "data" / "transcripts"
 BACKTEST_CSV    = ROOT / "data" / "backtest_results.csv"
 
+RISK_RED = "#E24B4A"
+RISK_GREEN = "#639922"
+RISK_AMBER = "#BA7517"
+INFO_BG = "#E6F1FB"
+INFO_BORDER = "#185FA5"
+INFO_TEXT = "#0C447C"
+
+COMPANY_NAMES: dict[str, str] = {
+    "AAPL": "Apple Inc.",
+    "ABBV": "AbbVie Inc.",
+    "ADBE": "Adobe Inc.",
+    "AMZN": "Amazon.com, Inc.",
+    "AXP": "American Express Co.",
+    "BAC": "Bank of America Corp.",
+    "BLK": "BlackRock, Inc.",
+    "C": "Citigroup Inc.",
+    "COP": "ConocoPhillips",
+    "COST": "Costco Wholesale Corp.",
+    "CRM": "Salesforce, Inc.",
+    "CVS": "CVS Health Corp.",
+    "CVX": "Chevron Corp.",
+    "EOG": "EOG Resources, Inc.",
+    "GOOGL": "Alphabet Inc.",
+    "GS": "Goldman Sachs Group, Inc.",
+    "HD": "Home Depot, Inc.",
+    "INTC": "Intel Corp.",
+    "JNJ": "Johnson & Johnson",
+    "JPM": "JPMorgan Chase & Co.",
+    "LLY": "Eli Lilly and Co.",
+    "MCD": "McDonald's Corp.",
+    "MDT": "Medtronic plc",
+    "META": "Meta Platforms, Inc.",
+    "MPC": "Marathon Petroleum Corp.",
+    "MRK": "Merck & Co., Inc.",
+    "MS": "Morgan Stanley",
+    "MSFT": "Microsoft Corp.",
+    "NKE": "NIKE, Inc.",
+    "NVDA": "NVIDIA Corp.",
+    "PFE": "Pfizer Inc.",
+    "PSX": "Phillips 66",
+    "SBUX": "Starbucks Corp.",
+    "SLB": "Schlumberger N.V.",
+    "TGT": "Target Corp.",
+    "TSLA": "Tesla, Inc.",
+    "UNH": "UnitedHealth Group Inc.",
+    "VLO": "Valero Energy Corp.",
+    "WFC": "Wells Fargo & Co.",
+    "XOM": "Exxon Mobil Corp.",
+}
+
 # ---------------------------------------------------------------------------
 # Page config
 # ---------------------------------------------------------------------------
@@ -58,6 +111,29 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+st.markdown("""
+<style>
+    [data-testid="stToolbar"]      { display: none !important; }
+    [data-testid="stDecoration"]   { display: none !important; }
+    [data-testid="stStatusWidget"] { display: none !important; }
+    header[data-testid="stHeader"] { height: 0 !important; min-height: 0 !important; visibility: hidden !important; }
+    #MainMenu                      { visibility: hidden !important; }
+    footer                         { visibility: hidden !important; }
+    .block-container               { padding-top: 1rem !important; }
+    section[data-testid="stSidebar"] { top: 0 !important; }
+    section[data-testid="stSidebar"] { display: block !important; min-width: 18rem; }
+    section[data-testid="stSidebar"] > div { display: block !important; }
+    section[data-testid="stSidebar"] { 
+        display: flex !important; 
+        width: 18rem !important;
+        min-width: 18rem !important;
+    }
+    section[data-testid="stSidebar"] > div:first-child {
+        width: 18rem !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 # ---------------------------------------------------------------------------
 # Cached resources
@@ -125,6 +201,22 @@ def _classify_for_highlight(text: str) -> dict[str, bool]:
     }
 
 
+@st.cache_data(show_spinner="Classifying sentences for highlights...")
+def _classify_both_sections(opening: str, qa: str) -> tuple[dict[str, bool], dict[str, bool]]:
+    """Classify opening + Q&A in a single batched FinBERT pass instead of two separate calls."""
+    pipe = _get_finbert()
+    opening_sents = _split_sentences(opening) if opening else []
+    qa_sents      = _split_sentences(qa)      if qa      else []
+    all_sents     = opening_sents + qa_sents
+    if not all_sents:
+        return {}, {}
+    all_scores = _classify_sentences(all_sents, pipe)
+    split = len(opening_sents)
+    neg_map_opening = {s: (max(sc, key=sc.get) == "negative") for s, sc in zip(opening_sents, all_scores[:split])}
+    neg_map_qa      = {s: (max(sc, key=sc.get) == "negative") for s, sc in zip(qa_sents,      all_scores[split:])}
+    return neg_map_opening, neg_map_qa
+
+
 @st.cache_data
 def _load_backtest_df() -> Optional[pd.DataFrame]:
     """Load and cache the backtest results CSV; returns None if file does not exist."""
@@ -173,78 +265,83 @@ def _get_source(ticker: str, call_date: str) -> str:
 
 def _risk_color(risk_class: str) -> str:
     """Return a hex color for a risk class string (red/orange/green)."""
-    return {"High Risk": "#d62728", "Medium Risk": "#ff7f0e", "Low Risk": "#2ca02c"}.get(
+    return {"High Risk": RISK_RED, "Medium Risk": RISK_AMBER, "Low Risk": RISK_GREEN}.get(
         risk_class, "#1f77b4"
     )
-
-
-def _gauge_fig(score: float, risk_class: str) -> go.Figure:
-    """Build a Plotly indicator gauge for EW_Risk_Score with colour-coded risk zones."""
-    color = _risk_color(risk_class)
-    fig = go.Figure(go.Indicator(
-        mode="gauge+number",
-        value=score,
-        number={"font": {"size": 38}},
-        domain={"x": [0, 1], "y": [0, 1]},
-        title={"text": "EW Risk Score", "font": {"size": 16}},
-        gauge={
-            "axis": {"range": [0, 100], "tickwidth": 1, "tickcolor": "#555"},
-            "bar": {"color": color, "thickness": 0.25},
-            "steps": [
-                {"range": [0, 35],   "color": "#e8f5e9"},
-                {"range": [35, 65],  "color": "#fff3e0"},
-                {"range": [65, 100], "color": "#ffebee"},
-            ],
-            "threshold": {
-                "line": {"color": color, "width": 4},
-                "thickness": 0.75,
-                "value": score,
-            },
-        },
-    ))
-    fig.update_layout(height=260, margin=dict(t=30, b=0, l=10, r=10))
-    return fig
 
 
 def render_score_panel(score_data: dict) -> None:
     """Render Tab 1: EW_Risk_Score gauge, component progress bars, and SHAP hedge chart."""
     ew  = score_data["EW_Risk_Score"]
     rc  = score_data["risk_class"]
-    hn  = score_data.get("hedging_norm", 0.0)
-    sn  = score_data.get("negative_sentiment_norm", 0.0)
-    bn  = score_data.get("backward_ratio_norm", 0.0)
+    hedge_raw = score_data.get("hedging", {})
+    sent_raw  = score_data.get("sentiment", {})
+    vocab_raw = score_data.get("vocab", {})
+    hedge_density = float(hedge_raw.get("hedging_density", 0.0))
+    neg_sentiment = float(sent_raw.get("overall_negative_ratio", 0.0))
+    backward_ratio = float(vocab_raw.get("backward_ratio", 0.0))
+    hedge_norm = min(hedge_density / 3.0, 1.0)
+    neg_norm = min(neg_sentiment / 0.20, 1.0)
+    back_norm = min(backward_ratio / 1.0, 1.0)
 
-    col_gauge, col_detail = st.columns([1, 1])
+    st.markdown(
+        f"""
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+          <div style="font-size:24px;font-weight:700;color:#18212B;">EW Risk Score</div>
+          <div style="font-size:24px;font-weight:800;color:#18212B;">{ew:.2f}</div>
+          <div style="background:{_risk_color(rc)};color:white;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:700;">
+            {rc}
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
-    with col_gauge:
-        st.plotly_chart(_gauge_fig(ew, rc), use_container_width=True)
-        badge_color = _risk_color(rc)
+    col_main, col_side = st.columns([2, 1])
+
+    with col_main:
+        st.metric("EW_Risk_Score", f"{ew:.2f}")
+        st.progress(min(max(ew / 100.0, 0.0), 1.0))
         st.markdown(
-            f'<div style="text-align:center;font-size:20px;font-weight:bold;'
-            f'color:white;background:{badge_color};border-radius:8px;padding:6px 0">'
-            f'{rc}</div>',
+            "<div style='display:flex;justify-content:space-between;font-size:12px;color:#5F7080;'>"
+            "<span>0</span><span>35</span><span>65</span><span>100</span></div>",
             unsafe_allow_html=True,
         )
 
-    with col_detail:
-        st.markdown("**Component Contributions**")
-        st.caption("Hedging density  (weight 40%)")
-        st.progress(float(hn), text=f"{hn*100:.1f} / 100")
-        st.caption("Negative sentiment  (weight 35%)")
-        st.progress(float(sn), text=f"{sn*100:.1f} / 100")
-        st.caption("Backward-looking ratio  (weight 25%)")
-        st.progress(float(bn), text=f"{bn*100:.1f} / 100")
-
-        hedge_raw = score_data.get("hedging", {})
-        sent_raw  = score_data.get("sentiment", {})
-        vocab_raw = score_data.get("vocab", {})
-
+        st.markdown("**Signal Components**")
+        st.caption("Hedging density")
+        st.progress(float(hedge_norm), text=f"{hedge_density:.3f}")
+        st.caption("Negative sentiment")
+        st.progress(float(neg_norm), text=f"{neg_sentiment:.3f}")
+        st.caption("Backward vocab ratio")
+        st.progress(float(back_norm), text=f"{backward_ratio:.3f}")
         st.markdown("---")
         m1, m2, m3, m4 = st.columns(4)
-        m1.metric("Hedging density",  f"{hedge_raw.get('hedging_density', 0):.2f}")
-        m2.metric("Neg. sentiment",   f"{sent_raw.get('overall_negative_ratio', 0):.3f}")
-        m3.metric("Backward ratio",   f"{vocab_raw.get('backward_ratio', 0):.3f}")
+        m1.metric("Hedging density",  f"{hedge_density:.2f}")
+        m2.metric("Neg. sentiment",   f"{neg_sentiment:.3f}")
+        m3.metric("Backward ratio",   f"{backward_ratio:.3f}")
         m4.metric("Sent. trajectory", f"{sent_raw.get('sentiment_trajectory', 0):+.4f}")
+        st.markdown(
+            f"<div style='height:8px;border-radius:8px;background:linear-gradient(90deg,{RISK_GREEN} 0%,{RISK_GREEN} 35%,{RISK_AMBER} 35%,{RISK_AMBER} 65%,{RISK_RED} 65%,{RISK_RED} 100%);'></div>",
+            unsafe_allow_html=True,
+        )
+
+    with col_side:
+        risk_short = rc.replace(" Risk", "")
+        st.markdown(
+            f"""
+            <div style="font-size:14px;color:#5F7080;margin-bottom:4px;">Risk Class</div>
+            <div style="font-size:34px;font-weight:800;color:{_risk_color(rc)};margin-bottom:12px;">{risk_short}</div>
+            """,
+            unsafe_allow_html=True,
+        )
+        top_phrases = hedge_raw.get("top_phrases", [])
+        st.markdown("**Top phrases detected:**")
+        if isinstance(top_phrases, list) and top_phrases:
+            for phrase, count in top_phrases[:5]:
+                st.caption(f"- {phrase}: {count}")
+        else:
+            st.caption("- None detected")
 
     # ── SHAP-style hedge explanation ──────────────────────────────────────
     st.markdown("---")
@@ -318,8 +415,7 @@ def render_transcript_panel(score_data: dict) -> None:
         )
 
     with st.spinner("Classifying sentences for highlights..."):
-        neg_map_opening = _classify_for_highlight(opening) if opening else {}
-        neg_map_qa      = _classify_for_highlight(qa)      if qa      else {}
+        neg_map_opening, neg_map_qa = _classify_both_sections(opening or "", qa or "")
 
     tab_open, tab_qa = st.tabs(["Opening Remarks", "Q&A Session"])
     with tab_open:
@@ -406,7 +502,14 @@ def render_backtest_panel(current_ticker: str, current_date: str) -> None:
     stats = compute_stats(df, primary_window="5d")
 
     # ── Key finding callout ───────────────────────────────────────────────
-    st.info(_KEY_FINDING)
+    st.markdown(
+        f"""
+        <div style="background:{INFO_BG};border-left:3px solid {INFO_BORDER};padding:10px 12px;border-radius:8px;margin-bottom:8px;color:{INFO_TEXT};">
+          {_KEY_FINDING.replace("**", "")}
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
     # ── Headline metrics ──────────────────────────────────────────────────
     acc = stats["overall_accuracy"]
@@ -424,16 +527,27 @@ def render_backtest_panel(current_ticker: str, current_date: str) -> None:
     src = stats.get("source_accuracy", {})
     if src:
         st.markdown("**Accuracy by source (directional signals)**")
-        rows = []
-        for s, ss in src.items():
-            rows.append({
-                "Source":   "Motley Fool" if s == "motleyfool" else "EDGAR",
-                "Accuracy": f"{ss['accuracy']*100:.1f}%",
-                "Correct":  ss["n_correct"],
-                "Total":    ss["n"],
-                "p-value":  f"{ss['p_value']:.4f}",
-            })
-        st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+        h1, h2, h3, h4 = st.columns([2, 2, 2, 2])
+        h1.markdown("**Source**")
+        h2.markdown("**Accuracy**")
+        h3.markdown("**Correct/Total**")
+        h4.markdown("**p-value**")
+        for s, ss in sorted(src.items()):
+            src_label = "Motley Fool" if s == "motleyfool" else "EDGAR"
+            accuracy = float(ss["accuracy"]) * 100
+            acc_color = RISK_GREEN if accuracy > 60 else (RISK_AMBER if accuracy >= 50 else RISK_RED)
+            c1, c2, c3, c4 = st.columns([2, 2, 2, 2])
+            c1.write(src_label)
+            c2.markdown(
+                f"<span style='color:{acc_color};font-weight:700'>{accuracy:.1f}%</span>",
+                unsafe_allow_html=True,
+            )
+            c3.write(f"{ss['n_correct']}/{ss['n']}")
+            c4.write(f"{ss['p_value']:.4f}")
+        st.caption(
+            "p=0.31 is expected at n=106 — Cohen's h=0.076 (negligible effect size). "
+            "Min-n for 80% power: 1,357 signals."
+        )
 
     neg = stats.get("negative_signal_accuracy", {})
     if neg:
@@ -450,23 +564,37 @@ def render_backtest_panel(current_ticker: str, current_date: str) -> None:
     top5 = (
         df.sort_values("ew_risk_score", ascending=False)
         .head(5)[["ticker", "call_date", "ew_risk_score", "signal", "source", "actual_5d"]]
-        .rename(columns={
-            "ticker":        "Ticker",
-            "call_date":     "Date",
-            "ew_risk_score": "EW Risk Score",
-            "signal":        "Signal",
-            "source":        "Source",
-            "actual_5d":     "Actual 5d Return",
-        })
     )
+    th1, th2, th3, th4, th5, th6 = st.columns([1.2, 1.5, 2.0, 1.4, 1.5, 1.6])
+    th1.markdown("**Ticker**")
+    th2.markdown("**Date**")
+    th3.markdown("**EW score**")
+    th4.markdown("**Signal**")
+    th5.markdown("**Source**")
+    th6.markdown("**5d return**")
 
-    def _style_row(row):
-        """Highlight the currently selected ticker/date row in amber."""
-        if row["Ticker"] == current_ticker and str(row["Date"]) == current_date:
-            return ["background-color: #fff3cd"] * len(row)
-        return [""] * len(row)
+    for _, row in top5.iterrows():
+        ticker = str(row["ticker"])
+        date_val = str(row["call_date"])
+        score_val = float(row["ew_risk_score"])
+        signal = str(row["signal"])
+        source = "Motley Fool" if str(row["source"]) == "motleyfool" else "EDGAR"
+        ret_val = float(row["actual_5d"]) if pd.notna(row["actual_5d"]) else np.nan
+        ret_color = RISK_GREEN if (pd.notna(ret_val) and ret_val > 0) else RISK_RED
 
-    st.dataframe(top5.style.apply(_style_row, axis=1), use_container_width=True, hide_index=True)
+        r1, r2, r3, r4, r5, r6 = st.columns([1.2, 1.5, 2.0, 1.4, 1.5, 1.6])
+        r1.markdown(
+            f"**{ticker}**" if (ticker == current_ticker and date_val == current_date) else ticker
+        )
+        r2.write(date_val)
+        with r3:
+            st.progress(min(score_val / 100.0, 1.0), text=f"{score_val:.2f}")
+        r4.write(signal)
+        r5.write(source)
+        r6.markdown(
+            f"<span style='color:{ret_color};font-weight:700'>{ret_val:+.3f}</span>" if pd.notna(ret_val) else "N/A",
+            unsafe_allow_html=True,
+        )
 
     # ── Window accuracy breakdown ─────────────────────────────────────────
     st.markdown("**Accuracy by return window**")
@@ -495,6 +623,18 @@ def render_scatter_panel(current_ticker: str, current_date: str) -> None:
         y="actual_5d",
         color="sector",
         symbol="signal",
+        color_discrete_map={
+            "Consumer": "#1D9E75",
+            "Healthcare": "#378ADD",
+            "Financials": "#7F77DD",
+            "Technology": "#BA7517",
+            "Energy": "#D85A30",
+        },
+        symbol_map={
+            "POSITIVE": "triangle-up",
+            "NEGATIVE": "triangle-down",
+            "NEUTRAL": "circle",
+        },
         hover_data={
             "ticker": True, "call_date": True, "source": True,
             "ew_risk_score": ":.2f", "actual_5d": ":.4f",
@@ -529,7 +669,23 @@ def render_scatter_panel(current_ticker: str, current_date: str) -> None:
                   annotation_font_size=11)
     fig.add_vline(x=50, line_dash="dot",  line_color="#aaa", line_width=1)
 
-    fig.update_layout(margin=dict(t=50, b=30, l=10, r=10))
+    seen_sectors: set[str] = set()
+    for trace in fig.data:
+        name = str(trace.name)
+        sector_name = name.split(",")[0].strip()
+        trace.name = sector_name
+        trace.legendgroup = sector_name
+        if sector_name in seen_sectors:
+            trace.showlegend = False
+        else:
+            trace.showlegend = True
+            seen_sectors.add(sector_name)
+
+    fig.update_layout(
+        margin=dict(t=50, b=30, l=10, r=10),
+        legend_title_text="Sector",
+        legend=dict(x=0.01, y=0.99, bgcolor="rgba(0,0,0,0)"),
+    )
     st.plotly_chart(fig, use_container_width=True)
 
 
@@ -580,8 +736,214 @@ def render_mlflow_sidebar() -> None:
 
 
 # ---------------------------------------------------------------------------
+# Layout helpers
+# ---------------------------------------------------------------------------
+
+def _inject_layout_styles() -> None:
+    """Inject inline CSS for a cleaner two-column dashboard shell."""
+    st.markdown(
+        """
+        <style>
+        [data-testid="stSidebar"] {
+            width: 220px !important;
+            min-width: 220px !important;
+            background: #1D232A !important;
+        }
+        [data-testid="stSidebar"] * {
+            color: #E8EDF2 !important;
+        }
+        [data-testid="stSidebar"] small, [data-testid="stSidebar"] .stCaption {
+            color: #9FB0C1 !important;
+        }
+        [data-testid="stAppViewContainer"] {
+            background: #FFFFFF !important;
+        }
+        [data-testid="stAppViewContainer"] * {
+            color: #1F2A35;
+        }
+        [data-testid="stMainBlockContainer"] {
+            max-width: 100% !important;
+            padding-top: 1rem !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def _render_topbar(score_data: dict, source_label: str) -> None:
+    """Render styled top bar with transcript context and risk summary."""
+    ticker = str(score_data.get("ticker", "?"))
+    call_date = str(score_data.get("date", "?"))
+    company_name = COMPANY_NAMES.get(ticker, ticker)
+    ew_score = float(score_data.get("EW_Risk_Score", 0.0))
+    risk_class = str(score_data.get("risk_class", "Medium Risk"))
+    badge_color = _risk_color(risk_class)
+    risk_short = risk_class.replace(" Risk", "").upper()
+
+    left_col, right_col = st.columns([3, 2], vertical_alignment="center")
+    with left_col:
+        st.markdown(
+            f"""
+            <div style="padding:10px 12px;border-radius:10px;background:#F4F7FB;border:1px solid #D8E2EC;">
+              <div style="font-size:24px;font-weight:700;color:#18212B;">{ticker} · {company_name}</div>
+              <div style="font-size:13px;color:#4B5A6A;">Call date: {call_date} · Source: {source_label}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+    with right_col:
+        st.markdown(
+            f"""
+            <div style="padding:10px 12px;border-radius:10px;background:#F4F7FB;border:1px solid #D8E2EC;text-align:right;">
+              <div style="display:inline-block;background:{badge_color};color:white;font-weight:700;font-size:12px;padding:3px 8px;border-radius:999px;">
+                {risk_short}
+              </div>
+              <div style="font-size:33px;font-weight:800;color:#18212B;line-height:1.2;">{ew_score:.2f}</div>
+              <div style="font-size:12px;color:#4B5A6A;">EW_Risk_Score</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+
+def _render_landing_page() -> None:
+    """Render hero landing page when no transcript is selected."""
+    st.markdown(
+        """
+        <div style="padding:4px 2px 8px 2px;">
+          <div style="font-size:42px;font-weight:800;color:#18212B;">EarningsEcho</div>
+          <div style="font-size:16px;color:#495B6D;">Language-native risk intelligence for post-earnings drift.</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Directional accuracy (5d)", "53.8%", "n=106 signals")
+    c2.metric("Signal Sharpe", "2.174", "vs B&H -0.896")
+    c3.metric("Walk-forward accuracy", "55.5%", "no look-ahead bias")
+    c4.metric("Best sector (Consumer)", "64.5%", "n=31 · p≈0.07")
+
+    st.markdown(
+        f"""
+        <div style="background:{INFO_BG};border-left:3px solid {INFO_BORDER};padding:10px 12px;border-radius:8px;margin:8px 0 14px 0;color:{INFO_TEXT};">
+          Full-call transcripts (Motley Fool) achieve 71.4% NEGATIVE signal accuracy vs 56.5% for EDGAR press releases — Q&A hedging language is the key differentiator.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    col_bt, col_sc = st.columns(2)
+    with col_bt:
+        st.markdown("#### Backtest overview")
+        render_backtest_panel("", "")
+    with col_sc:
+        st.markdown("#### Corpus scatter")
+        render_scatter_panel("", "")
+
+
+# ---------------------------------------------------------------------------
 # Live pipeline helper
 # ---------------------------------------------------------------------------
+
+def render_bilingual_explainer(score_data: dict) -> None:
+    """Render Tab 6: bilingual (English + Hindi) explanation generated via Claude."""
+    ew_risk_score = float(score_data.get("EW_Risk_Score", 0.0))
+    risk_class = str(score_data.get("risk_class", "Unknown"))
+    hedging_density = float(score_data.get("hedging", {}).get("hedging_density", 0.0))
+    neg_sentiment = float(score_data.get("sentiment", {}).get("overall_negative_ratio", 0.0))
+    backward_ratio = float(score_data.get("vocab", {}).get("backward_ratio", 0.0))
+    ticker = str(score_data.get("ticker", "UNKNOWN"))
+    call_date = str(score_data.get("date", "unknown"))
+
+    hedging_data = score_data.get("hedging", {})
+    hedge_counts = hedging_data.get("hedge_counts", {})
+    if not isinstance(hedge_counts, dict) or not hedge_counts:
+        top_phrases_raw = hedging_data.get("top_phrases", [])
+        if isinstance(top_phrases_raw, list):
+            hedge_counts = {
+                str(item[0]): int(item[1])
+                for item in top_phrases_raw
+                if isinstance(item, (list, tuple)) and len(item) >= 2
+            }
+        else:
+            hedge_counts = {}
+
+    top_hedges = sorted(hedge_counts.items(), key=lambda x: x[1], reverse=True)[:5]
+    top_hedges_text = ", ".join([f"{phrase} ({count})" for phrase, count in top_hedges]) or "None detected"
+
+    st.markdown(
+        "Generate a balanced bilingual explanation of the current risk score and its three underlying signals."
+    )
+
+    if st.button("Generate Bilingual Summary", type="primary", key="generate_bilingual_summary"):
+        try:
+            api_key = st.secrets.get("GROK_API_KEY", "")
+        except Exception:
+            api_key = ""
+        if not api_key:
+            api_key = os.getenv("GROK_API_KEY", "")
+        if not api_key:
+            st.error("Missing GROK_API_KEY. Add it to .streamlit/secrets.toml")
+            return
+
+        prompt = (
+            "You are explaining an earnings-call NLP risk score.\n\n"
+            "Write exactly:\n"
+            "1) A 4-6 sentence plain English paragraph explaining the score and signals.\n"
+            "2) The same explanation in Hindi (Devanagari script), prefixed with 'Hindi Summary:'.\n\n"
+            "Tone: informative, balanced, no buy/sell advice.\n\n"
+            f"Data:\n"
+            f"- Ticker: {ticker}\n"
+            f"- Call Date: {call_date}\n"
+            f"- EW_Risk_Score: {ew_risk_score:.2f}\n"
+            f"- Risk Class: {risk_class}\n"
+            f"- Hedging Density: {hedging_density:.4f}\n"
+            f"- Negative Sentiment Ratio: {neg_sentiment:.4f}\n"
+            f"- Backward Ratio: {backward_ratio:.4f}\n"
+            f"- Top 5 hedging phrases: {top_hedges_text}\n"
+        )
+
+        try:
+            headers = {
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            }
+            payload = {
+                "model": "grok-3",
+                "messages": [{"role": "user", "content": prompt}],
+                "max_tokens": 1000,
+            }
+            response = requests.post(
+                "https://api.x.ai/v1/chat/completions",
+                headers=headers,
+                json=payload,
+                timeout=30,
+            )
+            response.raise_for_status()
+            result = response.json()["choices"][0]["message"]["content"]
+            model_text = result.strip()
+
+            english_text, hindi_text = model_text, ""
+            if "Hindi Summary:" in model_text:
+                english_text, hindi_text = model_text.split("Hindi Summary:", 1)
+                english_text = english_text.strip()
+                hindi_text = hindi_text.strip()
+
+            col_en, col_hi = st.columns(2)
+            with col_en:
+                st.markdown("**English Summary**")
+                st.info(english_text if english_text else "No English summary returned.")
+            with col_hi:
+                st.markdown("**Hindi Summary**")
+                st.info(hindi_text if hindi_text else "Hindi Summary marker not found in response.")
+
+        except requests.exceptions.RequestException as exc:
+            st.error(f"Failed to generate summary (request error): {exc}")
+        except Exception as exc:
+            st.error(f"Failed to generate summary: {exc}")
+
 
 def _run_live_pipeline(ticker: str) -> Optional[dict]:
     """Fetch, parse, score, save, and MLflow-log a new EDGAR transcript for ticker."""
@@ -638,37 +1000,31 @@ def _run_live_pipeline(ticker: str) -> Optional[dict]:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
-    """Entry point: build sidebar, resolve selected transcript, render 5-tab dashboard."""
-    # ── Project header ────────────────────────────────────────────────────
-    st.markdown(
-        "# EarningsEcho\n"
-        "**NLP signal from earnings call language** — "
-        "hedging density · FinBERT sentiment · forward/backward vocabulary"
-    )
-    st.divider()
+    """Entry point: build sidebar, resolve selected transcript, render 6-tab dashboard."""
+    _inject_layout_styles()
 
     # ── Sidebar ───────────────────────────────────────────────────────────
     with st.sidebar:
-        st.header("EarningsEcho")
-        st.caption("Select a transcript to analyse")
+        st.markdown("### **EarningsEcho**")
+        st.caption("NLP risk signals from earnings calls")
+        st.markdown("**From corpus**")
 
         corpus_options = _list_corpus_options()
         selected_label = st.selectbox(
-            "Load from corpus",
+            "Load transcript",
             options=["— select —"] + corpus_options,
             index=0,
             help="Instantly load any previously scored transcript (264 available)",
+            label_visibility="collapsed",
         )
 
         st.markdown("---")
-        st.markdown("**Analyze a new ticker (live EDGAR fetch)**")
+        st.markdown("**Live analysis**")
         new_ticker  = st.text_input("Ticker symbol", max_chars=10, placeholder="e.g. MSFT").strip().upper()
         analyze_btn = st.button("Analyze", type="primary", disabled=not new_ticker)
 
-        render_mlflow_sidebar()
-
         st.markdown("---")
-        st.caption("Sources: SEC EDGAR · Motley Fool · yfinance")
+        st.caption("264 transcripts · 40 tickers · 5 sectors · 2023–2026")
 
     # ── Resolve which score_data to display ──────────────────────────────
     score_data: Optional[dict] = None
@@ -684,17 +1040,7 @@ def main() -> None:
             st.error(f"Score file not found: {score_path}")
 
     if score_data is None:
-        st.info(
-            "Select a transcript from the sidebar dropdown, "
-            "or enter a ticker symbol and click **Analyze**."
-        )
-        col_bt, col_sc = st.columns(2)
-        with col_bt:
-            with st.expander("Backtest overview", expanded=True):
-                render_backtest_panel("", "")
-        with col_sc:
-            with st.expander("Corpus scatter", expanded=True):
-                render_scatter_panel("", "")
+        _render_landing_page()
         return
 
     ticker    = score_data.get("ticker", "?")
@@ -702,15 +1048,16 @@ def main() -> None:
     source    = _get_source(ticker, call_date)
     src_label = "Motley Fool" if source == "motleyfool" else "EDGAR"
 
-    st.markdown(f"### {ticker}  ·  {call_date}  ·  *{src_label}*")
+    _render_topbar(score_data, src_label)
 
-    # ── Five panels as tabs ───────────────────────────────────────────────
+    # ── Six panels as tabs ────────────────────────────────────────────────
     tabs = st.tabs([
-        "Risk Score",
-        "Transcript",
-        "Price Chart",
-        "Backtest",
-        "Corpus",
+        "📊 Risk Score",
+        "📄 Transcript",
+        "📈 Price Chart",
+        "🔁 Backtest",
+        "🗂 Corpus",
+        "🌐 Bilingual",
     ])
 
     with tabs[0]:
@@ -727,6 +1074,9 @@ def main() -> None:
 
     with tabs[4]:
         render_scatter_panel(ticker, call_date)
+
+    with tabs[5]:
+        render_bilingual_explainer(score_data)
 
 
 if __name__ == "__main__":
