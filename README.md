@@ -441,11 +441,17 @@ mlflow ui  # http://localhost:5000
 
 ### Optional: Bilingual Explainer
 
-Add a Grok API key to `.streamlit/secrets.toml` for English + Hindi summaries:
+Add a Gemini API key to `.streamlit/secrets.toml` for English + Hindi summaries:
 
 ```toml
-GROK_API_KEY = "your-key-here"
+GEMINI_API_KEY = "your-key-here"
 ```
+
+Notes
+-----
+- The bilingual explainer calls the Gemini endpoint (`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent`). If `GEMINI_API_KEY` is missing, Tab 6 will show an error and no summary will be generated.
+
+
 
 ---
 

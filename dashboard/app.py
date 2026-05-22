@@ -879,13 +879,13 @@ def render_bilingual_explainer(score_data: dict) -> None:
 
     if st.button("Generate Bilingual Summary", type="primary", key="generate_bilingual_summary"):
         try:
-            api_key = st.secrets.get("GROK_API_KEY", "")
+            api_key = st.secrets.get("GROQ_API_KEY", "")
         except Exception:
             api_key = ""
         if not api_key:
-            api_key = os.getenv("GROK_API_KEY", "")
+            api_key = os.getenv("GROQ_API_KEY", "")
         if not api_key:
-            st.error("Missing GROK_API_KEY. Add it to .streamlit/secrets.toml")
+            st.error("Missing GROQ_API_KEY. Add it to .streamlit/secrets.toml")
             return
 
         prompt = (
@@ -906,24 +906,23 @@ def render_bilingual_explainer(score_data: dict) -> None:
         )
 
         try:
-            headers = {
-                "Authorization": f"Bearer {api_key}",
-                "Content-Type": "application/json",
-            }
-            payload = {
-                "model": "grok-3",
-                "messages": [{"role": "user", "content": prompt}],
-                "max_tokens": 1000,
-            }
             response = requests.post(
-                "https://api.x.ai/v1/chat/completions",
-                headers=headers,
-                json=payload,
+                "https://api.groq.com/openai/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {api_key}",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": "llama-3.3-70b-versatile",
+                    "messages": [{"role": "user", "content": prompt}],
+                    "max_tokens": 1000,
+                },
                 timeout=30,
             )
             response.raise_for_status()
             result = response.json()["choices"][0]["message"]["content"]
             model_text = result.strip()
+
 
             english_text, hindi_text = model_text, ""
             if "Hindi Summary:" in model_text:
